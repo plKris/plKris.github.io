@@ -273,7 +273,7 @@ span{
         margin-top: 4rem;
     }
 }
-/* -----------about--------------- */
+/* -----------a propos--------------- */
 
 .aboutc{
     display: flex;
@@ -295,12 +295,51 @@ span{
 }
 
 .aboutc .section-titre h1{
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 700;
     line-height: 1.3;
     position: relative;
     display: inline-block; 
+    margin-bottom: 50px;
+}
+
+.aboutc .section-titre h2{
+    font-size: 3rem;
     margin-bottom: 30px;
+}
+
+.aboutc .section-titre h3{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.info-tooltip {
+    display: none; /* Masque le texte par défaut */
+    position: absolute; /* Permet un positionnement spécifique si nécessaire */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
+    color: #fff; /* Texte blanc */
+    padding: 5px 10px; /* Ajoute un peu d'espace */
+    border-radius: 5px; /* Arrondit les coins */
+    font-size: 1.2rem; /* Taille du texte ajustée */
+    z-index: 10; /* Assure que ça s'affiche au-dessus */
+}
+
+.info-key {
+    position: relative; /* Nécessaire pour positionner correctement .info-tooltip */
+    color: #b74b4b; /* Couleur rouge pour les mots-clés */
+    cursor: pointer; /* Change le curseur en pointeur pour indiquer une interactivité */
+}
+
+.info-key:hover .info-tooltip {
+    display: block; /* Affiche le texte lors du survol */
+    top: 100%; /* Place le texte juste en dessous */
+    left: 0; /* Aligne le texte à gauche */
+    transform: translateY(10px); /* Décale légèrement vers le bas */
+}
+
+.section-titre a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .section-titre p{
@@ -319,8 +358,10 @@ span{
             background-color: #b74b4b; /* Couleur de la ligne */
 }
 
+
+
 .parcourc .section-titre h1{
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 700;
     line-height: 1.3;
     position: relative;
@@ -347,15 +388,14 @@ span{
 
 .case {
     background-color: #262626; /* Fond blanc */
-    border: 1px solid #ddd; /* Bordure grise claire */
     border-radius: 8px; /* Coins arrondis */
     padding: 20px; /* Espacement interne */
-    margin: 0 auto 20px auto; /* Espacement vertical entre les cases */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    width: 100%; /* Prend toute la largeur */
+    margin: 0 auto 100px auto; /* Espacement vertical entre les cases */
+    box-shadow: 0 4px 6px #b74b4b; /* Ombre douce */
+    width: 60%; /* Prend toute la largeur */
     max-width: 100%; /* Limite la largeur à celle du parent */
     box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
-    height: 200px; /* Hauteur fixe des cases */
+    height: 500px; /* Hauteur fixe des cases */
 }
 
 /* ----------------bts sio------------- */
