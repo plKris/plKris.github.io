@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BTS SIO | Kris PLESEL</title>
+    <title>Portfolio BTS SIO &#124; Kris PLESEL</title>
     <meta name="description" content="Portfolio de Kris Plesel, étudiant en BTS SIO option SLAM, passionné par le développement web et à la recherche d'un stage.">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <link rel="icon" href="img/favicondoc/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -34,7 +34,7 @@
         <div class="home-content">
             <h1>Bonjour, je suis<span> Kris PLESEL</span></h1>
             <h3 class="typing-text">Je suis un <span></span></h3>
-            <p>Bienvenu sur mon portfolio</p>
+            <p>Bienvenue sur mon portfolio !</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/kris-p-95139625a/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/plKris"><i class="fa-brands fa-github"></i></a>
@@ -77,17 +77,18 @@
                 <div class="case">
                     <h2>Développeur web</h2>
                 <p><span>En recherche</span> Stage 2 ème année BTS SIO
-                    Montereau-fault-yonne Mai-Juin 2024
+                    Montereau-fault-yonne Dès que possible
                 </p>
             </div>
             <div class="case">
                 <h2>Développeur web</h2>
                 <p>Stage 1 ère année BTS SIO
-                    Montereau-fault-yonne Mai-Juin 2024
+                   Montereau-fault-yonne Mai-Juin 2024
                 </p>
             </div>
             <div class="case">
-                <p>Stage 1 ère année BTS SIO
+                <h2>Assistant technicien informatique</h2>
+                <p>Stage d'observation 3ème
                     Montereau-fault-yonne Mai-Juin 2024
                 </p>
             </div>
@@ -96,7 +97,27 @@
 </section>
 
 <!-- ----------compétences------------ -->
-<section id="parcour" class="parcour">
+<section id="compet" class="competc">
+    <div class="section-titre">
+        <h1>Mes compétences</h1>
+        </div>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="img/ImagesCompet/HTML5.png" alt="Image 1" onclick="toggleText(this)">
+                <div class="description">Texte associé à l'image 1</div>
+            </div>
+            <div class="image-item">
+                <img src="img/ImagesCompet/CSS.png" alt="Image 2" onclick="toggleText(this)">
+                <div class="description">Texte associé à l'image 2</div>
+            </div>
+            <div class="image-item">
+                <img src="img/ImagesCompet/JAVASCRIPT.png" alt="Image 3" onclick="toggleText(this)">
+                <div class="description">Texte associé à l'image 3</div>
+            </div>
+        </div>
+</section>
+<!-- -----------projets---------- -->
+<section id="projet" class="projet">
     <div class="container">
         <h1 class="sub-title">Mes projets</h1>
         <div class="work-list">
@@ -126,11 +147,6 @@
             </div>
         </div>
         <a href="#" class="btn">Voir plus</a>
-    </div>
-</div>
-</section>
-<!-- -----------projets---------- -->
-<section id="projet" class="projet">
     <div class="container">
             <div class="section-titre">
                 <h1>À propos</h1>
@@ -168,7 +184,7 @@
     <div class="container">
             <div class="section-titre">
                 <h1>À propos</h1>
-                <p>Salut, moi c'est Kris PLESEL, j’ai 20 ans. Je suis actuellement étudiant en 2ème année de BTS SIO (Services Informatiques aux Organisations) option SLAM
+                <p>Je m'appelle Kris PLESEL, j’ai 20 ans. Je suis actuellement étudiant en 2ème année de BTS SIO (Services Informatiques aux Organisations) option SLAM
                      (Solutions Logicielles et Application Métier) au CNED.
                      Actuellement à la recherche d'un stage en développement web pour compléter ma formation. Je me suis dirigé en BAC Science Technologique du Développement
                      Durable (STI2D) spécialité Système d’Information Numérique (SIN) au Lycée LaFayette. Au cours de ces années de Lycée, je me suis passionné 
@@ -182,7 +198,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Me contacter</h1>
-                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fas fa-paper-plane"></i> pleselkris@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> 0612923563</p>
                 <div class="social-icons">
                 <a href="https://www.linkedin.com/in/kris-p-95139625a/"><i class="fa-brands fa-linkedin"></i></a>
@@ -205,7 +221,7 @@
         <p>Copyright 2024 © Kris PLESEL <i class="fas fa-heart"></i></p>
     </div>
 </div>
-</body>
+
 
 <script>
 
@@ -238,7 +254,7 @@
 
 </script>
 <script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbylH3QHynb7WY7hukQSDrynA0LjjfyKes7i04gVuL-RkMGdPRuCQn_d-wJLuLi-3xr2/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
@@ -255,5 +271,31 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script>
+  function toggleText(image) {
+    const description = image.nextElementSibling;
+    if (description.style.display === "none" || !description.style.display) {
+        description.style.display = "block";
+    } else {
+        description.style.display = "none";
+    }
+}
+const imageItems = document.querySelectorAll('.image-item');
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.5 // L'élément doit être visible à 50% pour être déclenché
+});
+
+// Observer chaque élément
+imageItems.forEach(item => {
+    observer.observe(item);
+});
+</script>
+</body>
 </html>

@@ -551,3 +551,43 @@ form input, form textarea{
     color: #ff004f;
     text-decoration: none;
 }
+
+.competc .image-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.competc .image-item {
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+.competc .image-item:nth-child(1) { animation-delay: 0.5s; }
+.competc .image-item:nth-child(2) { animation-delay: 1s; }
+.competc .image-item:nth-child(3) { animation-delay: 1.5s; }
+
+.competc img {
+    max-width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.competc img:hover {
+    transform: scale(1.1);
+}
+
+.competc .description {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+ @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
