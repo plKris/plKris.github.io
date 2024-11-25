@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <div id="construction-banner">
+        <p>🚧 Ce site est en cours de création 🚧</p>
+        <p>Merci de ne pas prendre en compte les bugs et les entités manquantes !</p>
+    </div>
     <header>
         <a href="#" class="logo">Kris PLESEL</a>
 
@@ -21,7 +25,7 @@
             <a href="#about" >Profil</a>
             <a href="#parcour" >Parcours</a>
             <a href="#compet" >Compétences</a>
-            <a href="#pro" >Projets</a>
+            <a href="#projet" >Projets</a>
             <a href="#btssio" >BTS SIO</a>
             <a href="#vtechno" >Veille technologique</a>
             <a href="#contacts" >Contact</a>
@@ -29,17 +33,17 @@
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="img/moitkt.png" alt="">
+            <img src="img/Tete/moitkt.png" alt="">
         </div>
         <div class="home-content">
             <h1>Bonjour, je suis<span> Kris PLESEL</span></h1>
             <h3 class="typing-text">Je suis un <span></span></h3>
             <p>Bienvenue sur mon portfolio !</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kris-p-95139625a/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/plKris"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kris-p-95139625a/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/plKris"target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="img/CV stage PLESEL Kris.pdf" target="_blank" rel="noopener noreferrer" class="btn">Cliquez ici si vous êtes un recruteur pour un stage</a>
+            <a href="img/Documentspro/CV stage PLESEL Kris.pdf" target="_blank" rel="noopener noreferrer" class="btn">Cliquez ici si vous êtes un recruteur pour un stage</a>
         </div>
     </section>
     <!-- -----------profil---------- -->
@@ -47,7 +51,7 @@
     <div class="container">
         <div class="row">
         <div class="about-col-1">
-            <img src="img/user.png">
+            <img src="img/Tete/user.png">
         </div>
         <div class="about-col-2">
             <div class="section-titre">
@@ -99,96 +103,164 @@
 <!-- ----------compétences------------ -->
 <section id="compet" class="competc">
     <div class="section-titre">
-        <h1>Mes compétences</h1>
+        <h1>Mes compétences en développement 👨‍💻</h1>
         </div>
+        <button class="btn-next" onclick="changeSection()">Mes certifications</button>
+        <div class="section-content active">
         <div class="image-container">
-            <div class="image-item">
-                <img src="img/ImagesCompet/HTML5.png" alt="Image 1" onclick="toggleText(this)">
-                <div class="description">Texte associé à l'image 1</div>
+            <div class="carte">
+                <div class="line-with-text"><span>HTML</span></div>
+                <img src="img/ImagesCompet/HTML5.png" alt="Image 1">
             </div>
-            <div class="image-item">
-                <img src="img/ImagesCompet/CSS.png" alt="Image 2" onclick="toggleText(this)">
-                <div class="description">Texte associé à l'image 2</div>
+            <div class="carte">
+                <div class="line-with-text"><span>CSS</span></div>
+                <img src="img/ImagesCompet/CSS.png" alt="Image 2" > 
             </div>
-            <div class="image-item">
-                <img src="img/ImagesCompet/JAVASCRIPT.png" alt="Image 3" onclick="toggleText(this)">
-                <div class="description">Texte associé à l'image 3</div>
+            <div class="carte">
+                <div class="line-with-text"><span>JAVASCRIPT</span></div>
+                <img src="img/ImagesCompet/JAVASCRIPT.png" alt="Image 3">
+            </div>
+            <div class="carte">
+                <div class="line-with-text"><span>PHP</span></div>
+                <img src="img/ImagesCompet/PHP.png" alt="Image 4">
+            </div>
+            <div class="carte">
+                <div class="line-with-text"><span>JAVA</span></div>
+                <img src="img/ImagesCompet/JAVA.png" alt="Image 5">
+            </div>
+            <div class="carte">
+                <div class="line-with-text"><span>C#</span></div>
+                <img src="img/ImagesCompet/Csharp.png" alt="Image 6">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Mes Certifications -->
+<section id="certifications" class="competc hidden">
+    <div class="section-titre">
+        <h1>Mes certifications 🏅</h1>
+    </div>
+    <button class="btn-next" onclick="changeSection()">Mes outils & logiciels</button>
+   
+        <div class="image-container">
+            <div class="carte">
+                <div class="line-with-text"><span>Certification Pix</span></div>
+                <img src="img/Certif/Certificat-Pix.png" alt="Certification 1">
+            </div>
+            <div class="carte">
+                <div class="line-with-text"><span>Certification SecNum</span></div>
+                <img src="img/ImagesCompet" alt="Certification 2">
+            </div>
+        </div>
+    
+</section>
+
+<!-- Section Mes Outils -->
+<section id="outils" class="competc hidden">
+    <div class="section-titre">
+        <h1>Mes outils & logiciels 🔧</h1>
+    </div>
+    <button class="btn-next" onclick="changeSection()">Mes compétences en développement</button>
+        <div class="image-container">
+            <div class="carte">
+                <div class="line-with-text"><span>VS Code</span></div>
+                <img src="img/ImagesOutils/vscode.png" alt="VS Code">
+            </div>
+            <div class="carte">
+                <div class="line-with-text"><span>Git</span></div>
+                <img src="img/ImagesOutils/git.png" alt="Git">
             </div>
         </div>
 </section>
 <!-- -----------projets---------- -->
-<section id="projet" class="projet">
-    <div class="container">
-        <h1 class="sub-title">Mes projets</h1>
+<section id="projet" class="projetc">
+        <div class="section-titre">
+        <h1>Mes projets</h1>
+    </div>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="img/Projet/acvertest.jfif">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <h3>Développement d'un site web</h3>
+                    <p>Développement d'un site pour une association durant mon stage de 1ère année.</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="img/en_construction.gif">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <h3>Rien encore</h3>
+                    <p>Il n'y a rien pour le moment. 🚧</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="img/en_construction.gif">
                 <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <h3>Rien encore</h3>
+                    <p>Il n'y a rien pour le moment. 🚧</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Voir plus</a>
-    <div class="container">
-            <div class="section-titre">
-                <h1>À propos</h1>
-                <p>Je m’appelle Kris PLESEL, j’ai 20 ans. Je suis actuellement étudiant en 2ème année de BTS SIO (Services Informatiques aux Organisations) option SLAM
-                     (Solutions Logicielles et Application Métier) au CNED.
-                     Actuellement à la recherche d'un stage en développement web pour compléter ma formation. Je me suis dirigé en BAC Science Technologique du Développement
-                     Durable (STI2D) spécialité Système d’Information Numérique (SIN) au Lycée LaFayette. Au cours de ces années de Lycée, je me suis passionné 
-                     pour l’informatique mais plus particulièrement pour le développement, ce qui explique mon choix pour l’option SLAM.</p>
-            </div>
-        </div>
+        <a href="#" class="btn">Voir plus (il y'a rien de plus.)</a>
 </section>
  <!-- -----------bts sio---------- -->
- <section id="btssio" class="btssio">
-    <div class="container">
-        <h1 class="sub-title">Qu'est ce que le BTS SIO ?</h1>
+ <section id="btssio" class="btssioc">
+        <div class="section-titre">
+        <h1>Qu'est ce que le BTS SIO ? 🎓</h1>
+        </div>
+        <h2>Le <span class="info-key">BTS SIO <span class="info-tooltip">Technicien Supérieur aux Services Informatiques aux Organisations</span></span>, s'adresse à ceux qui souhaitent se 
+            former en deux ans aux métiers d'administrateur réseau ou de développeur. Pour par la suite intégré directement le marché du 
+            travail ou continuer des études, dans le domaine de l'informatique.
+            Le BTS SIO propose deux spécialités :</h2>
         <div class="services-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>SISR</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">En savoir plus</a>
+                <h2>Option SISR</h2>
+                <p>L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
+                    Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de : 
+                    Administrateur systèmes et réseaux
+                    Informaticien support et déploiement
+                    Pilote d’exploitation
+                    Support systèmes et réseaux
+                    Technicien d’infrastructure
+                    Technicien de production
+                    Technicien micro et réseaux </p>
+                <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux"target="_blank">En savoir plus</a>
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
-                <h2>SLAM</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">En savoir plus</a>
+                <h2>Option SLAM</h2>
+                <p>L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+                    Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de : 
+                    Développeur d’applications informatiques
+                    Développeur informatique
+                    Analyste d’applications ou d’études
+                    Analyste programmeur
+                    Programmeur analyste
+                    Programmeur d’applications
+                    Responsable des services applicatifs
+                    Technicien d’études informatiques.</p>
+                <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"target="_blank">En savoir plus</a>
             </div>
         </div>
     </div>
 </div>
 </section>
   <!-- -----------veille technologique---------- -->
-  <section id="vtechno" class="vtechno">
+  <section id="vtechno" class="vtechnoc">
     <div class="container">
             <div class="section-titre">
-                <h1>À propos</h1>
-                <p>Je m'appelle Kris PLESEL, j’ai 20 ans. Je suis actuellement étudiant en 2ème année de BTS SIO (Services Informatiques aux Organisations) option SLAM
-                     (Solutions Logicielles et Application Métier) au CNED.
-                     Actuellement à la recherche d'un stage en développement web pour compléter ma formation. Je me suis dirigé en BAC Science Technologique du Développement
-                     Durable (STI2D) spécialité Système d’Information Numérique (SIN) au Lycée LaFayette. Au cours de ces années de Lycée, je me suis passionné 
-                     pour l’informatique mais plus particulièrement pour le développement, ce qui explique mon choix pour l’option SLAM.</p>
+                <h1>Veille Technologique 📔</h1>
+            </div>
+                <p>Qu'est-ce que la veille technologique ?
+                    La veille technologique, élément de la veille stratégique, consiste à surveiller les 
+                    évolutions techniques, les innovations dans un secteur d’activité donnée. La veille 
+                    technologique comprend notamment la surveillance, la collecte, le partage et la diffusion
+                     d’information permettant d’anticiper ou de s’informer sur des changements en matière de 
+                     recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, 
+                     innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.</p>
             </div>
         </div>
 </section>
@@ -204,7 +276,7 @@
                 <a href="https://www.linkedin.com/in/kris-p-95139625a/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/plKris"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="img/CV stage PLESEL Kris.pdf" download class="btn btn2">Télécharger le CV</a>
+                <a href="img/Documentspro/CV stage PLESEL Kris.pdf" download class="btn btn2">Télécharger le CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -271,31 +343,30 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <script>
-  function toggleText(image) {
-    const description = image.nextElementSibling;
-    if (description.style.display === "none" || !description.style.display) {
-        description.style.display = "block";
-    } else {
-        description.style.display = "none";
+<script>
+    let currentIndex = 0;
+    const sections = document.querySelectorAll('section.competc');
+
+    function changeSection() {
+        // Masquer la section actuelle
+        sections[currentIndex].classList.add('hidden');
+
+        // Aller à la section suivante
+        currentIndex = (currentIndex + 1) % sections.length;
+
+        // Afficher la nouvelle section
+        sections[currentIndex].classList.remove('hidden');
     }
-}
-const imageItems = document.querySelectorAll('.image-item');
+</script>
+<script>
+    // Afficher la notification
+    const notification = document.getElementById('notification');
+    notification.style.opacity = '1';
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, {
-    threshold: 0.5 // L'élément doit être visible à 50% pour être déclenché
-});
-
-// Observer chaque élément
-imageItems.forEach(item => {
-    observer.observe(item);
-});
+    // Masquer la notification après 3 secondes
+    setTimeout(() => {
+        notification.style.opacity = '0';
+    }, 3000);
 </script>
 </body>
 </html>
