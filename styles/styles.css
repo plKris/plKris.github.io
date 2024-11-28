@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Base du contenu de la page */
 *{
     margin: 0;
     padding: 0;
@@ -38,51 +39,7 @@ header{
     z-index: 100;
 }
 
-#construction-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #d7e7f7; /* Bleu clair doux */
-    color: #2c3e50; /* Bleu foncé pour le texte */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    animation: slideOut 8s forwards ease-in-out;
-}
-
-/* Ajout d'un motif rayé pour le style chantier */
-#construction-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, #b3cde3 25%, #cfe8f3 25%, #cfe8f3 50%, #b3cde3 50%, #b3cde3 75%, #cfe8f3 75%, #cfe8f3);
-    background-size: 50px 50px;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-/* Animation pour faire disparaître la banderole */
-@keyframes slideOut {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
+/* Barre de navigation */
 
 .logo{
     font-size: 3rem;
@@ -144,6 +101,7 @@ nav a.active{
     }
 }
 
+/* section titre */
 section{
     padding: 120px 0;
     overflow: hidden;
@@ -153,6 +111,48 @@ section{
     padding-bottom: 30px;
 
 }
+
+.section-titre a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-titre p{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-titre h1{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    position: relative;
+    display: inline-block; 
+    margin-bottom: 30px;
+}
+
+.section-titre h1::after{
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%; 
+    height: 3px; 
+    background-color: #b74b4b; 
+}
+
+.section-titre h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.section-titre h3{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+/* section acceuil */
 
 .home{
     display: flex;
@@ -173,11 +173,6 @@ span{
 }
 
 .home-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-.btssioc h2{
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -324,7 +319,8 @@ span{
         margin-top: 4rem;
     }
 }
-/* -----------a propos--------------- */
+
+/* section a propos */
 
 .aboutc{
     display: flex;
@@ -345,244 +341,174 @@ span{
     flex-basis: 60%;
 }
 
-.aboutc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 50px;
-}
-.vtechnoc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 50px;
-}
-
-.aboutc .section-titre h2{
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-.aboutc .section-titre h3{
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
 .info-tooltip {
-    display: none; /* Masque le texte par défaut */
-    position: absolute; /* Permet un positionnement spécifique si nécessaire */
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
-    color: #fff; /* Texte blanc */
-    padding: 5px 10px; /* Ajoute un peu d'espace */
-    border-radius: 5px; /* Arrondit les coins */
-    font-size: 1.2rem; /* Taille du texte ajustée */
-    z-index: 10; /* Assure que ça s'affiche au-dessus */
+    display: none; 
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    z-index: 10; 
 }
 
 .info-key {
-    position: relative; /* Nécessaire pour positionner correctement .info-tooltip */
-    color: #b74b4b; /* Couleur rouge pour les mots-clés */
-    cursor: pointer; /* Change le curseur en pointeur pour indiquer une interactivité */
+    position: relative; 
+    color: #b74b4b; 
+    cursor: pointer; 
 }
 
 .info-key:hover .info-tooltip {
-    display: block; /* Affiche le texte lors du survol */
-    top: 100%; /* Place le texte juste en dessous */
-    left: 0; /* Aligne le texte à gauche */
-    transform: translateY(10px); /* Décale légèrement vers le bas */
-}
-
-.section-titre a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.section-titre p{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.aboutc .section-titre h1::after{
-            content: ''; /* Nécessaire pour afficher l'élément */
-            position: absolute;
-            left: 0;
-            bottom: -5px; /* Distance par rapport au texte */
-            width: 100%; /* La ligne fait toute la largeur du titre */
-            height: 3px; /* Épaisseur de la ligne */
-            background-color: #b74b4b; /* Couleur de la ligne */
+    display: block; 
+    top: 100%; 
+    left: 0; 
+    transform: translateY(10px); 
 }
 
 
+/* Section parcours */
 
-.parcourc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 30px;
-}
-.btssioc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 30px;
-}
-.vtechnoc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 30px;
-}
-
-.parcourc .section-titre h1::after{
-    content: ''; /* Nécessaire pour afficher l'élément */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Distance par rapport au texte */
-    width: 100%; /* La ligne fait toute la largeur du titre */
-    height: 3px; /* Épaisseur de la ligne */
-    background-color: #b74b4b; /* Couleur de la ligne */
-}
-
-.competc .section-titre h1::after{
-    content: ''; /* Nécessaire pour afficher l'élément */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Distance par rapport au texte */
-    width: 100%; /* La ligne fait toute la largeur du titre */
-    height: 3px; /* Épaisseur de la ligne */
-    background-color: #b74b4b; /* Couleur de la ligne */
-}
-.projetc .section-titre h1::after{
-    content: ''; /* Nécessaire pour afficher l'élément */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Distance par rapport au texte */
-    width: 100%; /* La ligne fait toute la largeur du titre */
-    height: 3px; /* Épaisseur de la ligne */
-    background-color: #b74b4b; /* Couleur de la ligne */
-}
-.btssioc .section-titre h1::after{
-    content: ''; /* Nécessaire pour afficher l'élément */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Distance par rapport au texte */
-    width: 100%; /* La ligne fait toute la largeur du titre */
-    height: 3px; /* Épaisseur de la ligne */
-    background-color: #b74b4b; /* Couleur de la ligne */
-}
-.vtechnoc .section-titre h1::after{
-    content: ''; /* Nécessaire pour afficher l'élément */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Distance par rapport au texte */
-    width: 100%; /* La ligne fait toute la largeur du titre */
-    height: 3px; /* Épaisseur de la ligne */
-    background-color: #b74b4b; /* Couleur de la ligne */
-}
-
-
-.case p {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.6;
-    margin: 0;
+.cases-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
 
 .case {
-    background-color: #262626; /* Fond blanc */
-    border-radius: 8px; /* Coins arrondis */
-    padding: 20px; /* Espacement interne */
-    margin: 0 auto 100px auto; /* Espacement vertical entre les cases */
-    box-shadow: 0 4px 6px #b74b4b; /* Ombre douce */
-    width: 60%; /* Prend toute la largeur */
-    max-width: 100%; /* Limite la largeur à celle du parent */
-    box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
-    height: 500px; /* Hauteur fixe des cases */
-}
-
-/* ----------------bts sio------------- */
-.competc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 50px;
- 
-}
-
-.projetc .section-titre h1{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
-    display: inline-block; 
-    margin-bottom: 50px;
- 
-}
-
-.competc .section-titre h2{
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-.competc .section-titre h3{
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-#services{
-    padding: 30px 0;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
+    background-color: #1e1e1e; 
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid transparent; 
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+    text-align: left;
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
-.services-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
+
+
+.case:hover {
+    transform: translateY(-15px); 
+    border: 3px solid #b74b4b; 
+    box-shadow: 0 8px 20px rgba(183, 75, 75, 0.6);; 
 }
-/* -------parcour----------- */
+
+
+.case h2 {
+    font-size: 2em; 
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.case .detail {
+    font-size: 1.2em; 
+    margin-bottom: 10px;
+}
+
+.case p {
+    font-size: 1.1em; 
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+
+.status {
+    font-weight: bold;
+    color: #b74b4b; 
+}
+
+
+@media (max-width: 768px) {
+    .section-titre h1 {
+        font-size: 2.2em;
+    }
+    .case {
+        padding: 20px;
+    }
+    .case h2 {
+        font-size: 1.7em;
+    }
+    .case p {
+        font-size: 1em;
+    }
+}
+
+/* Section compétences */
 .parcourc{
     width: 100%;
     padding: 10px; 
 }
+
+.competc .image-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.carte {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    position: relative; 
+}
+
+.carte:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    border-color: #007bff; 
+}
+
+.carte img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px auto 10px;
+}
+
+.carte p {
+    color: #555;
+    font-size: 0.9em;
+    margin: 0 10px 20px;
+}
+
+.line-with-text {
+    position: absolute;
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80%; 
+    height: 2px;
+    background-color: #ddd;
+}
+
+.line-with-text span {
+    position: absolute;
+    top: -18px; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #fff; 
+    padding: 0 12px; 
+    font-size: 1.3em; 
+    font-weight: bold; 
+    color: #333; 
+    white-space: nowrap; 
+}
+
+/* Section projets */
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -641,123 +567,48 @@ span{
     height: 100%;
 }
 
-/* ---------contact-------- */
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/* Section bts sio */
 
-.contact-left{
-    flex-basis: 35%;
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
-
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-.copyright i{
-    color: #ff004f;
-}
-.copyright a{
-    color: #ff004f;
-    text-decoration: none;
-}
-
-.competc .image-container {
-    display: flex;
-    gap: 10px;
-    margin: 20px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-.carte {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
-    position: relative; /* Nécessaire pour positionner les éléments enfants */
-}
-
-.carte:hover {
-    transform: translateY(-10px); /* La carte monte légèrement */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus forte */
-    border-color: #007bff; /* Changement de couleur du bord */
-}
-
-.carte img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin: 20px auto 10px;
-}
-
-.carte p {
-    color: #555;
+.services-list p{
     font-size: 0.9em;
     margin: 0 10px 20px;
 }
-
-.line-with-text {
-    position: absolute;
-    top: 40px; /* Distance du haut de la carte */
-    left: 50%; /* Centré horizontalement */
-    transform: translateX(-50%); /* Ajustement pour le centrer */
-    width: 80%; /* Largeur de la ligne */
-    height: 2px;
-    background-color: #ddd;
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
 }
 
-.line-with-text span {
-    position: absolute;
-    top: -18px; /* Position du texte par rapport à la ligne */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centré verticalement et horizontalement */
-    background-color: #fff; /* Fond blanc pour masquer la ligne derrière */
-    padding: 0 12px; /* Un petit espace autour du texte */
-    font-size: 1.3em; /* Taille de la police */
-    font-weight: bold; /* Met le texte en gras */
-    color: #333; /* Couleur plus visible */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-}
-
-
-  /* Transitions entre les sections */
   .section-content {
     opacity: 0;
     visibility: hidden;
@@ -802,4 +653,62 @@ form input, form textarea{
 .btn-next:active {
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section veille techno */
+
+/* Section contact */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* Section copyright*/
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+.copyright a{
+    color: #ff004f;
+    text-decoration: none;
 }

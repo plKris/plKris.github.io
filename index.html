@@ -14,10 +14,6 @@
 </head>
 
 <body>
-    <div id="construction-banner">
-        <p>🚧 Ce site est en cours de création 🚧</p>
-        <p>Merci de ne pas prendre en compte les bugs et les entités manquantes !</p>
-    </div>
     <header>
         <a href="#" class="logo">Kris PLESEL</a>
 
@@ -29,7 +25,7 @@
             <a href="#projet" >Projets</a>
             <a href="#btssio" >BTS SIO</a>
             <a href="#vtechno" >Veille technologique</a>
-            <a href="#contacts" >Contact</a>
+            <a href="#contact" >Contact</a>
         </nav>
     </header>
     <section class="home">
@@ -79,26 +75,33 @@
             <div class="section-titre">
                 <h1>Mon Parcours Professionnel 🤵</h1>
                 </div>
-                <div class="case">
-                    <h2>Développeur web</h2>
-                <p><span>En recherche</span> Stage 2 ème année BTS SIO
-                    Montereau-fault-yonne Dès que possible
-                </p>
-            </div>
-            <div class="case">
-                <h2>Développeur web</h2>
-                <p>Stage 1 ère année BTS SIO
-                   Montereau-fault-yonne Mai-Juin 2024
-                </p>
-            </div>
-            <div class="case">
-                <h2>Assistant technicien informatique</h2>
-                <p>Stage d'observation 3ème
-                    Montereau-fault-yonne Mai-Juin 2024
-                </p>
-            </div>
-        </div>
-    </div>
+                <div class="cases-container">
+                    <div class="case">
+                        <h2>Développeur Web</h2>
+                        <p class="detail"><span class="status">En recherche :</span> Stage 2ème année BTS SIO</p>
+                        <p><strong>Lieu :</strong> Montereau-Fault-Yonne</p>
+                        <p><strong>Disponibilité :</strong> Dès que possible</p>
+                        <p><strong>Compétences :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                        <p><strong>Objectif :</strong> Apprendre et collaborer dans une équipe dynamique pour créer des sites modernes et performants.</p>
+                    </div>
+                    <div class="case">
+                        <h2>Développeur Web</h2>
+                        <p class="detail"><strong>Stage 1ère année BTS SIO</strong></p>
+                        <p><strong>Lieu :</strong> Montereau-Fault-Yonne</p>
+                        <p><strong>Dates :</strong> Mai-Juin 2024</p>
+                        <p><strong>Projet réalisé :</strong> Création d'un site vitrine pour une entreprise locale, intégration front-end et mise en place d'un formulaire fonctionnel.</p>
+                        <p><strong>Compétences acquises :</strong> Responsive design, bonnes pratiques de codage, collaboration avec un mentor technique.</p>
+                    </div>
+                    <div class="case">
+                        <h2>Assistant Technicien Informatique</h2>
+                        <p class="detail"><strong>Stage d'observation 3ème</strong></p>
+                        <p><strong>Lieu :</strong> Montereau-Fault-Yonne</p>
+                        <p><strong>Dates :</strong> Mai-Juin 2024</p>
+                        <p><strong>Activités observées :</strong> Maintenance de matériel informatique, installation de logiciels, et dépannage réseau.</p>
+                        <p><strong>Intérêt :</strong> Découverte des bases de l'informatique et passion pour les technologies numériques.</p>
+                    </div>
+                </div>
+                </div>
 </section>
 
 <!-- ----------compétences------------ -->
@@ -165,11 +168,11 @@
         <div class="image-container">
             <div class="carte">
                 <div class="line-with-text"><span>VS Code</span></div>
-                <img src="img/ImagesOutils/vscode.png" alt="VS Code">
+                <img src="img/ImagesCompet/VS.png" alt="VS Code">
             </div>
             <div class="carte">
                 <div class="line-with-text"><span>Git</span></div>
-                <img src="img/ImagesOutils/git.png" alt="Git">
+                <img src="img/ImagesCompet/GIT.png" alt="Git">
             </div>
         </div>
 </section>
@@ -180,11 +183,11 @@
     </div>
         <div class="work-list">
             <div class="work">
-                <img src="img/Projet/acvertest.jfif">
+                <img src="img/ACVER Site/ACVER Site/img/Logo.png">
                 <div class="layer">
                     <h3>Développement d'un site web</h3>
                     <p>Développement d'un site pour une association durant mon stage de 1ère année.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="img/ACVER Site/ACVER Site/acver.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -204,13 +207,13 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Voir plus (il y'a rien de plus.)</a>
+        <a href="#" class="btn">Voir plus (il y'a rien de plus pour l'instant.)</a>
 </section>
  <!-- -----------bts sio---------- -->
  <section id="btssio" class="btssioc">
         <div class="section-titre">
         <h1>Qu'est ce que le BTS SIO ? 🎓</h1>
-        </div>
+        
         <h2>Le <span class="info-key">BTS SIO <span class="info-tooltip">Technicien Supérieur aux Services Informatiques aux Organisations</span></span>, s'adresse à ceux qui souhaitent se 
             former en deux ans aux métiers d'administrateur réseau ou de développeur. Pour par la suite intégré directement le marché du 
             travail ou continuer des études, dans le domaine de l'informatique.
@@ -246,6 +249,7 @@
                 <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"target="_blank">En savoir plus</a>
             </div>
         </div>
+        </div>
     </div>
 </div>
 </section>
@@ -254,31 +258,33 @@
     <div class="container">
             <div class="section-titre">
                 <h1>Veille Technologique 📔</h1>
-            </div>
-                <p>Qu'est-ce que la veille technologique ?
-                    La veille technologique, élément de la veille stratégique, consiste à surveiller les 
+            
+                <h2>Qu'est-ce que la veille technologique ?</h2>
+                    <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les 
                     évolutions techniques, les innovations dans un secteur d’activité donnée. La veille 
                     technologique comprend notamment la surveillance, la collecte, le partage et la diffusion
                      d’information permettant d’anticiper ou de s’informer sur des changements en matière de 
                      recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, 
                      innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.</p>
             </div>
+            </div>
         </div>
 </section>
 <!-- ----------contact------------- -->
-<div id="contact">
+<section id="contact" class="contactc">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Me contacter</h1>
+                <div class="section-titre"><h1> Me contacter </h1>
                 <p><i class="fas fa-paper-plane"></i> pleselkris@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> 0612923563</p>
+                <p><i class="fas fa-phone-square-alt"></i> 06 12 92 35 63</p>
                 <div class="social-icons">
                 <a href="https://www.linkedin.com/in/kris-p-95139625a/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/plKris"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="img/Documentspro/CV stage PLESEL Kris.pdf" download class="btn btn2">Télécharger le CV</a>
             </div>
+        </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Votre nom" required>
@@ -290,10 +296,12 @@
             </div>
         </div>
     </div>
+</section>
     <div class="copyright">
         <p>Copyright 2024 © Kris PLESEL <i class="fas fa-heart"></i></p>
     </div>
 </div>
+
 
 
 <script>

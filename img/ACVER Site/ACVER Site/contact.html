@@ -1,0 +1,61 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="img/LogoT.webp">
+    <title>Nos Contacts</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="texte1">
+                <li class="logo"><img src="img/Logo.png" alt="Logo"></li>
+                <li><a href="acver.html#Acceuil">Acceuil</a></li>
+                <li><a href="acver.html#Equipe">Équipe</a></li>
+                <li><a href="acver.html#Actualite">Notre actualité</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="title">ACVER</div>
+        <div class="container">
+            <div class="coords">
+                <h2>Coordonnées</h2>
+                <p><strong>Adresse :</strong> 2, rue Corneille , 77130 Montereau-Fault-Yonne, France</p>
+                <p><strong>Téléphone :</strong> 07 56 83 09 67</p>
+                <p><strong>Email :</strong> <a href="mailto:acver77@gmail.com">acver77@gmail.com</a></p>
+            </div>
+            <div class="image">
+                <img src="img/map.png" alt="Image de l'entreprise" id="imageToZoom">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img src="img/mapzoom.png" alt="Image agrandie">
+        </div>
+    </div>
+
+    <script>
+        const image = document.getElementById('imageToZoom');
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('closeModal');
+
+        image.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+</script>
+</body>
+</html>
