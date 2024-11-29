@@ -16,7 +16,11 @@
 <body>
     <header>
         <a href="#" class="logo">Kris PLESEL</a>
-
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
             <a href="#" class="active"> Acceuil</a>
             <a href="#about" >Profil</a>
@@ -376,6 +380,11 @@
     setTimeout(() => {
         notification.style.opacity = '0';
     }, 3000);
+</script>
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('active');
+});
 </script>
 </body>
 </html>

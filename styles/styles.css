@@ -68,6 +68,82 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
+.menu-toggle {
+    display: none; /* Masqué par défaut */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 150;
+}
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #b74b4b;
+    border-radius: 2px;
+}
+@media (max-width: 995px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 50%; /* Réduction générale des tailles */
+    }
+    .section-titre h1 {
+        font-size: 4rem; /* Réduire les titres */
+    }
+    nav a {
+        font-size: 1.5rem; /* Liens plus compacts */
+    }
+    .home .home-content h1 {
+        font-size: 4.5rem;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centralise le texte */
+    }
+    .typing-text {
+        font-size: 2.4rem; /* Ajustement du texte animé */
+    }
+    form input, form textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Placer l'image au-dessus du texte */
+    .container .row{
+        flex-direction: column; /* Disposition en colonne pour les petits écrans */
+    }
+
+    .about-col-1 {
+            display: none; /* Supprime la row */
+        }
+    
+
+    .about-col-2 {
+        order: 2; /* Placer le texte après l'image */
+        text-align: center; /* Centrer le texte */
+    }
+    
+}
+
+
 @media(max-width:995px){
     nav{
         position: absolute;
