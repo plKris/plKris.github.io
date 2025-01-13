@@ -646,6 +646,29 @@ span{
 
 /* Section bts sio */
 
+.tampon {
+    position: absolute;
+    top: 10px; /* Position verticale */
+    right: 10px; /* Position horizontale */
+    padding: 10px 20px; /* Ajustez l'espacement pour que le texte s'adapte */
+    background-color: #262626; /* Couleur rouge */
+    color: white; /* Texte en blanc */
+    font-size: 12px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer horizontalement */
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 50%; /* Forme ronde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+    z-index: 10; /* Au-dessus des autres éléments */
+    white-space: nowrap; /* Empêche le texte de se couper */
+}
+
+.tampon:hover {
+    background-color: #ff004f;
+    cursor: pointer;
+}
+
+
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -657,6 +680,8 @@ span{
     margin: 0 10px 20px;
 }
 .services-list div{
+    position: relative; /* Parent pour positionner le tampon */
+    overflow: hidden; /* Évite les débordements */
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -739,6 +764,12 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactc p{
+    font-size: 30px;
+    margin: 0 10px 20px;
 }
 
 .contact-left{
