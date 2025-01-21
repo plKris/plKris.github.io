@@ -4,7 +4,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  
+  - pdf/
 
 keep_files:
   
