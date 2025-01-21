@@ -4,10 +4,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - pdf/
-
-keep_files:
-  
+  - pdf/*
 
 # Si vous voulez ajouter d'autres configurations, comme la langue ou le site URL
 url: "https://pleselkris.com"
