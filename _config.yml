@@ -3,6 +3,10 @@
 plugins:
   - jekyll-sitemap
 
+exclude:
+  - img/ACVER Site
+
+
 # Si vous voulez ajouter d'autres configurations, comme la langue ou le site URL
 url: "https://pleselkris.com"
 baseurl: "" # Laissez vide si votre site est à la racine
