@@ -5,7 +5,9 @@ plugins:
 
 exclude:
   - img/ACVER Site
-
+  
+keep_files:
+  - static
 
 # Si vous voulez ajouter d'autres configurations, comme la langue ou le site URL
 url: "https://pleselkris.com"
