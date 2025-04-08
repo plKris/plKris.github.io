@@ -12,15 +12,112 @@
     <link rel="apple-touch-icon" href="img/favicondoc/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body id="page-e5">
+<body>
+    <header>
+        <a href="#" class="logo">Épreuve E5</a>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="index.html#">Accueil</a>
+            <a href="epreuve.html">Épreuve</a>
+            <a href="epreuveE6.html">Épreuve E6</a>
+        </nav>
+    </header>
+    <section>
     <div class="section-titre">
         <h1>Documents épreuve E5</h1>
-        <div class="container">
-            <h2>Tableau de Synthèse des Réalisations</h2> 
-            <a href="pdf/tableau_de_synthese_PLESEL.pdf">Tableau de synthèse</a>          
-                <h2>Attestations de Stage / Certificats de Travail</h2>
-                <a href="pdf/Kris Attestations-19032025140036.pdf">Attestation stage</a>
+    
+        <h2>Tableau de Synthèse des Réalisations</h2> 
+        <div class="containerE5synth">
+            <img src="img/tableau_de_synthese_PLESEL.png">          
+            </div>
+        <h2>Attestations de Stage</h2>
+        <div class="containerE5stage">
+            <img src="img/ACVER-_1_.png">
+            <img src="img//Kris-Attestations-19032025140036_removed.png">
+        </div>
+        <div class="btnpro">
+        <a href="stage1ereannee.html" class="btn">Stage 1ère année</a>
+        <a href="stage2emeannee.html" class="btn">Stage 2ème année</a>
+        <a href="atelier1.html" class="btn">Atelier 1</a>
+        <a href="atelier2.html" class="btn">Atelier 2</a>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="section-titre">
+            <h1>Stage 1ère année (ACVER)</h1>
+        
+            <h2>Présentation de l'entrpise</h2> 
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/test123.png"> 
+            </div>
+                     <div class="about-col-2">
+                      <p>Situé à Montereau-Fault-Yonne,cette association
+                     a plusieurs responsabilités.</p>
+                     </div>        
             </div>
         </div>
+        </section>
+        <section>
+            <div class="section-titre">
+                <h1>Stage 2ème année (ACVER)</h1>
+            
+                <h2>Présentation de l'entrpise</h2> 
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/test123.png"> 
+                </div>
+                         <div class="about-col-2">
+                          <p>Situé à Montereau-Fault-Yonne,cette association
+                         a plusieurs responsabilités.</p>
+                         </div>        
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="section-titre">
+                    <h1>Atelier 1 (Mediatekformation)</h1>
+                
+                    <h2>Présentation de l'entrpise</h2> 
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="img/test123.png"> 
+                    </div>
+                             <div class="about-col-2">
+                              <p>Situé à Montereau-Fault-Yonne,cette association
+                             a plusieurs responsabilités.</p>
+                             </div>        
+                    </div>
+                </div>
+                </section>
+                <section>
+                    <div class="section-titre">
+                        <h1>Atelier 2 (MediatekDocument)</h1>
+                    
+                        <h2>Présentation de l'entrpise</h2> 
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="img/test123.png"> 
+                        </div>
+                                 <div class="about-col-2">
+                                  <p>Situé à Montereau-Fault-Yonne,cette association
+                                 a plusieurs responsabilités.</p>
+                                 </div>        
+                        </div>
+                    </div>
+                    </section>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
+    </script>
+
 </body>
 </html>
