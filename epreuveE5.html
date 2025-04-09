@@ -40,15 +40,15 @@
             <img src="img//Kris-Attestations-19032025140036_removed.png">
         </div>
         <div class="btnpro">
-        <a href="stage1ereannee.html" class="btn">Stage 1ère année</a>
-        <a href="stage2emeannee.html" class="btn">Stage 2ème année</a>
-        <a href="atelier1.html" class="btn">Atelier 1</a>
-        <a href="atelier2.html" class="btn">Atelier 2</a>
+        <a href="#stage1anne" class="btn">Stage 1ère année</a>
+        <a href="#stage2anne" class="btn">Stage 2ème année</a>
+        <a href="#atelier1" class="btn">Atelier 1</a>
+        <a href="#atelier2" class="btn">Atelier 2</a>
         </div>
     </div>
     </section>
 
-    <section>
+    <section id="stage1anne">
         <div class="section-titre">
             <h1>Stage 1ère année (ACVER)</h1>
         
@@ -62,9 +62,82 @@
                      a plusieurs responsabilités.</p>
                      </div>        
             </div>
+            <h2>Présentation de mon espace de travaille</h2>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/test123.png"> 
+                </div>
+                     <div class="about-col-2">
+                      <p>L'aménagement de mon espace
+                         de travail durant cette période de stage était constitué d'un ordinateur.</p>
+                     </div>  
+            </div>      
+            <h2>Présentation des différents poste</h2>
+            <div class="wrapper">
+
+                <div class="toggle-container" >
+                    <button class="toggle-button" onclick="toggleContent(this)">
+                        <span>Afficher le contenu</span>
+                        <span class="chevron">▶</span>
+                      </button>
+                  <div class="content">
+                    <h2>Contenu affiché</h2>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="toggle-container">
+                    <button class="toggle-button" onclick="toggleContent(this)">
+                      <span>Afficher le contenu 2</span>
+                      <span class="chevron">▶</span>
+                    </button>
+                    <div class="content">
+                      <p>Contenu du deuxième bouton, totalement indépendant du premier.</p>
+                    </div>
+                  </div>
+                  <div class="toggle-container">
+                    <button class="toggle-button" onclick="toggleContent(this)">
+                      <span>Afficher le contenu 2</span>
+                      <span class="chevron">▶</span>
+                    </button>
+                    <div class="content">
+                      <p>Contenu du deuxième bouton, totalement indépendant du premier.</p>
+                    </div>
+                  </div>
+                  <div class="toggle-container">
+                    <button class="toggle-button" onclick="toggleContent(this)">
+                      <span>Afficher le contenu 2</span>
+                      <span class="chevron">▶</span>
+                    </button>
+
+                    <div class="content">
+                      <p>Contenu du deuxième bouton, totalement indépendant du premier.</p>
+                    </div>
+                  </div>
+              </div>
+            <h2>Présentation des différentes missions qui m'ont été données</h2>
+            <div class="wrapper">
+            <div class="toggle-container">
+                <button class="toggle-button" onclick="toggleContent(this)">
+                  <span>Afficher le contenu 2</span>
+                  <span class="chevron">▶</span>
+                </button>
+
+                <div class="content">
+                        <div class="card-grid">
+                          <div class="skill-card validated">Gérer le patrimoine informatique <span class="check">✔</span></div>
+                          <div class="skill-card validated">Répondre aux incidents et aux demandes d’assistance et d’évolution <span class="check">✔</span></div>
+                          <div class="skill-card validated">Développer la présence en ligne de l’organisation <span class="check">✔</span></div>
+                          <div class="skill-card validated">Travailler en mode projet <span class="check">✔</span></div>
+                          <div class="skill-card validated">Mettre à disposition des utilisateurs un service informatique <span class="check">✔</span></div>
+                          <div class="skill-card validated">Organiser son développement professionnel <span class="check">✔</span></div>
+                        </div>
+                  <p>Contenu du deuxième bouton, totalement indépendant du premier.</p>
+                </div>
+              </div>
+            </div>
         </div>
         </section>
-        <section>
+        <section id="stage2anne">
             <div class="section-titre">
                 <h1>Stage 2ème année (ACVER)</h1>
             
@@ -78,9 +151,12 @@
                          a plusieurs responsabilités.</p>
                          </div>        
                 </div>
+                <h2>Présentation de mon espace de travaille</h2>
+            <h2>Présentation des différents poste</h2>
+            <h2>Présentation des différentes missions qui m'ont été données</h2>
             </div>
             </section>
-            <section>
+            <section id="atelier1">
                 <div class="section-titre">
                     <h1>Atelier 1 (Mediatekformation)</h1>
                 
@@ -94,9 +170,12 @@
                              a plusieurs responsabilités.</p>
                              </div>        
                     </div>
+                    <h2>Présentation de mon espace de travaille</h2>
+            <h2>Présentation des différents poste</h2>
+            <h2>Présentation des différentes missions qui m'ont été données</h2>
                 </div>
                 </section>
-                <section>
+                <section id="atelier2">
                     <div class="section-titre">
                         <h1>Atelier 2 (MediatekDocument)</h1>
                     
@@ -110,6 +189,9 @@
                                  a plusieurs responsabilités.</p>
                                  </div>        
                         </div>
+                        <h2>Présentation de mon espace de travaille</h2>
+            <h2>Présentation des différents poste</h2>
+            <h2>Présentation des différentes missions qui m'ont été données</h2>
                     </div>
                     </section>
 
@@ -118,6 +200,14 @@
         document.querySelector('nav').classList.toggle('active');
     });
     </script>
+    <script>
+        function toggleContent(button) {
+          const container = button.parentElement;
+          const content = container.querySelector('.content');
+          content.classList.toggle('open');
+          container.classList.toggle('open');
+        }
+      </script>
 
 </body>
 </html>
