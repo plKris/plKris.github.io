@@ -1012,6 +1012,16 @@ form input, form textarea{
     flex: 1;
   }
 
-  #stage1anne p{
+  #e5 p{
     font-size: 2rem;
+  }
+  #e5 img{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding: 30px;
+  }
+
+  #e5 li{
+    font-size: 2rem
   }
