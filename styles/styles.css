@@ -53,6 +53,13 @@ header{
     transform: scale(1.1);
 }
 
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    border: 3px solid #b74b4b; 
+    box-shadow: 0 0px 20px rgba(183, 75, 75, 0.6);
+}
+
 nav a{
     font-size: 1.8rem;
     color: white;
@@ -471,7 +478,7 @@ span{
 .case:hover {
     transform: translateY(-15px); 
     border: 3px solid #b74b4b; 
-    box-shadow: 0 8px 20px rgba(183, 75, 75, 0.6);; 
+    box-shadow: 0 8px 20px rgba(183, 75, 75, 0.6);
 }
 
 
@@ -1024,4 +1031,12 @@ form input, form textarea{
 
   #e5 li{
     font-size: 2rem
+  }
+
+  #atelier1 .card-grid{
+    color: black;
+  }
+
+  #atelier2 .card-grid{
+    color: black;
   }
