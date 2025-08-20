@@ -9,18 +9,6 @@ body {
   height: 100vh;
 }
 
-.main-page {
-  z-index: 0;
-  background-color: black;
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
 .loading-page {
   position: absolute;
   top: 0;
@@ -69,12 +57,130 @@ body {
   font-weight: bolder;
 }
 
-video{
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
+.card {
+  background-color: #0000;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+}
+.loader {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 50px;
+  box-sizing: content-box;
+  height: 80px;
+  padding: 10px 10px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+  margin-left: 12px;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+
+.word {
+  display: block;
   height: 100%;
-  object-fit: cover;
+  padding-left: 6px;
+  color: #956afa;
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+    0%, 25% {
+    transform: translateY(0);        
+  }
+  33%, 58% {
+    transform: translateY(-100%);    
+  }
+  66%, 91% {
+    transform: translateY(-200%);    
+  }
+  100% {
+    transform: translateY(0);        
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #007e9e;
 
 }
+
+.cards .blue {
+  background-color: #0062ff;
+}
+
+.cards .green {
+  background-color: #18cd5e;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* couvre tout l'écran sans déformation */
+      z-index: -1; /* envoie la vidéo derrière le contenu */
+    }
+
+    /* Contenu par-dessus */
+    .content {
+      position: relative;
+      z-index: 1; /* reste au-dessus de la vidéo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3); /* optionnel : voile sombre */
+    }

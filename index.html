@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="main-page">
-    <video autoplay muted loop>
-      <source src="Frame-32.mp4" type="video/mp4">
-    </video>
 
+    <div class="main-page">
+      <video autoplay muted loop class="background-video">
+    <source src="mixkit-computer-code-in-the-screen-9757-hd-ready.mp4" type="video/mp4">
+  </video>
+
+      <div class="card">
+  <div class="loader">
+    <p>Développeur</p>
+    <div class="words">
+      <span class="word">web</span>
+      <span class="word">d'apllication</span>
+      <span class="word">mobile</span>
     </div>
+  </div>
+</div>
+<div class="cards">
+    <div class="card red" onclick="window.location.href='pages/apropos.html'">
+        <p class="tip">A propos de moi</p>
+    </div>
+    <div class="card blue" onclick="window.location.href='pages/mesprojets.html'">
+        <p class="tip">Mes projets pro</p>
+    </div>
+    <div class="card green" onclick="window.location.href='pages/mecontacter.html'">
+        <p class="tip">Me contacter</p>
+    </div>
+</div>
+    </div>
+
+    
+
+    
     <div class="loading-page">
         <svg id="svg" svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           
@@ -24,12 +50,15 @@
             <div class="logo-name">Bienvenue sur mon Portfolio</div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+
   </body>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
+
 </html>
