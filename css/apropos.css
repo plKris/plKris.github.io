@@ -83,12 +83,17 @@ h1 { font-size: clamp(2rem, 4vw + 1rem, 3.4rem); line-height: 1.1; margin: .4rem
 @keyframes fadeUp { from{opacity:0; transform:translateY(30px)} to{opacity:1; transform:translateY(0)} }
 
 .portrait {
-  aspect-ratio: 4/5; border-radius: 20px;
+  aspect-ratio: 4/5;
+  border-radius: 20px;
   background: linear-gradient(160deg, rgba(96,165,250,.25), rgba(110,231,183,.25));
   border: 1px solid rgba(255,255,255,.14);
-  display: grid; place-items: center;
-  font-weight: 600; color: #0b1020;
-  animation: zoomIn 1s ease 1s forwards; opacity: 0; transform: scale(.9);
+  display: grid; 
+  place-items: center;
+  font-weight: 600; 
+  color: #0b1020;
+  /* animation: zoomIn 1s ease 1s forwards; */
+  /* opacity: 0; */
+  transform: scale(1);
 }
 @keyframes zoomIn { from{opacity:0; transform:scale(.9)} to{opacity:1; transform:scale(1)} }
 
@@ -197,7 +202,7 @@ footer {
 /* couleurs spécifiques */
 .social-links a[aria-label="Email"]:hover { background: #d93025; }     /* Gmail rouge */
 .social-links a[aria-label="LinkedIn"]:hover { background: #0a66c2; } /* LinkedIn bleu */
-.social-links a[aria-label="GitHub"]:hover { background: #e7e5e5; }      /* GitHub noir */
+.social-links a[aria-label="GitHub"]:hover { background: #5afd44; }      /* GitHub noir */
 
 /* Section compétences */
 #competences {
@@ -206,14 +211,8 @@ footer {
 }
 
 .skills li,
-.certifications li {
+.certifications li,
+h3 {
   color: var(--text);
 }
 
-.skills li::before,
-.certifications li::before {
-  content: "✔";
-  color: var(--brand); /* icônes verts bien visibles */
-  position: absolute;
-  left: 0;
-}
