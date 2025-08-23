@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  height: 100%;
-}
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.12), transparent 60%),
+                  radial-gradient(900px 600px at -10% 20%, rgba(110,231,183,.10), transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+    }
 
 .main-page {
   display: flex;
@@ -22,7 +32,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.12), transparent 60%),
+                  radial-gradient(900px 600px at -10% 20%, rgba(110,231,183,.10), transparent 50%),
+                  var(--bg);
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -66,105 +78,52 @@ body {
   font-weight: bolder;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 50px; 
-}
-
-.cards .red {
-  background-size: cover;
-  background-position: center;
-  animation: slideshow 1s infinite;
-}
-
-.cards .blue {
-  background-size: cover;
-  background-position: center;
-  animation: slideshoww 1s infinite;
-}
-
-.cards .green {
-  background-size: cover;
-  background-position: center;
-  animation: slideshowww 1s infinite;
-}
-
-@keyframes slideshow {
-  0%   { background-image: url("img/animation/layered-waves-haikei.png"); }
-  25%  { background-image: url("img/animation/layered-waves-haikei\ \(1\).png"); }
-  50%  { background-image: url("img/animation/layered-waves-haikei\ \(2\).png"); }
-  75%  { background-image: url("img/animation/layered-waves-haikei\ \(3\).png"); }
-  100% { background-image: url("img/animation/layered-waves-haikei\ \(4\).png"); }
-  
-}
-@keyframes slideshoww {
-  0%   { background-image: url("img/animation/symbol-scatter-haikei.png"); }
-  25%  { background-image: url("img/animation/symbol-scatter-haikei\ \(1\).png"); }
-  50%  { background-image: url("img/animation/symbol-scatter-haikei\ \(2\).png"); }
-  75%  { background-image: url("img/animation/symbol-scatter-haikei\ \(3\).png"); }
-  100% { background-image: url("img/animation/symbol-scatter-haikei\ \(4\).png"); }
-}
-@keyframes slideshowww {
-  0%   { background-image: url("img/animation/layered-steps-haikei.png"); }
-  25%  { background-image: url("img/animation/layered-steps-haikei\ \(1\).png"); }
-  50%  { background-image: url("img/animation/layered-steps-haikei\ \(2\).png"); }
-  75%  { background-image: url("img/animation/layered-steps-haikei\ \(3\).png"); }
-  100% { background-image: url("img/animation/layered-steps-haikei\ \(4\).png"); }
-}
-
-.cards .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100px;
-  width: 450px;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  transition: 400ms;
-}
-
-.cards .card p.tip {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.cards .card p.second-text {
-  font-size: .9em;
-}
-
-.cards .card:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.cards:hover > .card:not(:hover) {
-  filter: blur(10px);
-  transform: scale(0.9, 0.9);
-}
-
-.background-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* couvre tout l'écran sans déformation */
-      z-index: -1; /* envoie la vidéo derrière le contenu */
+        :root {
+      --bg: #0b0c10;
+      --text: #e8ecf1;
+      --brand: #6ee7b7;
+      --brand-2: #60a5fa;
     }
 
-    /* Contenu par-dessus */
-    .content {
-      position: relative;
-      z-index: 1; /* reste au-dessus de la vidéo */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-      font-size: 3rem;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.3); /* optionnel : voile sombre */
+    .wrapper {
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .hint {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--brand);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px var(--brand); }
+      to { text-shadow: 0 0 20px var(--brand-2); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
     }
