@@ -5,8 +5,17 @@
 }
 
 body {
-  font-family: "Michroma", sans-serif;
-  height: 100vh;
+  margin: 0;
+  height: 100%;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;      /* centre verticalement */
+  min-height: 100vh;        /* occupe toute la hauteur de la fenêtre */
+  position: relative;
+  z-index: 1;               /* reste au-dessus de ta vidéo */
 }
 
 .loading-page {
@@ -57,76 +66,51 @@ body {
   font-weight: bolder;
 }
 
-.card {
-  background-color: #0000;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 1.25rem;
-}
-.loader {
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  font-size: 50px;
-  box-sizing: content-box;
-  height: 80px;
-  padding: 10px 10px;
-  display: flex;
-  border-radius: 8px;
-}
-
-.words {
-  overflow: hidden;
-  position: relative;
-  margin-left: 12px;
-}
-
-.words::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 20;
-}
-
-.word {
-  display: block;
-  height: 100%;
-  padding-left: 6px;
-  color: #956afa;
-  animation: spin 5s infinite;
-}
-
-@keyframes spin {
-    0%, 25% {
-    transform: translateY(0);        
-  }
-  33%, 58% {
-    transform: translateY(-100%);    
-  }
-  66%, 91% {
-    transform: translateY(-200%);    
-  }
-  100% {
-    transform: translateY(0);        
-  }
-}
-
 .cards {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
+  flex-direction: column;
+  gap: 50px; 
 }
 
 .cards .red {
-  background-color: #007e9e;
-
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 1s infinite;
 }
 
 .cards .blue {
-  background-color: #0062ff;
+  background-size: cover;
+  background-position: center;
+  animation: slideshoww 1s infinite;
 }
 
 .cards .green {
-  background-color: #18cd5e;
+  background-size: cover;
+  background-position: center;
+  animation: slideshowww 1s infinite;
+}
+
+@keyframes slideshow {
+  0%   { background-image: url("img/animation/layered-waves-haikei.png"); }
+  25%  { background-image: url("img/animation/layered-waves-haikei\ \(1\).png"); }
+  50%  { background-image: url("img/animation/layered-waves-haikei\ \(2\).png"); }
+  75%  { background-image: url("img/animation/layered-waves-haikei\ \(3\).png"); }
+  100% { background-image: url("img/animation/layered-waves-haikei\ \(4\).png"); }
+  
+}
+@keyframes slideshoww {
+  0%   { background-image: url("img/animation/symbol-scatter-haikei.png"); }
+  25%  { background-image: url("img/animation/symbol-scatter-haikei\ \(1\).png"); }
+  50%  { background-image: url("img/animation/symbol-scatter-haikei\ \(2\).png"); }
+  75%  { background-image: url("img/animation/symbol-scatter-haikei\ \(3\).png"); }
+  100% { background-image: url("img/animation/symbol-scatter-haikei\ \(4\).png"); }
+}
+@keyframes slideshowww {
+  0%   { background-image: url("img/animation/layered-steps-haikei.png"); }
+  25%  { background-image: url("img/animation/layered-steps-haikei\ \(1\).png"); }
+  50%  { background-image: url("img/animation/layered-steps-haikei\ \(2\).png"); }
+  75%  { background-image: url("img/animation/layered-steps-haikei\ \(3\).png"); }
+  100% { background-image: url("img/animation/layered-steps-haikei\ \(4\).png"); }
 }
 
 .cards .card {
@@ -136,8 +120,8 @@ body {
   flex-direction: column;
   text-align: center;
   height: 100px;
-  width: 250px;
-  border-radius: 10px;
+  width: 450px;
+  border-radius: 20px;
   color: white;
   cursor: pointer;
   transition: 400ms;
@@ -149,11 +133,11 @@ body {
 }
 
 .cards .card p.second-text {
-  font-size: .7em;
+  font-size: .9em;
 }
 
 .cards .card:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .cards:hover > .card:not(:hover) {
