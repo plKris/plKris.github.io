@@ -28,55 +28,6 @@
   z-index: 1;               /* reste au-dessus de ta vidéo */
 }
 
-.loading-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.12), transparent 60%),
-                  radial-gradient(900px 600px at -10% 20%, rgba(110,231,183,.10), transparent 50%),
-                  var(--bg);
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  color: #191654;
-}
-
-#svg {
-  height: 150px;
-  width: 150px;
-  stroke: white;
-  stroke-width: 3px;
-  stroke-dasharray: 4500;
-  animation: draw 8s ease;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 4500;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.name-container {
-  height: 30px;
-  overflow: hidden;
-}
-
-.logo-name {
-  color: #fff;
-  font-size: 15px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-left: 20px;
-  font-weight: bolder;
-}
 
         :root {
       --bg: #0b0c10;

@@ -17,10 +17,13 @@
         <span>Kris Plesel</span>
       </div>
       <nav class="menu" aria-label="Navigation principale">
+        <a href="#experience">Expériences</a>
+        <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
-        <a href="#experience">Expérience</a>
         <a href="#contact">Contact</a>
+        <!--
         <a class="cta" href="#contact">Me contacter</a>
+      -->
       </nav>
     </div>
   </header>
@@ -114,7 +117,7 @@
     </div>
     <div class="grid grid-3">
       <article class="card" data-desc="Vidéos d’auto-formation proposées par une chaîne de médiathèques, également disponibles sur YouTube.">
-        <img src="https://media.licdn.com/dms/image/v2/D4E2DAQEospqysBb1yQ/profile-treasury-image-shrink_8192_8192/B4EZiI_cHbGUAk-/0/1754644989161?e=1756558800&v=beta&t=-vZKE7wcforvjg7hV9yHiEjwBri26CJcjQbwdQmRdY0" alt="Projet UI" />
+        <img src="https://media.licdn.com/dms/image/v2/D4E2DAQEospqysBb1yQ/profile-treasury-image-shrink_8192_8192/B4EZiI_cHbGUAk-/0/1754644989161?e=1758373200&v=beta&t=LbjLsPHyqvYiwT89HwfSk_mn5WmfsBvrVuApk57bWNY" alt="Projet UI" />
         <h3>Site d’auto-formation en PHP Symfony</h3>
         <p class="desc"></p>
       </article>
@@ -164,6 +167,10 @@
       </a>
     </div>
   </div>
+  <div style="text-align: center; margin-top: 20px;">
+                <button id="openFormBtn" class="cta">Me contacter</button>
+            </div>
+        </div>
 </section>
 
   </main>
@@ -182,6 +189,24 @@
       </div>
     </div>
   </footer>
+
+  <div id="formModal" class="modal">
+  <div class="modal-content">
+    <span id="closeFormBtn" class="close">&times;</span>
+    <h2>Contactez-moi</h2>
+    <form action="https://formspree.io/f/xwpnzarv" method="POST">
+      <label>Nom :</label>
+      <input type="text" name="nom" required>
+      <label>Email :</label>
+      <input type="email" name="email" required>
+      <label>Message :</label>
+      <textarea name="message" rows="5" required></textarea>
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="hidden" name="_redirect" value="https://pleselkris.com/pages/apropos.html">
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</div>
 
   <script>
      document.getElementById("y").textContent = new Date().getFullYear();
@@ -231,6 +256,14 @@
       isTyping = false;
     });
   });
+
+const openBtn = document.getElementById("openFormBtn");
+const closeBtn = document.getElementById("closeFormBtn");
+const modal = document.getElementById("formModal");
+
+openBtn.onclick = () => { modal.style.display = "flex"; document.body.classList.add("modal-open"); };
+closeBtn.onclick = () => { modal.style.display = "none"; document.body.classList.remove("modal-open"); };
+window.onclick = (e) => { if (e.target === modal) { modal.style.display = "none"; document.body.classList.remove("modal-open"); } };
   </script>
 
 </body>
