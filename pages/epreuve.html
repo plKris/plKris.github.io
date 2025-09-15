@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS SIO SLAM - Épreuves</title>
+  <link rel="stylesheet" href="/css/epreuve.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        BTS SIO SLAM
+      </div>
+      <nav class="menu">
+        <a href="#e5">E5 - Projet</a>
+        <a href="#e6">E6 - Soutenance</a>
+        <a href="#autres">Autres Épreuves</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- E5 - Projet -->
+    <section id="e5" class="epreuve">
+      <div class="section-header">
+        <h2>E5 - Projet de Développement</h2>
+        <p>Épreuve pratique sur le projet réalisé en BTS SIO SLAM</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Description</h3>
+          <p>Évaluer la capacité à analyser les besoins, concevoir et développer une application complète en environnement réel.</p>
+        </div>
+        <div class="card">
+          <h3>Compétences évaluées</h3>
+          <ul>
+            <li>Analyse et conception UML</li>
+            <li>Développement full-stack</li>
+            <li>Gestion de versions (Git)</li>
+            <li>Tests et documentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item visible">
+          <h4>Début projet</h4>
+          <p>Collecte des besoins et planification.</p>
+        </div>
+        <div class="tl-item visible">
+          <h4>Développement</h4>
+          <p>Création des fonctionnalités, tests unitaires et intégration.</p>
+        </div>
+        <div class="tl-item visible">
+          <h4>Livraison</h4>
+          <p>Déploiement et présentation finale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- E6 - Soutenance -->
+    <section id="e6" class="epreuve">
+      <div class="section-header">
+        <h2>E6 - Soutenance</h2>
+        <p>Présentation orale du projet devant un jury</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Objectif</h3>
+          <p>Présenter clairement le projet, démontrer les compétences techniques et répondre aux questions du jury.</p>
+        </div>
+        <div class="card">
+          <h3>Conseils</h3>
+          <ul>
+            <li>Préparer un diaporama structuré</li>
+            <li>Mettre en avant vos choix techniques</li>
+            <li>Pratiquer l'expression orale et la gestion du stress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autres Épreuves -->
+    <section id="autres" class="epreuve">
+      <div class="section-header">
+        <h2>Autres Épreuves</h2>
+        <p>Épreuves complémentaires du BTS SIO SLAM</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>E4 - Analyse d'exploitation</h4>
+          <p>Étude et analyse d’un système d’information pour en améliorer l’efficacité.</p>
+        </div>
+        <div class="card">
+          <h4>Tests et QA</h4>
+          <p>Vérification de la qualité et du bon fonctionnement des applications.</p>
+        </div>
+        <div class="card">
+          <h4>Rapports et documentation</h4>
+          <p>Rédaction claire et complète de toutes les étapes du projet.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    // Animation simple pour faire apparaître les sections au scroll
+    const sections = document.querySelectorAll('.epreuve');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.2});
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>

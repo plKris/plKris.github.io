@@ -232,3 +232,147 @@ h3 {
 
         /* Flou du fond quand modal ouverte */
         body.modal-open > *:not(.modal) { filter: blur(4px); pointer-events: none; user-select: none; }
+
+/* Section Veille Technologique */
+#veille-techno {
+  padding: 60px 0;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+#veille-techno.visible { opacity: 1; transform: translateY(0); }
+
+/* Header */
+#veille-techno .section-header h2 { 
+  font-size: 2rem; 
+  margin-bottom: 8px; 
+  color: var(--brand); 
+}
+#veille-techno .section-header p { 
+  color: var(--muted); 
+  font-size: 1rem; 
+}
+
+/* Grilles */
+#veille-techno .grid-2, #veille-techno .grid-3 { display: grid; gap: 20px; }
+#veille-techno .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+#veille-techno .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+@media (max-width: 920px) { #veille-techno .grid-2, #veille-techno .grid-3 { grid-template-columns: 1fr; } }
+
+/* Cartes */
+#veille-techno .card {
+  background: var(--panel);
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .3s ease, border-color .3s ease;
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+#veille-techno .card:hover { 
+  transform: translateY(-6px) scale(1.02); 
+  border-color: var(--brand); 
+}
+
+/* Titres des cartes */
+#veille-techno .card h3, #veille-techno .card h4 { 
+  color: var(--brand); 
+  margin-bottom: 10px; 
+}
+#veille-techno .card p, #veille-techno .card li { 
+  color: var(--text); 
+  font-size: 0.95rem; 
+  line-height: 1.5; 
+}
+#veille-techno .card ul { padding-left: 18px; margin-top: 6px; }
+
+/* Sources interactives */
+.sources-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.source-item {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,.05);
+  padding: 6px 12px;
+  border-radius: 12px;
+  gap: 6px;
+  position: relative;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.source-item img { width: 20px; height: 20px; border-radius: 4px; }
+.source-item a { color: var(--text); font-size: 0.88rem; text-decoration: underline dotted; }
+.source-item:hover { transform: translateY(-2px); background: rgba(110,231,183,.15); }
+.source-info {
+  display: none;
+  position: absolute;
+  bottom: 110%; left: 50%;
+  transform: translateX(-50%);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.source-item:hover .source-info { display: block; }
+
+/* Note filtrage */
+.filtered-note { font-size: 0.75rem; color: var(--muted); margin-top: 8px; }
+
+#projectsModal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+#projectsModal .modal-content {
+  background: var(--panel);
+  margin: 15% auto;
+  padding: 28px 24px;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 92%;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  color: var(--text);
+  animation: slideUp 0.4s ease;
+  position: relative;
+  text-align: center;
+}
+
+#projectsModal h2 {
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  color: var(--brand);
+}
+
+#projectsModal p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+#projectsModal .close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--muted);
+  transition: color .2s;
+}
+
+#projectsModal .close:hover {
+  color: var(--brand);
+}
+
+#closeProjectsModal {
+  margin-top: 1rem;
+}
+</style>

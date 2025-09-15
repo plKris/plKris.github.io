@@ -1,0 +1,98 @@
+/* Couleur différente pour le côté scolaire */
+:root {
+  --school-bg: #1a1b22;
+  --school-panel: #22252d;
+  --school-text: #f0f0f0;
+  --school-brand: #ff6b6b; /* Rouge/rose pour le côté scolaire */
+  --school-muted: #b0b3b8;
+  --school-ring: 0 0 0 2px color-mix(in srgb, var(--school-brand) 35%, transparent);
+}
+
+/* Page entière */
+body {
+  background: var(--school-bg);
+  color: var(--school-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: saturate(160%) blur(8px);
+  background: color-mix(in srgb, var(--school-bg) 80%, transparent);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+header .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 8px; }
+header .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--school-text); }
+header .brand-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--school-brand);
+  box-shadow: 0 0 0 4px rgba(255,107,107,.15);
+  animation: pulse 2s infinite alternate;
+}
+@keyframes pulse { from{transform:scale(1)} to{transform:scale(1.3)} }
+header .menu { display: flex; gap: 18px; }
+header .menu a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: var(--school-text);
+  font-weight: 500;
+}
+header .menu a:hover {
+  background: rgba(255,107,107,0.2);
+  color: var(--school-brand);
+}
+
+/* Sections épreuves */
+.epreuve {
+  padding: 60px 0;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+.epreuve.visible { opacity: 1; transform: translateY(0); }
+
+/* Section header */
+.epreuve .section-header h2 { font-size: 2rem; margin-bottom: 8px; color: var(--school-brand); }
+.epreuve .section-header p { color: var(--school-muted); font-size: 1rem; }
+
+/* Grilles */
+.epreuve .grid-2, .epreuve .grid-3 { display: grid; gap: 20px; }
+.epreuve .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); }
+.epreuve .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+@media (max-width: 920px) { .epreuve .grid-2, .epreuve .grid-3 { grid-template-columns: 1fr; } }
+
+/* Cartes */
+.epreuve .card {
+  background: var(--school-panel);
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .3s ease, border-color .3s ease;
+  color: var(--school-text);
+  position: relative;
+  overflow: hidden;
+}
+.epreuve .card:hover { transform: translateY(-6px) scale(1.02); border-color: var(--school-brand); }
+
+/* Titres et textes cartes */
+.epreuve .card h3, .epreuve .card h4 { color: var(--school-brand); margin-bottom: 10px; }
+.epreuve .card p, .epreuve .card li { color: var(--school-text); font-size: 0.95rem; line-height: 1.5; }
+.epreuve .card ul { padding-left: 18px; margin-top: 6px; }
+
+/* Timeline / progression optionnelle */
+.epreuve .timeline { position: relative; margin: 20px 0 0 6px; }
+.epreuve .timeline:before {
+  content: "";
+  position: absolute; left: 10px; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(var(--school-brand), transparent);
+}
+.epreuve .tl-item { position: relative; padding-left: 34px; margin: 22px 0; opacity: 0; transform: translateX(-20px); transition: all .8s ease; }
+.epreuve .tl-item.visible { opacity: 1; transform: translateX(0); }
+.epreuve .tl-item:before {
+  content: ""; position: absolute; left: 2px; top: .35rem;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--school-brand); box-shadow: 0 0 0 4px rgba(255,107,107,.15);
+}

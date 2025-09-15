@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes porjets</title>
+    <title>Mes Projets - Portfolio</title>
+    <link rel="stylesheet" href="/css/mesprojets.css">
 </head>
 <body>
-    
+    <nav class="navigation">
+        <a href="index.html" class="home-button">← Accueil</a>
+        <div class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span>Kris Plesel</span>
+        </div>
+        <div class="nav-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <section class="project-section active" id="project1">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Application E-commerce</h2>
+                    <p class="project-date">Janvier 2023</p>
+                    <p class="project-description">
+                        Développement complet d'une plateforme e-commerce avec système de paiement sécurisé, 
+                        gestion de stock en temps réel et interface administrateur avancée.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir en ligne</a>
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/2563eb/white" alt="Application E-commerce">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" id="project2">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Plateforme de Réservation</h2>
+                    <p class="project-date">Mars 2023</p>
+                    <p class="project-description">
+                        Conception d'un système de réservation en ligne avec calendrier interactif, 
+                        notifications en temps réel et gestion multi-utilisateurs.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir en ligne</a>
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/7e22ce/white" alt="Plateforme de Réservation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" id="project3">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Application Mobile Fitness</h2>
+                    <p class="project-date">Juin 2023</p>
+                    <p class="project-description">
+                        Application mobile de suivi d'activité physique avec personnalisation de programmes 
+                        d'entraînement et synchronisation avec wearables.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">API HealthKit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Télécharger</a>
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/22c55e/white" alt="Application Mobile Fitness">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" id="project4">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Dashboard Analytique</h2>
+                    <p class="project-date">Septembre 2023</p>
+                    <p class="project-description">
+                        Tableau de bord de visualisation de données avec graphiques interactifs, 
+                        reporting personnalisable et export de données multiples formats.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir en ligne</a>
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/f97316/white" alt="Dashboard Analytique">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Scroll pour naviguer</p>
+    </div>
+
+    <script src="/projets.js"></script>
 </body>
 </html>

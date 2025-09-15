@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+    <title>Portfolio - PLESEL Kris</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/apropos.css">
 </head>
@@ -21,9 +21,7 @@
         <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
         <a href="#contact">Contact</a>
-        <!--
-        <a class="cta" href="#contact">Me contacter</a>
-      -->
+        <a href="/pages/epreuve.html" class="cta">BTS SIO</a>
       </nav>
     </div>
   </header>
@@ -128,6 +126,91 @@
   </div>
 </section>
 
+<!-- Section Veille Technologique -->
+<section id="veille-techno">
+  <div class="container">
+    <div class="section-header">
+      <h2>Veille Technologique</h2>
+      <p class="muted">IA générative & productivité du développeur</p>
+    </div>
+
+    <!-- Grille principale -->
+    <div class="grid grid-2">
+      <!-- Problématique -->
+      <div class="card">
+        <h3>Problématique</h3>
+        <p>
+          Dans quelle mesure les assistants d’IA générative 
+          (ex : GitHub Copilot, ChatGPT) améliorent-ils réellement 
+          la productivité d’un développeur full-stack, et quels 
+          risques introduisent-ils ?
+        </p>
+      </div>
+
+      <!-- Méthodes de veille -->
+      <div class="card">
+        <h3>Méthodes de veille</h3>
+        <p>Pour rester à jour et sélectionner des informations fiables, j’ai utilisé les outils suivants :</p>
+
+        <ul class="sources-list">
+          <li class="source-item">
+            <img src="https://feedly.com/favicon.ico" alt="Feedly Logo">
+            <a href="https://feedly.com" target="_blank">Feedly</a>
+            <span class="source-info">Agrégation et organisation des flux RSS de blogs dev & IA</span>
+          </li>
+          <li class="source-item">
+            <img src="https://www.google.com/favicon.ico" alt="Google Alerts Logo">
+            <a href="https://www.google.com/alerts" target="_blank">Google Alerts</a>
+            <span class="source-info">Alertes personnalisées pour GitHub Copilot et IA</span>
+          </li>
+          <li class="source-item">
+            <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub Logo">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <span class="source-info">Suivi des commits, releases et projets IA</span>
+          </li>
+          <li class="source-item">
+            <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" alt="Reddit Logo">
+            <a href="https://www.reddit.com/r/programming/" target="_blank">Reddit /r/programming</a>
+            <span class="source-info">Discussions et retours d’expérience sur outils IA</span>
+          </li>
+          <li class="source-item">
+            <img src="https://cdn.medium.com/favicon.ico" alt="Medium Logo">
+            <a href="https://medium.com/tag/ai" target="_blank">Medium</a>
+            <span class="source-info">Articles de blog et études de cas IA générative</span>
+          </li>
+        </ul>
+
+        <p class="filtered-note">Toutes les informations ont été filtrées et organisées via ces outils pour garantir leur fiabilité et pertinence.</p>
+      </div>
+    </div>
+
+    <!-- Exemples récents -->
+    <div class="grid grid-3" style="margin-top:30px;">
+      <div class="card">
+        <h4>Avantages</h4>
+        <p>
+          Gain de temps sur le code répétitif, aide à la complétion, 
+          génération de tests unitaires, documentation plus rapide.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Limites</h4>
+        <p>
+          Qualité inégale du code généré, risques de failles 
+          de sécurité, dépendance excessive à l’outil, dette technique.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Impact métier</h4>
+        <p>
+          Le rôle du développeur évolue : supervision, relecture et 
+          validation du code généré deviennent essentiels.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Contact -->
     <section id="contact">
   <div class="container">
@@ -208,6 +291,17 @@
   </div>
 </div>
 
+<!-- Ajoutez ce code juste avant la balise </body> -->
+<div id="projectsModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Page en développement</h2>
+    <p>La page "Tous mes projets" est actuellement en cours de développement.</p>
+    <p>Elle sera bientôt disponible avec une présentation immersive de tous mes travaux.</p>
+    <button class="cta" id="closeProjectsModal">Fermer</button>
+  </div>
+</div>
+
   <script>
      document.getElementById("y").textContent = new Date().getFullYear();
 
@@ -264,6 +358,55 @@ const modal = document.getElementById("formModal");
 openBtn.onclick = () => { modal.style.display = "flex"; document.body.classList.add("modal-open"); };
 closeBtn.onclick = () => { modal.style.display = "none"; document.body.classList.remove("modal-open"); };
 window.onclick = (e) => { if (e.target === modal) { modal.style.display = "none"; document.body.classList.remove("modal-open"); } };
+
+// Toggle affichage des sources
+  document.querySelectorAll('#veille-techno .sources-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const list = btn.nextElementSibling;
+      if(list) list.style.display = list.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Gestion du modal des projets
+document.addEventListener('DOMContentLoaded', function() {
+  const projectsModal = document.getElementById('projectsModal');
+  const projectsLink = document.querySelector('a[href="mesprojets.html"]');
+  const closeProjectsModal = document.getElementById('closeProjectsModal');
+  const closeModalBtn = document.querySelector('#projectsModal .close');
+  
+  // Ouvrir le modal quand on clique sur "Voir tous mes projets"
+  if (projectsLink) {
+    projectsLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      projectsModal.style.display = 'block';
+      document.body.classList.add('modal-open');
+    });
+  }
+  
+  // Fermer le modal
+  if (closeProjectsModal) {
+    closeProjectsModal.addEventListener('click', function() {
+      projectsModal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    });
+  }
+  
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', function() {
+      projectsModal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    });
+  }
+  
+  // Fermer le modal en cliquant à l'extérieur
+  window.addEventListener('click', function(e) {
+    if (e.target === projectsModal) {
+      projectsModal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    }
+  });
+});
+  
   </script>
 
 </body>
