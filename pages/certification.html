@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Épreuves / Certifications — BTS SIO</title>
+
+  <link rel="stylesheet" href="/css/apropos.css"> 
+
+  <style>
+    /* Styles spécifiques adaptés au thème sombre */
+    body { 
+      padding: 2rem; 
+    }
+    .back { 
+      text-decoration:none; color:var(--text); 
+      display:inline-flex; gap:.5rem; align-items:center; 
+      margin-bottom:1.5rem; 
+      transition: color .3s;
+    }
+    .back:hover { color:var(--brand); }
+
+    /* Conteneur principal de la carte (reprend l'apparence de vos .card) */
+    .cert-details-container { 
+      max-width:900px; margin:0 auto; 
+      background: var(--panel); 
+      padding:28px; border-radius:18px; 
+      border: 1px solid rgba(255,255,255,.06);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      color: var(--text); /* Assure que le texte est clair */
+    }
+    
+    .meta { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+    
+    .badge-status { 
+      display:inline-flex; align-items:center; gap:.5rem; 
+      padding:.4rem .7rem; border-radius:999px; font-weight:700; 
+      font-size: .9rem;
+    }
+    /* Couleurs de badge adaptées aux variables CSS */
+    .validated { 
+      background:rgba(110,231,183,0.2); 
+      color:var(--brand); 
+    }
+    .inprogress { 
+      background:rgba(251,191,36,0.2); 
+      color:#fcd34d; /* Jaune */
+    }
+    
+    .logo { 
+      width:72px; height:72px; border-radius:12px; 
+      background:var(--brand); display:flex; 
+      align-items:center; justify-content:center; 
+      font-weight:800; font-size: 1.8rem;
+      color: var(--panel); 
+    }
+    
+    .content-section { margin-top:1.5rem; line-height:1.7; }
+    .content-section h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: .5rem; color: var(--brand-2); }
+    .muted { color:var(--muted); font-size:.95rem; }
+
+    /* Contrôles et boutons (reprise des styles .cta et .ghost) */
+    .controls { display:flex; justify-content:space-between; gap:.75rem; margin-top:2rem; }
+    .controls a, .controls button { 
+      padding: 10px 14px; 
+      border-radius: 12px;
+      transition: .3s;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    /* Style pour les boutons "Précédent/Suivant" et "Basculer statut" (style ghost) */
+    .btn-ghost {
+      border: 1px solid rgba(255,255,255,.12); 
+      background: transparent; 
+      color: var(--text);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.05); }
+    
+    /* Style pour le bouton "Retour au profil" (style cta) */
+    .btn-cta {
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      color: #0b1020;
+    }
+    .btn-cta:hover { transform: translateY(-2px); }
+
+    .pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Espace entre les points */
+  margin-top: 30px; /* Espace au-dessus des points */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: var(--muted); /* Couleur pour les points inactifs (gris) */
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--brand); /* Couleur pour le point actif (votre couleur principale) */
+  opacity: 1;
+  transform: scale(1.2);
+}
+  </style>
+</head>
+<body>
+  <div class="container"> <a class="back" href="/pages/apropos.html">&larr; Retour</a>
+
+    <div class="cert-details-container" role="region" aria-label="Détails des certifications">
+      <div class="meta">
+        <div class="logo" id="certLogo">📜</div>
+        <div>
+          <h1 id="certTitle" style="font-size: 2.2rem; margin: 0;">Certification</h1> 
+          <div id="certShort" class="muted">Résumé court</div>
+        </div>
+        <div style="margin-left:auto">
+          <div id="certStatus" class="badge-status validated" aria-live="polite">Validée</div>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h3>Ce que ça apporte</h3>
+        <p id="certBenefit">Points forts / apports...</p>
+
+        <h3>Détails</h3>
+        <p id="certDetails">Détails de l'épreuve, compétences évaluées, durée, outils.</p>
+
+        <h3>Parcours</h3>
+        <p id="certParcours">Parcours effectué pour obtenir la certification.</p>
+      </div>
+
+      <div class="controls">
+        <div>
+          <button id="prevBtn" class="btn-ghost">Précédent</button>
+          <button id="nextBtn" class="btn-ghost">Suivant</button>
+        </div>
+        <div>
+          <button id="toggleStatusBtn" class="btn-ghost" style="font-size: .9rem;">Basculer statut</button>
+          <a href="/pages/apropos.html" class="btn-cta">Retour au profil</a>
+        </div>
+      </div>
+    </div>
+    <div id="paginationDots" class="pagination-dots">
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // Liste des certifications (VALEURS PAR DÉFAUT)
+    let certifications = [
+      {
+        id: 'pix',
+        title: 'PIX',
+        short: 'Maîtrise des outils numériques.',
+        benefit: 'Validation progressive des compétences numériques : usage d’outils, sécurité de base, culture numérique.',
+        details: 'Évaluation par domaines (information, communication, création, protection). Exemples d’exercices réalisés : manipulation fichiers, sécurité des mots de passe, recherche avancée.',
+        parcours: 'Auto-formation + entraînements sur la plateforme PIX, tests blancs et correction par scénario.',
+        status: 'validated',
+        logo: 'PIX',
+      },
+      {
+        id: 'secnum',
+        title: 'SecNumAcadémie - ANSSI',
+        short: 'Bonnes pratiques en cybersécurité.',
+        benefit: 'Connaissance des principes de sécurité applicative, gestion des données, bonnes pratiques pour limiter les vulnérabilités.',
+        details: 'Modules sur chiffrement, gestion des accès, mises à jour, sensibilisation aux attaques courantes (phishing, injection).',
+        parcours: 'Formations modulaires en ligne, exercices et quiz de validation.',
+        status: 'validated',
+        logo: 'SN',
+      },
+      // NOUVELLES CERTIFICATIONS EN COURS :
+      {
+        id: 'oc_devweb',
+        title: 'OpenClassrooms - Développeur Web',
+        short: 'Projets pratiques en JavaScript, Git/GitHub, API, Python, création de pages web.',
+        benefit: 'Approche projet-driven pour maîtriser les outils fondamentaux et les méthodologies agiles.',
+        details: 'Technologies étudiées : JavaScript (ES6+), Git/GitHub (gestion de version), communication via API REST, bases de Python pour le backend, et développement web front-end (HTML/CSS/JS).',
+        parcours: 'Parcours guidé avec projets et mentorat régulier.',
+        status: 'inprogress',
+        logo: 'OC'
+      },
+      {
+        id: 'pcep',
+        title: 'PCEP Python Institute',
+        short: 'Certified Entry-Level Python Programmer.',
+        benefit: 'Validation des bases du langage Python, incluant la syntaxe, la structure de données et les principes fondamentaux de la programmation orientée objet.',
+        details: 'Préparation à l\'examen PCEP-30-02.',
+        parcours: 'Auto-formation et exercices de codage sur la plateforme Python Institute et divers supports.',
+        status: 'inprogress',
+        logo: 'PCEP'
+      },
+      {
+        id: 'aws_c_p',
+        title: 'AWS Certified Cloud Practitioner',
+        short: 'Fondamentaux des services cloud AWS (Cloud computing).',
+        benefit: 'Compréhension de la terminologie, de la sécurité, du modèle de tarification et des concepts de base du cloud AWS.',
+        details: 'Domaines couverts : Concepts de Cloud, Sécurité, Technologie, Facturation et Tarification.',
+        parcours: 'Formations en ligne officielles et labs pratiques.',
+        status: 'inprogress',
+        logo: 'AWS'
+      },
+      {
+        id: 'hackerrank',
+        title: 'HackerRank',
+        short: 'Résolution de problèmes algorithmiques et maîtrise de langages.',
+        benefit: 'Amélioration de la logique de programmation et de la capacité à résoudre des défis techniques variés (problèmes d\'algorithmes).',
+        details: 'Exercices dans différents domaines (Data Structures, Algorithms, SQL) et différents langages (Java, Python).',
+        parcours: 'Pratique quotidienne et complétion de challenges.',
+        status: 'inprogress',
+        logo: 'HR'
+      },
+      {
+        id: 'google_atelier',
+        title: 'Google Atelier Numérique',
+        short: 'Compétences numériques pour le monde professionnel.',
+        benefit: 'Acquisition de connaissances en marketing digital, présence en ligne et utilisation des outils Google.',
+        details: 'Modules sur le référencement, la publicité en ligne, l’e-commerce.',
+        parcours: 'Formation modulaire complète en ligne.',
+        status: 'inprogress',
+        logo: 'G'
+      },
+      {
+        id: 'sololearn',
+        title: 'SoloLearn',
+        short: 'Apprentissage rapide et interactif de langages de programmation.',
+        benefit: 'Renforcement rapide des connaissances en syntaxe de divers langages (ex: SQL, C#, Python) via des modules interactifs.',
+        details: 'Micro-leçons et quiz pour l\'acquisition de compétences spécifiques.',
+        parcours: 'Utilisation de l\'application mobile et web.',
+        status: 'inprogress',
+        logo: 'SL'
+      },
+      {
+        id: 'toefl',
+        title: 'TOEFL iBT (Anglais Académique)',
+        short: 'Certification de niveau d’anglais reconnue internationalement.',
+        benefit: 'Validation des compétences en compréhension et expression (écrite et orale) pour évoluer dans un environnement anglophone.',
+        details: 'Évaluation sur 120 points. Prépare à la lecture de documentation technique complexe et à la communication avec des équipes internationales.',
+        parcours: 'Entraînement via des plateformes dédiées, lecture de ressources en anglais et podcasts spécialisés.',
+        status: 'inprogress',
+        logo: 'EN'
+      },
+      {
+        id: 'linkedin_learning',
+        title: 'LinkedIn Learning - Soft Skills',
+        short: 'Développement des compétences comportementales et transversales.',
+        benefit: 'Amélioration de la gestion du temps, de la communication interpersonnelle et de la résolution de problèmes en équipe.',
+        details: 'Suivi de parcours spécialisés sur l\'intelligence émotionnelle, le leadership et l\'organisation du travail en mode Agile.',
+        parcours: 'Complétion de modules vidéos et validation par des quiz de connaissances.',
+        status: 'inprogress',
+        logo: 'IN'
+      }
+      
+    ];
+
+    // FONCTIONS POUR LA PERSISTANCE VIA LOCALSTORAGE
+    function loadCertifications() {
+        const storedData = localStorage.getItem('cert_statuses');
+        if (storedData) {
+            try {
+                const storedStatuses = JSON.parse(storedData);
+                certifications = certifications.map(cert => {
+                    const storedStatus = storedStatuses[cert.id];
+                    if (storedStatus) {
+                        return { ...cert, status: storedStatus };
+                    }
+                    return cert;
+                });
+            } catch (e) {
+                console.error("Erreur lors de la lecture du LocalStorage:", e);
+            }
+        }
+    }
+
+    function saveCertifications() {
+        const statusesToStore = certifications.reduce((acc, cert) => {
+            acc[cert.id] = cert.status;
+            return acc;
+        }, {});
+        localStorage.setItem('cert_statuses', JSON.stringify(statusesToStore));
+    }
+
+
+    // Récupère paramètre id pour ouvrir une certification spécifique
+    function getQueryParam(name) {
+      const params = new URLSearchParams(location.search);
+      return params.get(name);
+    }
+
+    let index = 0;
+    
+    // SÉLECTION DES ÉLÉMENTS DOM
+    const certTitle = document.getElementById('certTitle');
+    const certShort = document.getElementById('certShort');
+    const certBenefit = document.getElementById('certBenefit');
+    const certDetails = document.getElementById('certDetails');
+    const certParcours = document.getElementById('certParcours');
+    const certStatus = document.getElementById('certStatus');
+    const certLogo = document.getElementById('certLogo');
+    
+    // SÉLECTION DU CONTENEUR DES BOUTONS DE CONTRÔLE
+    const controlsDiv = document.querySelector('.controls > div:last-child');
+    const dotsContainer = document.getElementById('paginationDots');
+
+    function createDots() {
+      dotsContainer.innerHTML = ''; // Efface les anciens dots
+      certifications.forEach((cert, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'dot';
+        if (i === index) {
+          dot.classList.add('active');
+        }
+        // Permet de cliquer sur le dot pour naviguer
+        dot.addEventListener('click', () => {
+          index = i;
+          render(index);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+
+    function render(i) {
+      const c = certifications[i];
+      certTitle.textContent = c.title;
+      certShort.textContent = c.short;
+      certBenefit.textContent = c.benefit;
+      certDetails.textContent = c.details;
+      certParcours.textContent = c.parcours;
+      certLogo.textContent = c.logo || '📜';
+
+      if (c.status === 'validated') {
+        certStatus.className = 'badge-status validated';
+        certStatus.innerHTML = '✔️ Validée';
+      } else {
+        certStatus.className = 'badge-status inprogress';
+        certStatus.innerHTML = '⏳ En cours';
+      }
+
+      // Mettre à jour l'URL
+      const url = new URL(location);
+      url.searchParams.set('id', c.id);
+      history.replaceState({}, '', url);
+
+      // LOGIQUE POUR LE LIEN DE DOCUMENT (Ajouté)
+      let docLink = document.getElementById('certDocLink');
+      if (docLink) {
+          docLink.remove();
+      }
+
+      if (c.documentUrl) {
+          docLink = document.createElement('a');
+          docLink.id = 'certDocLink';
+          docLink.href = c.documentUrl;
+          docLink.textContent = 'Voir le document 📜';
+          docLink.target = '_blank';
+          docLink.className = 'btn-ghost';
+          
+          const retourBtn = controlsDiv.querySelector('.btn-cta'); 
+          controlsDiv.insertBefore(docLink, retourBtn);
+      }
+      const dots = dotsContainer.querySelectorAll('.dot');
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === i);
+      });
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      index = (index - 1 + certifications.length) % certifications.length;
+      render(index);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      index = (index + 1) % certifications.length;
+      render(index);
+    });
+
+    // Le bouton bascule l'état ET le sauvegarde
+    document.getElementById('toggleStatusBtn').addEventListener('click', () => {
+      const c = certifications[index];
+      c.status = (c.status === 'validated') ? 'inprogress' : 'validated';
+      
+      saveCertifications(); 
+      
+      render(index);
+    });
+
+    // Raccourcis clavier
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+    });
+
+    // 🚀 INITIALISATION
+    
+    // 1. Charger les statuts persistants
+    loadCertifications();
+
+    // 2. Déterminer l'index initial
+    const idParam = getQueryParam('id');
+    if (idParam) {
+      const found = certifications.findIndex(c => c.id === idParam);
+      if (found >= 0) index = found;
+    }
+    
+    // 3. Rendu initial
+    createDots();
+    render(index);
+</script>
+</body>
+</html>
