@@ -16,99 +16,186 @@
         BTS SIO SLAM
       </div>
       <nav class="menu">
+        <a href="/pages/apropos.html">Accueil</a>
         <a href="#e5">E5 - Projet</a>
-        <a href="#e6">E6 - Soutenance</a>
-        <a href="#autres">Autres Épreuves</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="container" id="e5Content" style="display:none;">
 
     <!-- E5 - Projet -->
     <section id="e5" class="epreuve">
       <div class="section-header">
-        <h2>E5 - Projet de Développement</h2>
-        <p>Épreuve pratique sur le projet réalisé en BTS SIO SLAM</p>
+        <h2>E5 - Projet de Développement (BTS SIO SLAM)</h2>
+        <p>L’épreuve E5 évalue votre capacité à analyser, concevoir et réaliser une solution applicative complète, à travers un projet ou un stage encadré.</p>
       </div>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Description</h3>
-          <p>Évaluer la capacité à analyser les besoins, concevoir et développer une application complète en environnement réel.</p>
+
+      <div class="card" style="margin-bottom:20px;">
+        <h3>Tableau de synthèse</h3>
+        <p>Visuel du plan d’action (à insérer) :</p>
+        <div style="border:1px dashed #888; padding:30px; text-align:center; color:#666;">Emplacement image de synthèse - insérez votre tableau ici</div>
+      </div>
+
+      <div class="card" style="margin-bottom:20px;">
+        <h3>Sommaire de l’E5</h3>
+        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+          <a href="#stages" style="padding: 10px 16px; border-radius: 6px; background: var(--school-brand); color: #fff; text-decoration:none; font-weight:600; border:1px solid #ff8a8a;">Stages</a>
+          <a href="#projets" style="padding: 10px 16px; border-radius: 6px; background: var(--school-brand); color: #fff; text-decoration:none; font-weight:600; border:1px solid #ff8a8a;">Projets scolaires</a>
         </div>
+      </div>
+
+      <section id="stages" class="epreuve">
+        <div class="section-header">
+          <h2>Mes stages</h2>
+          <p>Description détaillée des expériences en entreprise.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:20px;">
+          <h3>Stage 1 (1ère année)</h3>
+          <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:20px;">
+            <div style="flex:1; min-width:280px; border:1px dashed #888; padding:20px; color:#666; text-align:center;">Image entreprise stage 1</div>
+            <div style="flex:2; min-width:280px;">
+              <h4>1) Présentation de l'entreprise</h4>
+              <p>Entreprise : [Nom entreprise stage 1], secteur d’activité, taille et contexte.</p>
+              <p>Organisation, mission principale, positionnement du service informatique.</p>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:20px;">
+            <div style="flex:1; min-width:280px; border:1px dashed #888; padding:20px; color:#666; text-align:center;">Image espace travail stage 1</div>
+            <div style="flex:2; min-width:280px;">
+              <h4>2) Présentation de mon espace de travail</h4>
+              <p>Environnement : IDE, outils de suivi, logiciels de tickets, versioning Git, accès aux environnements de dev/test/prod, documentation.</p>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <h4>3) Présentation des différents postes</h4>
+            <p>Poste principal : développeur web junior.</p>
+            <p>Autres rôles : support technique, gestion de tickets, revue de code, participation aux réunions.</p>
+          </div>
+
+          <div>
+            <h4>4) Présentation des missions</h4>
+            <details>
+              <summary>Mission A : [Nom mission]</summary>
+              <p><strong>Compétences mobilisées :</strong> Analyse des besoins, PHP, SQL, Git, tests unitaires.</p>
+              <p><strong>Description :</strong> Développement d’un module de gestion des utilisateurs avec authentification et validation des données.</p>
+            </details>
+            <details>
+              <summary>Mission B : [Nom mission]</summary>
+              <p><strong>Compétences mobilisées :</strong> Frontend HTML/CSS/JS, accessibilité, responsive design.</p>
+              <p><strong>Description :</strong> Création d’une interface client pour suivi de commande avec filtres et tri.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:20px;">
+          <h3>Stage 2 (2ème année)</h3>
+          <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:20px;">
+            <div style="flex:1; min-width:280px; border:1px dashed #888; padding:20px; color:#666; text-align:center;">Image entreprise stage 2</div>
+            <div style="flex:2; min-width:280px;">
+              <h4>1) Présentation de l'entreprise</h4>
+              <p>Entreprise : [Nom entreprise stage 2], secteur, effectif, contexte.</p>
+              <p>Service informatique et rôle du projet.</p>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:20px;">
+            <div style="flex:1; min-width:280px; border:1px dashed #888; padding:20px; color:#666; text-align:center;">Image espace travail stage 2</div>
+            <div style="flex:2; min-width:280px;">
+              <h4>2) Présentation de mon espace de travail</h4>
+              <p>Outils : IDE, Git, gestion de projet, serveurs de dev, outils de communication, documentation.</p>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <h4>3) Présentation des différents postes</h4>
+            <p>Poste principal : développeur full-stack.</p>
+            <p>Autres rôles : tests, maintenance, support, revue de code.</p>
+          </div>
+
+          <div>
+            <h4>4) Présentation des missions</h4>
+            <details>
+              <summary>Mission C : [Nom mission]</summary>
+              <p><strong>Compétences mobilisées :</strong> Symfony/Node.js, API REST, sécurité, tests, Git.</p>
+              <p><strong>Description :</strong> Implémentation de webservices sécurisés pour échanges inter-applications.</p>
+            </details>
+            <details>
+              <summary>Mission D : [Nom mission]</summary>
+              <p><strong>Compétences mobilisées :</strong> Docker, CI/CD, supervision, automations.</p>
+              <p><strong>Description :</strong> Construction d’un pipeline d’intégration continue et documentation de déploiement.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="epreuve">
+        <div class="section-header">
+          <h2>Projets scolaires</h2>
+          <p>Travaux réalisés pendant la formation BTS SIO SLAM.</p>
+        </div>
+
         <div class="card">
-          <h3>Compétences évaluées</h3>
+          <h3>Projet 1</h3>
+          <p>Description : réalisation d’une application de suivi client / facturation en PHP/SQL, avec interface responsive.</p>
           <ul>
-            <li>Analyse et conception UML</li>
-            <li>Développement full-stack</li>
-            <li>Gestion de versions (Git)</li>
+            <li>Modélisation des données</li>
+            <li>Développement backend et frontend</li>
             <li>Tests et documentation</li>
           </ul>
         </div>
-      </div>
 
-      <div class="timeline">
-        <div class="tl-item visible">
-          <h4>Début projet</h4>
-          <p>Collecte des besoins et planification.</p>
-        </div>
-        <div class="tl-item visible">
-          <h4>Développement</h4>
-          <p>Création des fonctionnalités, tests unitaires et intégration.</p>
-        </div>
-        <div class="tl-item visible">
-          <h4>Livraison</h4>
-          <p>Déploiement et présentation finale.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- E6 - Soutenance -->
-    <section id="e6" class="epreuve">
-      <div class="section-header">
-        <h2>E6 - Soutenance</h2>
-        <p>Présentation orale du projet devant un jury</p>
-      </div>
-      <div class="grid grid-2">
         <div class="card">
-          <h3>Objectif</h3>
-          <p>Présenter clairement le projet, démontrer les compétences techniques et répondre aux questions du jury.</p>
-        </div>
-        <div class="card">
-          <h3>Conseils</h3>
+          <h3>Projet 2</h3>
+          <p>Description : refonte d’un site vitrine avec CMS headless, intégration API et amélioration UX.</p>
           <ul>
-            <li>Préparer un diaporama structuré</li>
-            <li>Mettre en avant vos choix techniques</li>
-            <li>Pratiquer l'expression orale et la gestion du stress</li>
+            <li>Implémentation REST API</li>
+            <li>Optimisation performance et sécurité</li>
+            <li>Présentation en soutenance</li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- Autres Épreuves -->
-    <section id="autres" class="epreuve">
-      <div class="section-header">
-        <h2>Autres Épreuves</h2>
-        <p>Épreuves complémentaires du BTS SIO SLAM</p>
-      </div>
-      <div class="grid grid-3">
         <div class="card">
-          <h4>E4 - Analyse d'exploitation</h4>
-          <p>Étude et analyse d’un système d’information pour en améliorer l’efficacité.</p>
+          <h3>Projet 3</h3>
+          <p>Description : réalisation de tests automatisés et stratégie de mise en production dans un cadre Agile.</p>
+          <ul>
+            <li>Tests unitaires / fonctionnels</li>
+            <li>Pipeline CI/CD</li>
+            <li>Suivi de version Git</li>
+          </ul>
         </div>
-        <div class="card">
-          <h4>Tests et QA</h4>
-          <p>Vérification de la qualité et du bon fonctionnement des applications.</p>
-        </div>
-        <div class="card">
-          <h4>Rapports et documentation</h4>
-          <p>Rédaction claire et complète de toutes les étapes du projet.</p>
-        </div>
-      </div>
+      </section>
+
     </section>
 
   </main>
   <script>
+    // Protection par mot de passe pour accéder à E5
+    (function(){
+      const password = '1234';
+      let attempts = 3;
+      while(attempts > 0){
+        const userInput = prompt('Accès E5 réservé - entrez le mot de passe (tentatives restantes : ' + attempts + ')');
+        if(userInput === null){
+          window.location.href = '/pages/apropos.html';
+          return;
+        }
+        if(userInput === password){
+          document.getElementById('e5Content').style.display = 'block';
+          break;
+        }
+        attempts--;
+        alert('Mot de passe incorrect.');
+      }
+      if(attempts <= 0){
+        alert('Accès refusé. Redirection vers la page À propos.');
+        window.location.href = '/pages/apropos.html';
+      }
+    })();
+
     // Animation simple pour faire apparaître les sections au scroll
     const sections = document.querySelectorAll('.epreuve');
     const observer = new IntersectionObserver((entries) => {
