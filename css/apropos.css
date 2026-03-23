@@ -287,6 +287,9 @@ h3 {
 }
 #veille-techno .card ul { padding-left: 18px; margin-top: 6px; }
 
+/* Ajustement pour les listes dans les compétences et certifications */
+#competences .card ul { padding-left: 20px; margin-top: 6px; }
+
 /* Sources interactives */
 .sources-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
 .source-item {

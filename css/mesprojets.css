@@ -291,6 +291,36 @@
             font-size: 0.9rem;
         }
 
+        /* Notice for school projects */
+        .school-projects-notice {
+            position: fixed;
+            bottom: 6rem;
+            right: 2rem;
+            background: var(--panel);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .school-projects-notice p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .school-link {
+            color: var(--brand);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .school-link:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive */
         @media (max-width: 968px) {
             .project-content {
@@ -337,4 +367,11 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+
+        /* School projects page specific */
+        .school-projects body {
+            background: radial-gradient(1200px 800px at 80% -10%, rgba(250,165,96,.12), transparent 60%),
+                        radial-gradient(900px 600px at -10% 20%, rgba(183,231,110,.10), transparent 50%),
+                        var(--bg);
         }

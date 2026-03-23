@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets Scolaires - Kris Plesel</title>
+    <link rel="stylesheet" href="/css/mesprojets.css">
+</head>
+<body class="school-projects">
+    <nav class="navigation">
+        <a href="mesprojets.html" class="home-button">← Retour</a>
+        <div class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span>Kris Plesel - Projets Scolaires</span>
+        </div>
+        <div class="nav-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <section class="project-section active" id="school1">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Application de Gestion Scolaire (Java)</h2>
+                    <p class="project-date">Projet Scolaire - 2022</p>
+                    <p class="project-description">
+                        Application console en Java pour la gestion d'étudiants et de cours, avec persistance
+                        de données et interface utilisateur basique. Démonstration des concepts OOP et JDBC.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JDBC</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/3b82f6/white" alt="Application Java Scolaire">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" id="school2">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Site Web de Blog (CodeIgniter/PHP)</h2>
+                    <p class="project-date">Projet Scolaire - 2021</p>
+                    <p class="project-description">
+                        Plateforme de blog simple développée avec CodeIgniter, incluant gestion d'articles,
+                        utilisateurs et commentaires. Introduction aux frameworks PHP et MVC.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/10b981/white" alt="Site Blog CodeIgniter">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" id="school3">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Script d'Analyse de Données (Python)</h2>
+                    <p class="project-date">Projet Scolaire - 2023</p>
+                    <p class="project-description">
+                        Script Python pour analyser des datasets CSV, générer des statistiques et visualiser
+                        les données avec Matplotlib. Utilisation de Pandas et NumPy.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/8b5cf6/white" alt="Script Python Analyse">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container foot">
+            <div class="brand">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span>Kris Plesel</span>
+            </div>
+            <div class="muted">© <span id="y"></span> — Tous droits réservés</div>
+            <div class="menu">
+                <a href="apropos.html">Accueil</a>
+                <a href="mesprojets.html">Projets</a>
+                <a href="apropos.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Scroll pour naviguer</p>
+    </div>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="/projets.js"></script>
+</body>
+</html>
