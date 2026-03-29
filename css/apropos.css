@@ -91,8 +91,6 @@ h1 { font-size: clamp(2rem, 4vw + 1rem, 3.4rem); line-height: 1.1; margin: .4rem
   place-items: center;
   font-weight: 600; 
   color: #0b1020;
-  /* animation: zoomIn 1s ease 1s forwards; */
-  /* opacity: 0; */
   transform: scale(1);
 }
 @keyframes zoomIn { from{opacity:0; transform:scale(.9)} to{opacity:1; transform:scale(1)} }
@@ -111,6 +109,9 @@ section.visible { opacity: 1; transform: translateY(0); }
   background: var(--panel); padding: 18px; border-radius: 18px;
   border: 1px solid rgba(255,255,255,.06);
   opacity: 0; transform: translateY(30px); transition: .8s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .card.visible { opacity: 1; transform: translateY(0); }
 .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
@@ -143,12 +144,6 @@ footer {
 }
 @media (max-width: 560px) {
   .grid-3 { grid-template-columns: 1fr; }
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .card:hover {
@@ -199,6 +194,14 @@ footer {
   height: 32px;
 }
 
+.email-feedback {
+  margin-top: 14px;
+  text-align: center;
+  color: var(--muted);
+  min-height: 22px;
+  font-size: 0.9rem;
+}
+
 /* couleurs spécifiques */
 .social-links a[aria-label="Email"]:hover { background: #d93025; }     /* Gmail rouge */
 .social-links a[aria-label="LinkedIn"]:hover { background: #0a66c2; } /* LinkedIn bleu */
@@ -247,6 +250,9 @@ h3 {
   font-size: 2rem; 
   margin-bottom: 8px; 
   color: var(--brand); 
+}
+#veille-techno .section-header h3 {
+  color: var(--brand);
 }
 #veille-techno .section-header p { 
   color: var(--muted); 
@@ -321,6 +327,90 @@ h3 {
 
 /* Note filtrage */
 .filtered-note { font-size: 0.75rem; color: var(--muted); margin-top: 8px; }
+
+#veille-techno .theme-articles-list,
+#veille-techno .latest-articles-grid {
+  display: grid;
+  gap: 14px;
+}
+
+#veille-techno .latest-articles-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+#veille-techno .theme-article-item,
+#veille-techno .latest-article-item {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.03);
+}
+
+#veille-techno .theme-article-item h5,
+#veille-techno .latest-article-item h5 {
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+}
+
+#veille-techno .theme-article-item a,
+#veille-techno .latest-article-item a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#veille-techno .theme-article-item a:hover,
+#veille-techno .latest-article-item a:hover {
+  color: var(--brand);
+}
+
+#veille-techno .article-meta {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  color: var(--muted) !important;
+}
+
+#veille-techno .theme-article-item p,
+#veille-techno .latest-article-item p {
+  margin: 0;
+}
+
+#veille-techno .card-actualite {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.03);
+  display: grid;
+  gap: 8px;
+}
+
+#veille-techno .card-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+#veille-techno .card-titre {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+#veille-techno .card-lien {
+  color: var(--brand);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#veille-techno .card-lien:hover {
+  color: var(--brand-2);
+}
+
+#veille-techno .veille-more-wrap {
+  margin-top: 20px;
+  text-align: center;
+}
 
 #projectsModal {
   display: none;

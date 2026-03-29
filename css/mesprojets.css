@@ -370,7 +370,7 @@
         }
 
         /* School projects page specific */
-        .school-projects body {
+        body.school-projects {
             background: radial-gradient(1200px 800px at 80% -10%, rgba(250,165,96,.12), transparent 60%),
                         radial-gradient(900px 600px at -10% 20%, rgba(183,231,110,.10), transparent 50%),
                         var(--bg);

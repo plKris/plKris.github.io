@@ -13,17 +13,23 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- Wrapper caché par défaut -->
-  <div class="wrapper" style="display:none;">
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Développeur Web — En quête d’expériences et de projets</p>
-    <div class="hint">Cliquez n’importe où pour entrer 🖱️</div>
-  </div> 
+    <main class="entry-shell" style="display:none;" aria-label="Entrée du portfolio">
+      <div class="entry-glow" aria-hidden="true"></div>
+      <section class="entry-card" aria-label="Entrée du portfolio">
+        <p class="entry-kicker">Portfolio</p>
+        <h1>Kris Plesel</h1>
+        <p class="entry-lead">Développeur web orienté projets concrets, qualité du code et progression continue.</p>
+        <div class="entry-tags" aria-hidden="true">
+          <span>Frontend</span>
+          <span>Backend</span>
+          <span>Veille IA</span>
+        </div>
+        <button class="entry-btn" id="enterSiteBtn" type="button">Entrer sur le site</button>
+        <p class="hint">ou cliquez n’importe où</p>
+      </section>
+    </main>
   </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 
 </html>

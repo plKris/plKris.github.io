@@ -96,7 +96,7 @@
 
       <!-- Certifications -->
       <div class="certifications card">
-        <a href="/pages/certification.html" class="cert-card-link" title="Voir les certifications" style="display:block;color:inherit;text-decoration:none" role="link" tabindex="0" aria-label="Ouvrir la page des certifications">
+        <a href="/pages/certification.html" class="cert-card-link" title="Voir les certifications" style="display:block;color:inherit;text-decoration:none" tabindex="0" aria-label="Ouvrir la page des certifications">
         <h3>Certifications</h3>
         <ul>
           <li>✔️ <strong>PIX</strong> & <strong>SecNumAcadémie</strong> obtenus</li>
@@ -179,52 +179,44 @@
       </div>
     </div>
 
-    <!-- Thèmes et articles fiables alignés à la problématique -->
-    <div class="grid grid-3" style="margin-top:30px;">
-      <div class="card">
-        <h4>Thème 1 : Vulnérabilités des assistants IA</h4>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top 10</a></h5>
-          <p>Analyse des vulnérabilités majeures applicables aux contextes où l’IA propose du code. Ce document est fondamental pour identifier les risques liés à l’usage de générateurs de code dans un environnement de production.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://www.reddit.com/r/programming/comments/15xyzabc/vulnabilites_copilot_quelles_plus_graves/" target="_blank">Thread Reddit /r/programming</a></h5>
-          <p>Retour d’experts sur les cas de fuites de données et secrets via les suggestions Copilot. Discussion technique pragmatique, illustrant les problématiques rencontrées en entreprise.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://x.com/securedev/status/1765500000000000000" target="_blank">Thread X (Twitter)</a></h5>
-          <p>Post de spécialistes cybersécurité présentant des exemples d’injection de code malveillant via prompts IA. Ce fil est très opératif pour les scénarios d’évaluation des risques.</p>
-        </article>
+    <div class="section-header" style="margin-top: 52px;">
+      <h3>Articles par thème</h3>
+      <p class="muted">3 articles sont affichés automatiquement pour chaque thème.</p>
+    </div>
+
+    <div class="grid grid-3" id="themes-articles-grid">
+      <div class="card theme-card">
+        <h4>Thème 1 : Sécurité et failles dans le code généré</h4>
+        <div id="articles-theme1" class="theme-articles-list">
+          <p class="muted">⏳ Chargement des articles...</p>
+        </div>
       </div>
-      <div class="card">
-        <h4>Thème 2 : Atténuation et bonnes pratiques</h4>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://www.microsoft.com/security/blog/2024/05/20/security-guidance-ai-development/" target="_blank">Microsoft Security Blog</a></h5>
-          <p>Guide détaillé pour sécuriser le développement assisté par IA, avec recommandations sur la gestion des secrets, validations, audits et routines de revue de code.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://x.com/cybersecblog/status/1759000000000000000" target="_blank">Thread X (Twitter)</a></h5>
-          <p>Astuces pratiques de professionnels pour auditer les suggestions IA avant intégration. Ce fil montre des cas concrets de mise en place de garde-fous.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://feedly.com/i/subscription/feed/http://example.com/ia-securite" target="_blank">Article Feedly</a></h5>
-          <p>Synthèse d’études sur le renforcement du code généré par IA. Idéal pour structurer une méthodologie de revue et tests dans le pipeline de développement.</p>
-        </article>
+
+      <div class="card theme-card">
+        <h4>Thème 2 : Confidentialité des données et Propriété Intellectuelle</h4>
+        <div id="articles-theme2" class="theme-articles-list">
+          <p class="muted">⏳ Chargement des articles...</p>
+        </div>
       </div>
-      <div class="card">
-        <h4>Thème 3 : Conformité, gouvernance et impacts</h4>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://www.cisa.gov/news-events/alerts/2024/03/15/cisa-ia-supplies-security" target="_blank">CISA</a></h5>
-          <p>Bulletin officiel sur les obligations de gouvernance pour l’usage de l’IA dans les projets. Utile pour préparer la mise en conformité et les contrôles internes.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://www.nist.gov/news-events/news/2024/01/nist-publishes-ai-security-framework" target="_blank">NIST</a></h5>
-          <p>Cadre de sécurité solide pour l’AI, qui guide la définition de politiques et standards pour des assistants IA en développement.</p>
-        </article>
-        <article style="margin-top:16px; border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;">
-          <h5><a href="https://x.com/anssi_fr/status/1760000000000000000" target="_blank">X (Twitter)</a></h5>
-          <p>Publication de l’ANSSI sur les bonnes pratiques d’audit pour les outils d’assistance au code, et points d’attention pour la sécurité des projets.</p>
-        </article>
+
+      <div class="card theme-card">
+        <h4>Thème 3 : La "confiance aveugle" et l'impact sur les compétences</h4>
+        <div id="articles-theme3" class="theme-articles-list">
+          <p class="muted">⏳ Chargement des articles...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="articles-container" style="margin-top: 40px;">
+      <div class="section-header" style="margin-top: 0;">
+        <h3>Dernières actualités</h3>
+        <p class="muted">Les articles les plus récents issus de ma veille.</p>
+      </div>
+      <div id="liste-globale-veille" class="latest-articles-grid">
+        <p class="muted">⏳ Chargement des articles...</p>
+      </div>
+      <div class="veille-more-wrap">
+        <button id="btn-afficher-plus-veille" class="cta" type="button" style="display: none;">Afficher plus</button>
       </div>
     </div>
   </div>
@@ -238,7 +230,7 @@
       <p class="muted">Retrouvez-moi sur mes réseaux.</p>
     </div>
     <div class="social-links">
-      <a href="mailto:krisplesel@gmail.com" target="_blank" aria-label="Email">
+      <a href="mailto:krisplesel@gmail.com" id="emailLink" data-email="krisplesel@gmail.com" aria-label="Email">
         <!-- Icône Email -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 
         1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 
@@ -268,11 +260,11 @@
         10 0 0 0 12 2Z"/></svg>
       </a>
     </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <button id="openFormBtn" class="cta">Me contacter</button>
+    </div>
+    <p id="emailFeedback" class="email-feedback" aria-live="polite"></p>
   </div>
-  <div style="text-align: center; margin-top: 20px;">
-                <button id="openFormBtn" class="cta">Me contacter</button>
-            </div>
-        </div>
 </section>
 
   </main>
@@ -300,12 +292,12 @@
     <span id="closeFormBtn" class="close">&times;</span>
     <h2>Contactez-moi</h2>
     <form action="https://formspree.io/f/xwpnzarv" method="POST">
-      <label>Nom :</label>
-      <input type="text" name="nom" required>
-      <label>Email :</label>
-      <input type="email" name="email" required>
-      <label>Message :</label>
-      <textarea name="message" rows="5" required></textarea>
+      <label for="contact-name">Nom :</label>
+      <input id="contact-name" type="text" name="nom" required>
+      <label for="contact-email">Email :</label>
+      <input id="contact-email" type="email" name="email" required>
+      <label for="contact-message">Message :</label>
+      <textarea id="contact-message" name="message" rows="5" required></textarea>
       <input type="text" name="_gotcha" style="display:none">
       <input type="hidden" name="_redirect" value="https://pleselkris.com/pages/apropos.html">
       <button type="submit">Envoyer</button>
@@ -334,6 +326,7 @@
   document.querySelectorAll(".card").forEach(card => {
     const p = card.querySelector(".desc");
     const originalText = card.dataset.desc; // ✅ on prend le texte depuis data-desc
+    if (!p || !originalText) return;
     let typingTimeout;
     let isTyping = false;
 
@@ -365,18 +358,35 @@
 const openBtn = document.getElementById("openFormBtn");
 const closeBtn = document.getElementById("closeFormBtn");
 const modal = document.getElementById("formModal");
+const emailLink = document.getElementById("emailLink");
+const emailFeedback = document.getElementById("emailFeedback");
 
 openBtn.onclick = () => { modal.style.display = "flex"; document.body.classList.add("modal-open"); };
 closeBtn.onclick = () => { modal.style.display = "none"; document.body.classList.remove("modal-open"); };
-window.onclick = (e) => { if (e.target === modal) { modal.style.display = "none"; document.body.classList.remove("modal-open"); } };
 
-// Toggle affichage des sources
-  document.querySelectorAll('#veille-techno .sources-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const list = btn.nextElementSibling;
-      if(list) list.style.display = list.style.display === 'block' ? 'none' : 'block';
-    });
+globalThis.onclick = (e) => { if (e.target === modal) { modal.style.display = "none"; document.body.classList.remove("modal-open"); } };
+
+if (emailLink) {
+  emailLink.addEventListener("click", async () => {
+    const email = emailLink.dataset.email || "krisplesel@gmail.com";
+    if (!emailFeedback) return;
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(email);
+        emailFeedback.textContent = `Adresse copiée: ${email}`;
+      } else {
+        emailFeedback.textContent = `Si rien ne s'ouvre, écris à: ${email}`;
+      }
+    } catch {
+      emailFeedback.textContent = `Si rien ne s'ouvre, écris à: ${email}`;
+    }
+
+    globalThis.setTimeout(() => {
+      emailFeedback.textContent = "";
+    }, 3500);
   });
+}
 
   // Gestion du modal des projets
 document.addEventListener('DOMContentLoaded', function() {
@@ -384,6 +394,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
   </script>
+
+  <!-- RSS2JSON Scripts -->
+  <script src="/google-alerts-loader.js"></script>
 
 </body>
 </html>

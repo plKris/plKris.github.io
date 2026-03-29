@@ -1,80 +1,185 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-    body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.12), transparent 60%),
-                  radial-gradient(900px 600px at -10% 20%, rgba(110,231,183,.10), transparent 50%),
-                  var(--bg);
-      color: var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
-      text-align: center;
-      cursor: pointer;
-      overflow: hidden;
-    }
-
-.main-page {
-  display: flex;
-  justify-content: center;  /* centre horizontalement */
-  align-items: center;      /* centre verticalement */
-  min-height: 100vh;        /* occupe toute la hauteur de la fenêtre */
-  position: relative;
-  z-index: 1;               /* reste au-dessus de ta vidéo */
-}
-
-
-        :root {
+:root {
       --bg: #0b0c10;
+      --panel: #111318;
       --text: #e8ecf1;
+      --muted: #aab3c0;
       --brand: #6ee7b7;
       --brand-2: #60a5fa;
-    }
+}
 
-    .wrapper {
-      max-width: 700px;
-      padding: 20px;
-      animation: fadeIn 1.5s ease forwards;
-    }
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.12), transparent 60%),
+    radial-gradient(900px 600px at -10% 20%, rgba(110,231,183,.10), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 4rem);
-      font-weight: 700;
-      background: linear-gradient(90deg, var(--brand), var(--brand-2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
+.entry-shell {
+  width: min(860px, 92vw);
+  position: relative;
+  animation: fadeIn .9s ease forwards;
+  transform-origin: center;
+}
 
-    p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
+.entry-glow {
+  position: absolute;
+  inset: -40px;
+  background: conic-gradient(from 160deg, rgba(96,165,250,.18), rgba(110,231,183,.16), rgba(96,165,250,.18));
+  filter: blur(50px);
+  z-index: 0;
+  transform: translate3d(var(--glow-x, 0px), var(--glow-y, 0px), 0);
+  transition: transform .22s ease-out;
+  animation: glowDrift 10s ease-in-out infinite alternate;
+}
 
-    .hint {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: var(--brand);
-      animation: pulse 2s infinite;
-    }
+.entry-card {
+  position: relative;
+  z-index: 1;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 22px;
+  padding: 34px 26px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.35);
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+  transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translate3d(0, var(--lift, 0px), 0);
+  transition: transform .2s ease, box-shadow .25s ease, opacity .3s ease;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.entry-shell:hover .entry-card {
+  --lift: -2px;
+  box-shadow: 0 28px 66px rgba(0,0,0,.42);
+}
 
-    @keyframes glow {
-      from { text-shadow: 0 0 10px var(--brand); }
-      to { text-shadow: 0 0 20px var(--brand-2); }
-    }
+.entry-kicker {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .74rem;
+  color: var(--brand);
+}
 
-    @keyframes pulse {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
+h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.entry-lead {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.entry-tags span {
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: .82rem;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+}
+
+.entry-btn {
+  margin-top: 4px;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 16px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color: #0b1020;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.entry-btn:hover,
+.entry-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(96,165,250,.28);
+  outline: none;
+}
+
+.hint {
+  font-size: .88rem;
+  color: var(--muted);
+  animation: pulse 2.2s infinite;
+}
+
+body.is-leaving {
+  pointer-events: none;
+}
+
+body.is-leaving .entry-shell {
+  animation: exitSplash .62s cubic-bezier(.2,.7,.25,1) forwards;
+}
+
+body.is-leaving .entry-card {
+  opacity: .2;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: .45; }
+  50% { opacity: 1; }
+}
+
+@keyframes glowDrift {
+  from { filter: blur(46px) saturate(100%); }
+  to { filter: blur(58px) saturate(120%); }
+}
+
+@keyframes exitSplash {
+  from { opacity: 1; transform: scale(1) translateY(0); }
+  to { opacity: 0; transform: scale(.94) translateY(-18px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry-shell,
+  .entry-glow,
+  .entry-card,
+  .hint {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .entry-card {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+  .entry-lead {
+    font-size: .96rem;
+  }
+}
