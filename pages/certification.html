@@ -10,8 +10,13 @@
   <style>
     /* Styles spécifiques adaptés au thème sombre */
     body { 
-      padding: 2rem; 
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    .container { width: min(1100px, 92vw); }
     .back { 
       text-decoration:none; color:var(--text); 
       display:inline-flex; gap:.5rem; align-items:center; 
@@ -28,6 +33,7 @@
       border: 1px solid rgba(255,255,255,.06);
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       color: var(--text); /* Assure que le texte est clair */
+      width: min(900px, 100%);
     }
     
     .meta { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
@@ -107,12 +113,241 @@
   opacity: 1;
   transform: scale(1.2);
 }
+
+    .ef3-guide {
+      max-width: 900px;
+      margin: 24px auto 0;
+      background: linear-gradient(150deg, rgba(110,231,183,.08), rgba(96,165,250,.08));
+      border: 1px solid rgba(110,231,183,.3);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+      opacity: 1;
+      transform: none;
+    }
+    .ef3-guide h2 {
+      margin: 0 0 8px;
+      color: var(--brand);
+      font-size: 1.45rem;
+    }
+    .ef3-guide p { margin: 0 0 12px; }
+    .ef3-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .ef3-box {
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .ef3-box h3 {
+      margin: 0 0 8px;
+      color: var(--brand-2);
+      font-size: 1rem;
+    }
+    .ef3-box ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.55;
+    }
+    .ef3-summary {
+      margin: 10px auto 14px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      width: min(900px, 100%);
+    }
+    .ef3-summary h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: var(--brand-2);
+    }
+    .presentation-view p {
+      margin: 0 0 12px;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .presentation-view {
+      opacity: 1;
+      transform: none;
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+    .presentation-actions {
+      margin-top: 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .ef3-summary ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.55;
+    }
+    .ef3-summary a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .summary-actions {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .summary-actions .btn-ghost,
+    .summary-actions .btn-cta,
+    .presentation-actions .btn-cta {
+      border-radius: 999px;
+      padding: 9px 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      font-weight: 700;
+      letter-spacing: .01em;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
+      box-shadow: 0 6px 16px rgba(0,0,0,.22);
+    }
+    .summary-actions .btn-ghost {
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+    .summary-actions .btn-ghost:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.28);
+    }
+    .summary-actions .btn-cta,
+    .presentation-actions .btn-cta {
+      background: linear-gradient(140deg, rgba(110,231,183,.26), rgba(96,165,250,.24));
+      color: #ebfff7;
+      border-color: rgba(110,231,183,.45);
+    }
+    .summary-actions .btn-cta:hover,
+    .presentation-actions .btn-cta:hover {
+      transform: translateY(-1px);
+      background: linear-gradient(140deg, rgba(110,231,183,.34), rgba(96,165,250,.32));
+      border-color: rgba(110,231,183,.75);
+      box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    }
+    .summary-actions .btn-ghost:focus-visible,
+    .summary-actions .btn-cta:focus-visible,
+    .presentation-actions .btn-cta:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(110,231,183,.3), 0 10px 20px rgba(0,0,0,.3);
+    }
+    .summary-cert-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .summary-status {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.04);
+    }
+    .summary-status.validated {
+      color: var(--brand);
+      border-color: rgba(110,231,183,.5);
+      background: rgba(110,231,183,.15);
+    }
+    .summary-status.inprogress {
+      color: #fcd34d;
+      border-color: rgba(251,191,36,.5);
+      background: rgba(251,191,36,.12);
+    }
+    .is-hidden { display: none; }
+
+    @media (max-width: 860px) {
+      body {
+        padding: 1rem;
+        align-items: flex-start;
+      }
+      .meta {
+        flex-wrap: wrap;
+      }
+      .controls {
+        flex-direction: column;
+      }
+      .controls > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .7rem;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .cert-details-container,
+      .ef3-summary {
+        padding: 16px;
+        border-radius: 14px;
+      }
+      .logo {
+        width: 58px;
+        height: 58px;
+        font-size: 1.3rem;
+      }
+      #certTitle {
+        font-size: clamp(1.4rem, 5.8vw, 1.9rem) !important;
+      }
+      .controls a,
+      .controls button {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .summary-cert-link {
+        display: inline-flex;
+        flex-wrap: wrap;
+        row-gap: 4px;
+      }
+      .presentation-actions {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container"> <a class="back" href="/pages/apropos.html">&larr; Retour</a>
+  <div class="container"> <a class="back" id="topBackLink" href="/pages/apropos.html">&larr; Retour au profil</a>
 
-    <div class="cert-details-container" role="region" aria-label="Détails des certifications">
+    <nav class="ef3-summary is-hidden" id="summaryPanel" aria-label="Sommaire EF3">
+      <h3>Sommaire</h3>
+      <ul id="certSummaryList">
+        <li class="muted">Chargement des certifications...</li>
+      </ul>
+      <div class="summary-actions">
+        <button id="backToPresentationBtn" class="btn-ghost" type="button">Retour a la presentation</button>
+        <button id="openCertsBtn" class="btn-cta" type="button">Ouvrir les certifications</button>
+      </div>
+    </nav>
+
+    <section class="cert-details-container presentation-view" id="presentationPanel" aria-label="Presentation de Kris Plesel">
+      <h2 style="margin:0 0 14px; color: var(--brand);">Presentation de moi</h2>
+      <p>
+        Je m'appelle Kris Plesel, etudiant en BTS SIO option SLAM. Mon projet professionnel est de devenir
+        developpeur web et applicatif, avec un fort accent sur la qualite du code, la securite et l'experience utilisateur.
+      </p>
+      <p>
+        Dans mon parcours, je m'appuie sur les certifications pour consolider mes acquis techniques,
+        structurer ma progression et prouver concretement mes competences.
+      </p>
+      <p>
+        Cette demarche me permet de mieux preparer mon insertion professionnelle et d'aligner mes competences
+        avec les attentes du metier de developpeur.
+      </p>
+      <div class="presentation-actions">
+        <button id="presentationToSummaryBtn" class="btn-cta" type="button">Aller au sommaire</button>
+      </div>
+    </section>
+
+    <div class="cert-details-container is-hidden" id="certifications" role="region" aria-label="Détails des certifications">
       <div class="meta">
         <div class="logo" id="certLogo">📜</div>
         <div>
@@ -142,14 +377,14 @@
         </div>
         <div>
           <button id="toggleStatusBtn" class="btn-ghost" style="font-size: .9rem;">Basculer statut</button>
-          <a href="/pages/apropos.html" class="btn-cta">Retour au profil</a>
+          <a id="backToProfileBtn" href="/pages/apropos.html" class="btn-cta">Retour au profil</a>
         </div>
       </div>
     </div>
-    <div id="paginationDots" class="pagination-dots">
+
+    <div id="paginationDots" class="pagination-dots is-hidden">
         </div>
     </div>
-  </div>
 
   <script>
     // Liste des certifications (VALEURS PAR DÉFAUT)
@@ -306,6 +541,102 @@
     // SÉLECTION DU CONTENEUR DES BOUTONS DE CONTRÔLE
     const controlsDiv = document.querySelector('.controls > div:last-child');
     const dotsContainer = document.getElementById('paginationDots');
+    const certContainer = document.getElementById('certifications');
+    const certSummaryList = document.getElementById('certSummaryList');
+    const summaryPanel = document.getElementById('summaryPanel');
+    const openCertsBtn = document.getElementById('openCertsBtn');
+    const backToPresentationBtn = document.getElementById('backToPresentationBtn');
+    const presentationPanel = document.getElementById('presentationPanel');
+    const presentationToSummaryBtn = document.getElementById('presentationToSummaryBtn');
+    const topBackLink = document.getElementById('topBackLink');
+
+    function updateTopBackLink() {
+      const isCertViewOpen = !certContainer.classList.contains('is-hidden');
+      const isSummaryVisible = !summaryPanel.classList.contains('is-hidden');
+      if (isCertViewOpen) {
+        topBackLink.textContent = '← Retour au sommaire';
+        topBackLink.setAttribute('href', '#summaryPanel');
+      } else {
+        topBackLink.textContent = '← Retour au profil';
+        topBackLink.setAttribute('href', '/pages/apropos.html');
+      }
+    }
+
+    function showCertifications() {
+      summaryPanel.classList.add('is-hidden');
+      presentationPanel.classList.add('is-hidden');
+      certContainer.classList.remove('is-hidden');
+      dotsContainer.classList.remove('is-hidden');
+      updateTopBackLink();
+    }
+
+    function showPresentation() {
+      summaryPanel.classList.add('is-hidden');
+      certContainer.classList.add('is-hidden');
+      dotsContainer.classList.add('is-hidden');
+      presentationPanel.classList.remove('is-hidden');
+      updateTopBackLink();
+    }
+
+    function showSummary() {
+      summaryPanel.classList.remove('is-hidden');
+      presentationPanel.classList.add('is-hidden');
+      certContainer.classList.add('is-hidden');
+      dotsContainer.classList.add('is-hidden');
+      updateTopBackLink();
+    }
+
+    openCertsBtn.addEventListener('click', () => {
+      showCertifications();
+      certContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    backToPresentationBtn.addEventListener('click', () => {
+      showPresentation();
+      presentationPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    presentationToSummaryBtn.addEventListener('click', () => {
+      showSummary();
+      summaryPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    topBackLink.addEventListener('click', (e) => {
+      const isCertViewOpen = !certContainer.classList.contains('is-hidden');
+      if (isCertViewOpen) {
+        e.preventDefault();
+        showSummary();
+        summaryPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    function renderSummaryList() {
+      certSummaryList.innerHTML = '';
+      certifications.forEach((cert, i) => {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        const status = document.createElement('span');
+
+        link.href = '#certifications';
+        link.className = 'summary-cert-link';
+        link.textContent = cert.title;
+
+        status.className = `summary-status ${cert.status}`;
+        status.textContent = cert.status === 'validated' ? 'Validee' : 'En cours';
+
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          index = i;
+          showCertifications();
+          render(index);
+          certContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        link.appendChild(status);
+        li.appendChild(link);
+        certSummaryList.appendChild(li);
+      });
+    }
 
     function createDots() {
       dotsContainer.innerHTML = ''; // Efface les anciens dots
@@ -361,13 +692,14 @@
           docLink.target = '_blank';
           docLink.className = 'btn-ghost';
           
-          const retourBtn = controlsDiv.querySelector('.btn-cta'); 
+          const retourBtn = controlsDiv.querySelector('#backToProfileBtn'); 
           controlsDiv.insertBefore(docLink, retourBtn);
       }
       const dots = dotsContainer.querySelectorAll('.dot');
       dots.forEach((dot, dotIndex) => {
         dot.classList.toggle('active', dotIndex === i);
       });
+      renderSummaryList();
     }
 
     document.getElementById('prevBtn').addEventListener('click', () => {
@@ -410,7 +742,9 @@
     
     // 3. Rendu initial
     createDots();
+    renderSummaryList();
     render(index);
+    updateTopBackLink();
 </script>
 </body>
 </html>

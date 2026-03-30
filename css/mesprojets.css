@@ -323,6 +323,36 @@
 
         /* Responsive */
         @media (max-width: 968px) {
+            html, body {
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .projects-container {
+                height: auto;
+                min-height: 100vh;
+                overflow: visible;
+                padding-top: 90px;
+                padding-bottom: 120px;
+            }
+
+            .project-section {
+                position: relative;
+                height: auto;
+                min-height: unset;
+                opacity: 0;
+                visibility: hidden;
+                transform: none;
+                display: none;
+                padding: 0 6%;
+            }
+
+            .project-section.active {
+                opacity: 1;
+                visibility: visible;
+                display: flex;
+            }
+
             .project-content {
                 flex-direction: column;
                 gap: 3rem;
@@ -339,12 +369,51 @@
             
             .project-image {
                 max-width: 400px;
+                height: clamp(220px, 46vw, 320px);
+                transform: none;
+            }
+
+            .project-image:hover {
+                transform: none;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+
+            .school-projects-notice {
+                position: static;
+                margin: 12px auto 0;
+                max-width: 92vw;
+            }
+
+            footer {
+                margin-top: 24px;
+                padding-bottom: 36px;
             }
         }
 
         @media (max-width: 600px) {
             .navigation {
                 padding: 1rem;
+                gap: .6rem;
+                flex-wrap: wrap;
+            }
+
+            .brand {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                order: 3;
+            }
+
+            .nav-progress {
+                width: 100%;
+                order: 2;
+            }
+
+            .home-button {
+                order: 1;
             }
             
             .project-section {
@@ -366,6 +435,13 @@
             .project-links {
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
+            }
+
+            .project-link {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
             }
         }
 

@@ -22,7 +22,7 @@
     </div>
   </header>
 
-  <main class="container" id="e5Content" style="display:none;">
+  <main class="container" id="e5Content">
 
     <!-- E5 - Projet -->
     <section id="e5" class="epreuve">
@@ -34,7 +34,10 @@
       <div class="card" style="margin-bottom:20px;">
         <h3>Tableau de synthèse</h3>
         <p>Le tableau de synthèse de compétences est présenté lors de la soutenance E5 et consolidé à partir des missions de stage et projets ci-dessous.</p>
-        <div style="border:1px dashed #888; padding:30px; text-align:center; color:#666;">Document de synthèse disponible dans le dossier de soutenance.</div>
+        <p class="project-links"><a href="/documents/tableau-synthese-e5-plesel-kris.pdf" target="_blank" rel="noopener">Ouvrir le tableau de synthèse (PDF)</a></p>
+        <a href="/documents/tableau-synthese-e5-plesel-kris.pdf" target="_blank" rel="noopener" aria-label="Ouvrir le tableau de synthèse en PDF">
+          <img src="/documents/tableau-synthese-e5-plesel-kris-preview.jpg" alt="Aperçu du tableau de synthèse E5" style="display:block; width:min(100%, 560px); height:auto; border:1px solid rgba(255,255,255,.15); border-radius:12px; margin:14px auto 0;">
+        </a>
       </div>
 
       <div class="card" style="margin-bottom:20px;">
@@ -169,23 +172,72 @@
         </div>
 
         <div class="card">
-          <h3>Gestion de Village Vacances (CodeIgniter)</h3>
-          <p>Description : développement d'une application complète de réservation clients/séjours et déploiement sur machine virtuelle.</p>
+          <h3>Projet 1 - Réservation de séjour et gestion des colloques (CodeIgniter)</h3>
+          <p><strong>Organisation :</strong> CVVEN (Comité pour les Villages de Vacances de l'Éducation Nationale)</p>
+          <p><strong>Période :</strong> année 2025/2026</p>
+          <p><strong>Contexte :</strong> conception d'une application web de gestion et réservation de locations, avec architecture MVC (Modèle-Vue-Contrôleur) et base PostgreSQL.</p>
+
+          <h4>Fonctionnalités réalisées</h4>
           <ul>
-            <li>Gestion des clients et des séjours</li>
-            <li>Validation des disponibilités</li>
-            <li>Déploiement et tests sur VM</li>
+            <li>Authentification des utilisateurs et gestion des accès</li>
+            <li>Consultation des locations disponibles et réservation</li>
+            <li>Gestion des clients et des colloques (création, modification, suppression)</li>
+            <li>Paramètres utilisateur : thème, notifications, sécurité et confidentialité</li>
           </ul>
+
+          <h4>Environnement technique</h4>
+          <ul>
+            <li>Langages : PHP, SQL, HTML, CSS, JavaScript</li>
+            <li>Framework : CodeIgniter</li>
+            <li>Base de données : PostgreSQL (administration via PhpPgAdmin)</li>
+            <li>IDE : NetBeans</li>
+            <li>Tests sécurité : Burp Suite</li>
+          </ul>
+
+          <h4>Compétences E5 mobilisées</h4>
+          <ul>
+            <li>Concevoir et développer une solution applicative</li>
+            <li>Assurer la maintenance corrective ou évolutive</li>
+            <li>Gérer les données</li>
+          </ul>
+
+          <p><strong>Livrables :</strong> code source, base de données, application opérationnelle et documentation de conception/réalisation/tests.</p>
+          <p class="project-links"><a href="/documents/Kris%20PLESEL%202026%20projet%201-2.pdf" target="_blank" rel="noopener">Voir la fiche de situation Projet 1 (PDF)</a></p>
         </div>
 
         <div class="card">
-          <h3>Système de Ticketing (Python Flask)</h3>
-          <p>Description : application de support pour la gestion et le suivi d'incidents dans le contexte Village Vacances.</p>
+          <h3>Projet 2 - Application de ticketing d'assistance (Python Flask)</h3>
+          <p><strong>Organisation :</strong> CVVEN (Comité pour les Villages de Vacances de l'Éducation Nationale)</p>
+          <p><strong>Période :</strong> année 2025/2026</p>
+          <p><strong>Contexte :</strong> développement d'une application web de suivi des incidents pour structurer les demandes d'assistance et d'évolution.</p>
+
+          <h4>Fonctionnalités réalisées</h4>
           <ul>
-            <li>Création et suivi des tickets</li>
-            <li>Priorisation et traçabilité des incidents</li>
-            <li>Interface d'administration et reporting</li>
+            <li>Connexion sécurisée avec gestion des rôles (utilisateur / administrateur)</li>
+            <li>Tableau de bord de suivi des tickets (ouverts, en cours, fermés)</li>
+            <li>Création de ticket avec catégorie, localisation et niveau de priorité</li>
+            <li>Mise à jour du statut, assignation à un technicien et notes de résolution</li>
+            <li>Mots de passe hachés en base pour renforcer la sécurité</li>
           </ul>
+
+          <h4>Environnement technique</h4>
+          <ul>
+            <li>Langage : Python</li>
+            <li>Framework : Flask</li>
+            <li>Base de données : SQLite</li>
+            <li>IDE : Visual Studio Code</li>
+            <li>Outils projet : Trello, GitHub</li>
+          </ul>
+
+          <h4>Compétences E5 mobilisées</h4>
+          <ul>
+            <li>Concevoir et développer une solution applicative</li>
+            <li>Assurer la maintenance corrective ou évolutive</li>
+            <li>Gérer les données</li>
+          </ul>
+
+          <p><strong>Livrables :</strong> code source, base SQLite, application fonctionnelle en local et documentations utilisateur/gestionnaire/développeur.</p>
+          <p class="project-links"><a href="/documents/FICHE%20DE%20SITUATION%202026%20PROJET%202%20PLESEL-2.pdf" target="_blank" rel="noopener">Voir la fiche de situation Projet 2 (PDF)</a></p>
         </div>
 
         <div class="card">
@@ -203,29 +255,6 @@
 
   </main>
   <script>
-    // Protection par mot de passe pour accéder à E5
-    (function(){
-      const password = '1234';
-      let attempts = 3;
-      while(attempts > 0){
-        const userInput = prompt('Accès E5 réservé - entrez le mot de passe (tentatives restantes : ' + attempts + ')');
-        if(userInput === null){
-          globalThis.location.href = '/pages/apropos.html';
-          return;
-        }
-        if(userInput === password){
-          document.getElementById('e5Content').style.display = 'block';
-          break;
-        }
-        attempts--;
-        alert('Mot de passe incorrect.');
-      }
-      if(attempts <= 0){
-        alert('Accès refusé. Redirection vers la page À propos.');
-        globalThis.location.href = '/pages/apropos.html';
-      }
-    })();
-
     // Animation simple pour faire apparaître les sections au scroll
     const sections = document.querySelectorAll('.epreuve');
     const observer = new IntersectionObserver((entries) => {

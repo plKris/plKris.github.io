@@ -48,8 +48,8 @@ header .menu a:hover {
 /* Sections épreuves */
 .epreuve {
   padding: 60px 0;
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 1s ease;
 }
 .epreuve.visible { opacity: 1; transform: translateY(0); }
@@ -81,6 +81,13 @@ header .menu a:hover {
 .epreuve .card h3, .epreuve .card h4 { color: var(--school-brand); margin-bottom: 10px; }
 .epreuve .card p, .epreuve .card li { color: var(--school-text); font-size: 0.95rem; line-height: 1.5; }
 .epreuve .card ul { padding-left: 18px; margin-top: 6px; }
+.epreuve .card .project-links { margin-top: 14px; }
+.epreuve .card .project-links a {
+  color: var(--school-brand);
+  font-weight: 600;
+  text-decoration: none;
+}
+.epreuve .card .project-links a:hover { text-decoration: underline; }
 
 /* Timeline / progression optionnelle */
 .epreuve .timeline { position: relative; margin: 20px 0 0 6px; }
@@ -95,4 +102,22 @@ header .menu a:hover {
   content: ""; position: absolute; left: 2px; top: .35rem;
   width: 16px; height: 16px; border-radius: 50%;
   background: var(--school-brand); box-shadow: 0 0 0 4px rgba(255,107,107,.15);
+}
+
+@media (max-width: 820px) {
+  header .nav { flex-wrap: wrap; gap: 10px; }
+  header .menu { width: 100%; justify-content: center; flex-wrap: wrap; gap: 10px; }
+  .epreuve { padding: 42px 0; }
+  .epreuve .card { padding: 18px; }
+  .epreuve .section-header h2 { font-size: clamp(1.35rem, 4vw, 1.85rem); }
+
+  .epreuve .card div[style*="display:flex"][style*="gap:20px"] {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .epreuve .card div[style*="min-width:280px"] {
+    min-width: 0 !important;
+    width: 100%;
+  }
 }
