@@ -281,6 +281,93 @@
   </div>
 </section>
 
+    <!-- Easter egg mobile -->
+    <section id="mobile-easter-egg" aria-label="Mini jeu mobile caché">
+      <div class="container">
+        <div class="section-header mobile-egg-header">
+          <h2>Mini jeu caché</h2>
+          <p class="muted">Clique sur un jeu pour l'afficher.</p>
+        </div>
+
+        <div class="mobile-egg-selector" role="tablist" aria-label="Choisir un mini jeu">
+          <button type="button" class="mobile-egg-switch" data-game-target="morpion" aria-pressed="false">Morpion</button>
+          <button type="button" class="mobile-egg-switch" data-game-target="allumettes" aria-pressed="false">Allumettes</button>
+          <button type="button" class="mobile-egg-switch" data-game-target="puissance4" aria-pressed="false">Puissance 4</button>
+        </div>
+
+        <div class="mobile-egg-card mobile-egg-game is-hidden" data-game="morpion">
+          <div class="mobile-egg-topline">
+            <span class="mobile-egg-badge">Mini jeu</span>
+            <span id="mobile-egg-status" class="mobile-egg-status">À toi de jouer</span>
+          </div>
+
+          <div id="mobile-egg-board" class="mobile-egg-board" role="grid" aria-label="Plateau de morpion">
+            <button type="button" class="mobile-egg-cell" data-index="0" aria-label="Case 1"></button>
+            <button type="button" class="mobile-egg-cell" data-index="1" aria-label="Case 2"></button>
+            <button type="button" class="mobile-egg-cell" data-index="2" aria-label="Case 3"></button>
+            <button type="button" class="mobile-egg-cell" data-index="3" aria-label="Case 4"></button>
+            <button type="button" class="mobile-egg-cell" data-index="4" aria-label="Case 5"></button>
+            <button type="button" class="mobile-egg-cell" data-index="5" aria-label="Case 6"></button>
+            <button type="button" class="mobile-egg-cell" data-index="6" aria-label="Case 7"></button>
+            <button type="button" class="mobile-egg-cell" data-index="7" aria-label="Case 8"></button>
+            <button type="button" class="mobile-egg-cell" data-index="8" aria-label="Case 9"></button>
+          </div>
+
+          <div class="mobile-egg-actions">
+            <button id="mobile-egg-reset" type="button" class="cta">Rejouer</button>
+          </div>
+        </div>
+
+        <div class="mobile-egg-card mobile-egg-card-alt mobile-egg-game is-hidden" data-game="allumettes">
+          <div class="mobile-egg-topline">
+            <span class="mobile-egg-badge">Mini jeu</span>
+            <span id="match-egg-status" class="mobile-egg-status">Prends 1 à 3 allumettes</span>
+          </div>
+
+          <h3 class="mobile-egg-title">Défi des allumettes</h3>
+          <p class="mobile-egg-note">Celui qui prend la dernière allumette gagne. L’IA joue parfaitement.</p>
+
+          <div id="match-egg-board" class="match-egg-board" aria-label="Allumettes restantes"></div>
+
+          <div class="match-egg-actions" aria-label="Choix du nombre d'allumettes à prendre">
+            <button type="button" class="match-egg-take" data-take="1">1</button>
+            <button type="button" class="match-egg-take" data-take="2">2</button>
+            <button type="button" class="match-egg-take" data-take="3">3</button>
+          </div>
+
+          <div class="mobile-egg-actions">
+            <button id="match-egg-reset" type="button" class="cta">Rejouer</button>
+          </div>
+        </div>
+
+        <div class="mobile-egg-card mobile-egg-card-alt mobile-egg-game is-hidden" data-game="puissance4">
+          <div class="mobile-egg-topline">
+            <span class="mobile-egg-badge">Mini jeu</span>
+            <span id="connect4-status" class="mobile-egg-status">Choisis une colonne</span>
+          </div>
+
+          <h3 class="mobile-egg-title">Puissance 4</h3>
+          <p class="mobile-egg-note">Aligne 4 pions avant l’IA. Elle joue très fort, donc évite les erreurs.</p>
+
+          <div class="connect4-actions" aria-label="Choix de la colonne">
+            <button type="button" class="connect4-drop" data-column="0">1</button>
+            <button type="button" class="connect4-drop" data-column="1">2</button>
+            <button type="button" class="connect4-drop" data-column="2">3</button>
+            <button type="button" class="connect4-drop" data-column="3">4</button>
+            <button type="button" class="connect4-drop" data-column="4">5</button>
+            <button type="button" class="connect4-drop" data-column="5">6</button>
+            <button type="button" class="connect4-drop" data-column="6">7</button>
+          </div>
+
+          <div id="connect4-board" class="connect4-board" role="grid" aria-label="Plateau Puissance 4"></div>
+
+          <div class="mobile-egg-actions">
+            <button id="connect4-reset" type="button" class="cta">Rejouer</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -446,6 +533,637 @@ if (emailLink) {
     }, 3500);
   });
 }
+
+// Mini jeu mobile caché : morpion contre IA
+(function initMobileEasterEgg() {
+  const board = document.getElementById("mobile-egg-board");
+  const status = document.getElementById("mobile-egg-status");
+  const resetBtn = document.getElementById("mobile-egg-reset");
+  if (!board || !status || !resetBtn) return;
+
+  const cells = Array.from(board.querySelectorAll(".mobile-egg-cell"));
+  const winPatterns = [
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [2, 4, 6]
+  ];
+  let state = new Array(9).fill("");
+  let gameActive = true;
+
+  function setStatus(message) {
+    status.textContent = message;
+  }
+
+  function checkWinner(playerState) {
+    for (const [a, b, c] of winPatterns) {
+      if (playerState[a] && playerState[a] === playerState[b] && playerState[a] === playerState[c]) {
+        return playerState[a];
+      }
+    }
+    return playerState.every(Boolean) ? "draw" : null;
+  }
+
+  function render() {
+    cells.forEach((cell, index) => {
+      cell.textContent = state[index];
+      cell.classList.toggle("is-x", state[index] === "X");
+      cell.classList.toggle("is-o", state[index] === "O");
+      cell.disabled = !gameActive || Boolean(state[index]);
+    });
+  }
+
+  function finish(message) {
+    gameActive = false;
+    setStatus(message);
+    render();
+  }
+
+  function minimax(boardState, isAiTurn, depth) {
+    const result = checkWinner(boardState);
+    if (result === "O") return 10 - depth;
+    if (result === "X") return depth - 10;
+    if (result === "draw") return 0;
+
+    if (isAiTurn) {
+      let bestScore = -Infinity;
+      for (let index = 0; index < boardState.length; index += 1) {
+        if (boardState[index]) continue;
+        boardState[index] = "O";
+        const score = minimax(boardState, false, depth + 1);
+        boardState[index] = "";
+        bestScore = Math.max(bestScore, score);
+      }
+      return bestScore;
+    }
+
+    let bestScore = Infinity;
+    for (let index = 0; index < boardState.length; index += 1) {
+      if (boardState[index]) continue;
+      boardState[index] = "X";
+      const score = minimax(boardState, true, depth + 1);
+      boardState[index] = "";
+      bestScore = Math.min(bestScore, score);
+    }
+    return bestScore;
+  }
+
+  function chooseAiMove() {
+    let bestMove = null;
+    let bestScore = -Infinity;
+
+    for (let index = 0; index < state.length; index += 1) {
+      if (state[index]) continue;
+      state[index] = "O";
+      const score = minimax(state, false, 0);
+      state[index] = "";
+      if (score > bestScore) {
+        bestScore = score;
+        bestMove = index;
+      }
+    }
+
+    return bestMove;
+  }
+
+  function aiMove() {
+    const empty = state.map((value, index) => (value ? null : index)).filter((value) => value !== null);
+    if (empty.length === 0) return;
+
+    const choice = chooseAiMove();
+    if (choice === null) return;
+
+    state[choice] = "O";
+    const result = checkWinner(state);
+    if (result === "O") {
+      finish("L'IA a gagné. Rejoue pour prendre ta revanche.");
+      return;
+    }
+    if (result === "draw") {
+      finish("Match nul. Bien joué.");
+      return;
+    }
+
+    setStatus("À toi de jouer");
+    render();
+  }
+
+  function handleCellClick(event) {
+    if (!gameActive) return;
+    const index = Number(event.currentTarget.dataset.index);
+    if (state[index]) return;
+
+    state[index] = "X";
+    const result = checkWinner(state);
+    if (result === "X") {
+      finish("Tu as gagné. L'IA n'a pas vu venir.");
+      return;
+    }
+    if (result === "draw") {
+      finish("Match nul. Pas mal.");
+      return;
+    }
+
+    setStatus("L'IA réfléchit...");
+    render();
+    globalThis.setTimeout(aiMove, 220);
+  }
+
+  function resetGame() {
+    state = new Array(9).fill("");
+    gameActive = true;
+    setStatus("À toi de jouer");
+    render();
+  }
+
+  cells.forEach((cell) => cell.addEventListener("click", handleCellClick));
+  resetBtn.addEventListener("click", resetGame);
+  resetGame();
+})();
+
+(function initGameSwitcher() {
+  const switches = Array.from(document.querySelectorAll(".mobile-egg-switch"));
+  const games = Array.from(document.querySelectorAll(".mobile-egg-game"));
+  let connect4Loaded = false;
+  if (switches.length === 0 || games.length === 0) return;
+
+  function activateGame(targetGame) {
+    switches.forEach((button) => {
+      const isActive = button.dataset.gameTarget === targetGame;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    games.forEach((game) => {
+      game.classList.toggle("is-hidden", game.dataset.game !== targetGame);
+      game.classList.toggle("is-active", game.dataset.game === targetGame);
+    });
+
+    const visibleGame = games.find((game) => game.dataset.game === targetGame);
+    if (!visibleGame) return;
+
+    if (targetGame === "puissance4" && !connect4Loaded && typeof globalThis.initConnect4Egg === "function") {
+      connect4Loaded = true;
+      globalThis.initConnect4Egg();
+    }
+
+    const resetButton = visibleGame.querySelector("#mobile-egg-reset, #match-egg-reset");
+    if (resetButton) {
+      globalThis.setTimeout(() => {
+        resetButton.click();
+      }, 0);
+    }
+  }
+
+  switches.forEach((button) => {
+    button.addEventListener("click", () => activateGame(button.dataset.gameTarget));
+  });
+})();
+
+(function initMatchEgg() {
+  const board = document.getElementById("match-egg-board");
+  const status = document.getElementById("match-egg-status");
+  const resetBtn = document.getElementById("match-egg-reset");
+  const takeButtons = Array.from(document.querySelectorAll(".match-egg-take"));
+  if (!board || !status || !resetBtn || takeButtons.length === 0) return;
+
+  let remaining = 15;
+  let active = true;
+
+  function render() {
+    board.innerHTML = "";
+    for (let index = 0; index < 15; index += 1) {
+      const stick = document.createElement("span");
+      stick.className = "match-egg-stick";
+      if (index >= remaining) stick.classList.add("is-taken");
+      stick.setAttribute("aria-hidden", "true");
+      board.appendChild(stick);
+    }
+
+    takeButtons.forEach((button) => {
+      button.disabled = !active;
+    });
+  }
+
+  function setStatus(message) {
+    status.textContent = message;
+  }
+
+  function finish(message) {
+    active = false;
+    setStatus(message);
+    render();
+  }
+
+  function aiTake() {
+    if (!active) return;
+    if (remaining <= 0) return;
+
+    let take = remaining % 4;
+    if (take === 0) take = 1;
+    if (take > 3) take = 3;
+    if (take > remaining) take = remaining;
+
+    remaining -= take;
+
+    if (remaining === 0) {
+      finish("L'IA a pris la dernière allumette. Rejoue pour tenter mieux.");
+      return;
+    }
+
+    setStatus(`L'IA prend ${take} allumette${take > 1 ? "s" : ""}. À toi de jouer.`);
+    render();
+  }
+
+  function playerTake(event) {
+    if (!active) return;
+    const take = Number(event.currentTarget.dataset.take);
+    if (!Number.isInteger(take) || take < 1 || take > 3 || take > remaining) return;
+
+    remaining -= take;
+    if (remaining === 0) {
+      finish("Tu as pris la dernière allumette. Bravo.");
+      return;
+    }
+
+    setStatus(`Tu prends ${take} allumette${take > 1 ? "s" : ""}. L'IA réfléchit...`);
+    render();
+    globalThis.setTimeout(aiTake, 220);
+  }
+
+  function resetGame() {
+    remaining = 15;
+    active = true;
+    setStatus("Prends 1 à 3 allumettes");
+    render();
+  }
+
+  takeButtons.forEach((button) => button.addEventListener("click", playerTake));
+  resetBtn.addEventListener("click", resetGame);
+  resetGame();
+})();
+
+function cloneBoard(sourceBoard) {
+  return sourceBoard.map((row) => row.slice());
+}
+
+function boardKey(sourceBoard, depth, maximizingPlayer) {
+  return `${depth}|${maximizingPlayer ? 1 : 0}|${sourceBoard.map((row) => row.join("")).join("/")}`;
+}
+
+globalThis.initConnect4Egg = function initConnect4Egg() {
+  const board = document.getElementById("connect4-board");
+  const status = document.getElementById("connect4-status");
+  const resetBtn = document.getElementById("connect4-reset");
+  const dropButtons = Array.from(document.querySelectorAll(".connect4-drop"));
+  if (!board || !status || !resetBtn || dropButtons.length === 0) return;
+
+  const rows = 6;
+  const columns = 7;
+  const aiPlayer = "O";
+  const humanPlayer = "X";
+  let boardState = new Array(rows).fill(null).map(() => new Array(columns).fill(""));
+  let boardCells = [];
+  let active = true;
+  let busy = false;
+  const transpositionTable = new Map();
+
+  function setStatus(message) {
+    status.textContent = message;
+  }
+
+  function buildBoard() {
+    if (boardCells.length > 0) return;
+
+    board.innerHTML = "";
+    for (let row = 0; row < rows; row += 1) {
+      for (let column = 0; column < columns; column += 1) {
+        const cell = document.createElement("button");
+        cell.type = "button";
+        cell.className = "connect4-cell";
+        cell.disabled = true;
+        cell.setAttribute("aria-hidden", "true");
+        board.appendChild(cell);
+        boardCells.push(cell);
+      }
+    }
+  }
+
+  function syncBoardCells() {
+    for (let row = 0; row < rows; row += 1) {
+      for (let column = 0; column < columns; column += 1) {
+        const cell = boardCells[row * columns + column];
+        if (!cell) continue;
+        const piece = boardState[row][column];
+        cell.className = "connect4-cell";
+        if (piece === humanPlayer) cell.classList.add("is-x");
+        if (piece === aiPlayer) cell.classList.add("is-o");
+      }
+    }
+  }
+
+  function syncDropButtons() {
+    dropButtons.forEach((button) => {
+      button.disabled = !active || busy;
+    });
+  }
+
+  function render() {
+    buildBoard();
+    syncBoardCells();
+    syncDropButtons();
+  }
+
+  function getAvailableRow(sourceBoard, column) {
+    for (let row = rows - 1; row >= 0; row -= 1) {
+      if (!sourceBoard[row][column]) return row;
+    }
+    return -1;
+  }
+
+  function getValidColumns(sourceBoard) {
+    const valid = [];
+    for (let column = 0; column < columns; column += 1) {
+      if (sourceBoard[0][column] === "") valid.push(column);
+    }
+    return valid;
+  }
+
+  function dropPiece(sourceBoard, column, player) {
+    const row = getAvailableRow(sourceBoard, column);
+    if (row === -1) return null;
+    sourceBoard[row][column] = player;
+    return row;
+  }
+
+  function isBoardFull(sourceBoard) {
+    return getValidColumns(sourceBoard).length === 0;
+  }
+
+  function findImmediateMove(sourceBoard, player) {
+    const validColumns = getValidColumns(sourceBoard);
+    for (const column of validColumns) {
+      const nextBoard = cloneBoard(sourceBoard);
+      dropPiece(nextBoard, column, player);
+      if (checkWinner(nextBoard, player)) {
+        return column;
+      }
+    }
+    return null;
+  }
+
+  function checkDirection(sourceBoard, row, column, rowStep, columnStep, player) {
+    let count = 0;
+    let currentRow = row;
+    let currentColumn = column;
+    while (
+      currentRow >= 0 && currentRow < rows &&
+      currentColumn >= 0 && currentColumn < columns &&
+      sourceBoard[currentRow][currentColumn] === player
+    ) {
+      count += 1;
+      currentRow += rowStep;
+      currentColumn += columnStep;
+    }
+    return count;
+  }
+
+  function checkWinner(sourceBoard, player) {
+    for (let row = 0; row < rows; row += 1) {
+      for (let column = 0; column < columns; column += 1) {
+        if (sourceBoard[row][column] !== player) continue;
+        if (
+          checkDirection(sourceBoard, row, column, 0, 1, player) >= 4 ||
+          checkDirection(sourceBoard, row, column, 1, 0, player) >= 4 ||
+          checkDirection(sourceBoard, row, column, 1, 1, player) >= 4 ||
+          checkDirection(sourceBoard, row, column, 1, -1, player) >= 4
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  function evaluateWindow(window, player) {
+    const opponent = player === aiPlayer ? humanPlayer : aiPlayer;
+    const playerCount = window.filter((cell) => cell === player).length;
+    const opponentCount = window.filter((cell) => cell === opponent).length;
+    const emptyCount = window.filter((cell) => cell === "").length;
+    let score = 0;
+
+    if (playerCount === 4) score += 100000;
+    else if (playerCount === 3 && emptyCount === 1) score += 120;
+    else if (playerCount === 2 && emptyCount === 2) score += 14;
+
+    if (opponentCount === 3 && emptyCount === 1) score -= 140;
+    if (opponentCount === 4) score -= 100000;
+
+    return score;
+  }
+
+  function evaluateBoard(sourceBoard) {
+    let score = 0;
+    const centerColumn = 3;
+    let centerCount = 0;
+
+    for (let row = 0; row < rows; row += 1) {
+      if (sourceBoard[row][centerColumn] === aiPlayer) centerCount += 1;
+    }
+    score += centerCount * 8;
+
+    for (let row = 0; row < rows; row += 1) {
+      for (let column = 0; column < columns - 3; column += 1) {
+        const window = [
+          sourceBoard[row][column],
+          sourceBoard[row][column + 1],
+          sourceBoard[row][column + 2],
+          sourceBoard[row][column + 3]
+        ];
+        score += evaluateWindow(window, aiPlayer);
+      }
+    }
+
+    for (let column = 0; column < columns; column += 1) {
+      for (let row = 0; row < rows - 3; row += 1) {
+        const window = [
+          sourceBoard[row][column],
+          sourceBoard[row + 1][column],
+          sourceBoard[row + 2][column],
+          sourceBoard[row + 3][column]
+        ];
+        score += evaluateWindow(window, aiPlayer);
+      }
+    }
+
+    for (let row = 0; row < rows - 3; row += 1) {
+      for (let column = 0; column < columns - 3; column += 1) {
+        const window = [
+          sourceBoard[row][column],
+          sourceBoard[row + 1][column + 1],
+          sourceBoard[row + 2][column + 2],
+          sourceBoard[row + 3][column + 3]
+        ];
+        score += evaluateWindow(window, aiPlayer);
+      }
+    }
+
+    for (let row = 0; row < rows - 3; row += 1) {
+      for (let column = 3; column < columns; column += 1) {
+        const window = [
+          sourceBoard[row][column],
+          sourceBoard[row + 1][column - 1],
+          sourceBoard[row + 2][column - 2],
+          sourceBoard[row + 3][column - 3]
+        ];
+        score += evaluateWindow(window, aiPlayer);
+      }
+    }
+
+    return score;
+  }
+
+  function minimax(sourceBoard, depth, alpha, beta, maximizingPlayer) {
+    const cacheKey = boardKey(sourceBoard, depth, maximizingPlayer);
+    if (transpositionTable.has(cacheKey)) {
+      return transpositionTable.get(cacheKey);
+    }
+
+    if (checkWinner(sourceBoard, aiPlayer)) return 1000000 + depth;
+    if (checkWinner(sourceBoard, humanPlayer)) return -1000000 - depth;
+    if (depth === 0 || isBoardFull(sourceBoard)) {
+      const score = evaluateBoard(sourceBoard);
+      transpositionTable.set(cacheKey, score);
+      return score;
+    }
+
+    const validColumns = getValidColumns(sourceBoard);
+    const orderedColumns = [3, 2, 4, 1, 5, 0, 6].filter((column) => validColumns.includes(column));
+
+    if (maximizingPlayer) {
+      let value = -Infinity;
+      for (const column of orderedColumns) {
+        const nextBoard = cloneBoard(sourceBoard);
+        dropPiece(nextBoard, column, aiPlayer);
+        value = Math.max(value, minimax(nextBoard, depth - 1, alpha, beta, false));
+        alpha = Math.max(alpha, value);
+        if (alpha >= beta) break;
+      }
+      transpositionTable.set(cacheKey, value);
+      return value;
+    }
+
+    let value = Infinity;
+    for (const column of orderedColumns) {
+      const nextBoard = cloneBoard(sourceBoard);
+      dropPiece(nextBoard, column, humanPlayer);
+      value = Math.min(value, minimax(nextBoard, depth - 1, alpha, beta, true));
+      beta = Math.min(beta, value);
+      if (alpha >= beta) break;
+    }
+    transpositionTable.set(cacheKey, value);
+    return value;
+  }
+
+  function chooseAiColumn() {
+    transpositionTable.clear();
+    const immediateWin = findImmediateMove(boardState, aiPlayer);
+    if (immediateWin !== null) return immediateWin;
+
+    const immediateBlock = findImmediateMove(boardState, humanPlayer);
+    if (immediateBlock !== null) return immediateBlock;
+
+    const validColumns = getValidColumns(boardState);
+    let bestColumn = validColumns[0] ?? null;
+    let bestScore = -Infinity;
+    let searchDepth = 6;
+    if (validColumns.length <= 14) {
+      searchDepth = 7;
+    }
+    if (validColumns.length <= 10) {
+      searchDepth = 8;
+    }
+    if (validColumns.length <= 6) {
+      searchDepth = 9;
+    }
+
+    for (const column of [3, 2, 4, 1, 5, 0, 6]) {
+      if (!validColumns.includes(column)) continue;
+      const nextBoard = cloneBoard(boardState);
+      dropPiece(nextBoard, column, aiPlayer);
+      const score = minimax(nextBoard, searchDepth, -Infinity, Infinity, false);
+      if (score > bestScore) {
+        bestScore = score;
+        bestColumn = column;
+      }
+    }
+
+    return bestColumn;
+  }
+
+  function finish(message) {
+    active = false;
+    busy = false;
+    setStatus(message);
+    render();
+  }
+
+  function aiTurn() {
+    if (!active) return;
+    const column = chooseAiColumn();
+    if (column === null) return;
+
+    dropPiece(boardState, column, aiPlayer);
+
+    if (checkWinner(boardState, aiPlayer)) {
+      finish("L'IA a gagné. Sur ce jeu, elle est vraiment dure à battre.");
+      return;
+    }
+
+    if (isBoardFull(boardState)) {
+      finish("Match nul. Tu as tenu le choc.");
+      return;
+    }
+
+    busy = false;
+    setStatus("À toi de jouer");
+    render();
+  }
+
+  function handleDrop(event) {
+    if (!active || busy) return;
+    const column = Number(event.currentTarget.dataset.column);
+    if (!Number.isInteger(column)) return;
+
+    const row = dropPiece(boardState, column, humanPlayer);
+    if (row === null) return;
+
+    if (checkWinner(boardState, humanPlayer)) {
+      finish("Tu as gagné. L'IA a raté une ouverture.");
+      return;
+    }
+
+    if (isBoardFull(boardState)) {
+      finish("Match nul. Beau duel.");
+      return;
+    }
+
+    busy = true;
+    setStatus("L'IA calcule...");
+    render();
+    globalThis.setTimeout(aiTurn, 220);
+  }
+
+  function resetGame() {
+    boardState = new Array(rows).fill(null).map(() => new Array(columns).fill(""));
+    active = true;
+    busy = false;
+    setStatus("Choisis une colonne");
+    render();
+  }
+
+  dropButtons.forEach((button) => button.addEventListener("click", handleDrop));
+  resetBtn.addEventListener("click", resetGame);
+};
 
   // Gestion du modal des projets
 document.addEventListener('DOMContentLoaded', function() {
