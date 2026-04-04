@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /documents/
+Disallow: /img/ACVER*
+
+Sitemap: https://pleselkris.com/sitemap.xml

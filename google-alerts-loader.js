@@ -10,6 +10,28 @@
   let globalArticles = [];
   let globalVisibleCount = GLOBAL_PAGE_SIZE;
 
+  async function fetchRssItems(urlRSS) {
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(urlRSS)}`;
+    const controller = new AbortController();
+    const timeoutId = globalThis.setTimeout(() => controller.abort(), 12000);
+
+    try {
+      const response = await fetch(apiUrl, { signal: controller.signal });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      if (!data || data.status !== 'ok' || !Array.isArray(data.items)) {
+        throw new Error('Format de reponse invalide');
+      }
+
+      return data.items;
+    } finally {
+      globalThis.clearTimeout(timeoutId);
+    }
+  }
+
   function decodeEntities(value) {
     const textarea = document.createElement('textarea');
     textarea.innerHTML = value || '';
@@ -47,23 +69,17 @@
   }
 
   function chargerVeille(urlRSS, idConteneur, nombreArticles) {
-    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(urlRSS)}`;
     const container = document.getElementById(idConteneur);
 
     if (!container) {
       return;
     }
 
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        if (!data || !Array.isArray(data.items)) {
-          throw new Error('Format de reponse invalide');
-        }
-
+    fetchRssItems(urlRSS)
+      .then((items) => {
         container.innerHTML = '';
 
-        const articles = data.items.slice(0, nombreArticles);
+        const articles = items.slice(0, nombreArticles);
 
         if (articles.length === 0) {
           container.innerHTML = '<p class="muted">Aucun article disponible pour le moment.</p>';
@@ -116,20 +132,14 @@
   }
 
   function chargerVeilleGlobale(urlRSS) {
-    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(urlRSS)}`;
     const container = document.getElementById('liste-globale-veille');
     if (!container) {
       return;
     }
 
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        if (!data || !Array.isArray(data.items)) {
-          throw new Error('Format de reponse invalide');
-        }
-
-        globalArticles = data.items;
+    fetchRssItems(urlRSS)
+      .then((items) => {
+        globalArticles = items;
         globalVisibleCount = GLOBAL_PAGE_SIZE;
         renderGlobalArticles();
       })
@@ -167,7 +177,7 @@
 
     // Dernieres actualites globales
     chargerVeilleGlobale(
-      'https://news.google.com/rss/search?q=IA+developpeur+vulnerabilite+OR+risque&hl=fr&gl=FR&ceid=FR:fr',
+      'https://news.google.com/rss/search?q=IA+developpeur+vulnerabilite+OR+risque&hl=fr&gl=FR&ceid=FR:fr'
     );
 
     const btnAfficherPlus = document.getElementById('btn-afficher-plus-veille');

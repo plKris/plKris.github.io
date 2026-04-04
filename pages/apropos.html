@@ -15,7 +15,11 @@
         <span class="brand-dot" aria-hidden="true"></span>
         <span>Kris Plesel</span>
       </div>
-      <nav class="menu" aria-label="Navigation principale">
+      <button class="menu-toggle" id="menuToggleBtn" type="button" aria-expanded="false" aria-controls="mainMenu" aria-label="Ouvrir le menu de navigation">
+        <span aria-hidden="true">☰</span>
+        Menu
+      </button>
+      <nav class="main-menu" id="mainMenu" aria-label="Navigation principale">
         <a href="#accueil">Accueil</a>
         <a href="#experience">Expériences</a>
         <a href="#competences">Compétences</a>
@@ -155,22 +159,22 @@
         <ul class="sources-list">
           <li class="source-item">
             <img src="https://feedly.com/favicon.ico" alt="Feedly Logo">
-            <a href="https://feedly.com" target="_blank">Feedly</a>
+            <a href="https://feedly.com" target="_blank" rel="noopener noreferrer">Feedly</a>
             <span class="source-info">Agrégation et organisation des flux RSS de blogs dev & IA</span>
           </li>
           <li class="source-item">
             <img src="https://www.google.com/favicon.ico" alt="Google Alerts Logo">
-            <a href="https://www.google.com/alerts" target="_blank">Google Alerts</a>
+            <a href="https://www.google.com/alerts" target="_blank" rel="noopener noreferrer">Google Alerts</a>
             <span class="source-info">Alertes personnalisées pour GitHub Copilot et IA</span>
           </li>
           <li class="source-item">
             <img src="https://abs.twimg.com/favicons/twitter.ico" alt="X Logo">
-            <a href="https://x.com" target="_blank">X (Twitter)</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
             <span class="source-info">Veille en temps réel, threads experts et actualités sur IA</span>
           </li>
           <li class="source-item">
             <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" alt="Reddit Logo">
-            <a href="https://www.reddit.com/r/programming/" target="_blank">Reddit /r/programming</a>
+            <a href="https://www.reddit.com/r/programming/" target="_blank" rel="noopener noreferrer">Reddit /r/programming</a>
             <span class="source-info">Discussions et retours d’expérience sur outils IA</span>
           </li>
         </ul>
@@ -186,7 +190,7 @@
         En plus de ma veille personnelle, notre classe a mis en commun ses recherches afin de partager les sujets,
         comparer les sources et centraliser les actualites importantes.
       </p>
-      <a class="veille-mutualisee-link" href="https://rayaneww.github.io/VeilleSIO2026/" target="_blank" rel="noopener">Acceder au site commun de veille</a>
+      <a class="veille-mutualisee-link" href="https://rayaneww.github.io/VeilleSIO2026/" target="_blank" rel="noopener noreferrer">Acceder au site commun de veille</a>
     </div>
 
     <div class="section-header" style="margin-top: 52px;">
@@ -246,7 +250,7 @@
         1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 
         4l-8 5-8-5V6l8 5 8-5z"/></svg>
       </a>
-      <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <!-- Icône LinkedIn -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3A2 2 0 0 1 21 
         5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 
@@ -257,7 +261,7 @@
         0-1.84.7-2.16 1.19V10h-2.67v7h2.67v-3.9c0-1.04.5-1.6 
         1.33-1.6c.8 0 1.2.56 1.2 1.6V17H19Z"/></svg>
       </a>
-      <a href="https://github.com/plKris" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/plKris" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <!-- Icône GitHub -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 
         2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.17-1.11-1.48-1.11-1.48c-.91-.62.07-.61.07-.61c1 
@@ -291,8 +295,8 @@
         <a href="#accueil">Haut de page</a>
         <a href="#veille-techno">Veille Techno</a>
         <a href="#contact">Contact</a>
-        <a href="https://github.com/plKris" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/pleselkris/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/plKris" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
@@ -318,18 +322,56 @@
   <script>
      document.getElementById("y").textContent = new Date().getFullYear();
 
-  // Intersection Observer pour animations
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+  // Menu mobile
+  const menuToggleBtn = document.getElementById("menuToggleBtn");
+  const mainMenu = document.getElementById("mainMenu");
+
+  function closeMobileMenu() {
+    if (!menuToggleBtn || !mainMenu) return;
+    menuToggleBtn.setAttribute("aria-expanded", "false");
+    mainMenu.classList.remove("is-open");
+  }
+
+  if (menuToggleBtn && mainMenu) {
+    menuToggleBtn.addEventListener("click", () => {
+      const isOpen = menuToggleBtn.getAttribute("aria-expanded") === "true";
+      menuToggleBtn.setAttribute("aria-expanded", String(!isOpen));
+      mainMenu.classList.toggle("is-open", !isOpen);
+    });
+
+    mainMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!mainMenu.classList.contains("is-open")) return;
+      if (mainMenu.contains(event.target) || menuToggleBtn.contains(event.target)) return;
+      closeMobileMenu();
+    });
+
+    globalThis.addEventListener("resize", () => {
+      if (globalThis.innerWidth > 760) {
+        closeMobileMenu();
       }
     });
-  }, { threshold: 0.2 });
+  }
 
-  document.querySelectorAll("section, .card, .tl-item, footer, .portrait").forEach(el => {
-  observer.observe(el);
-});
+  // Intersection Observer pour animations
+  const animatedElements = document.querySelectorAll("section, .card, .tl-item, footer, .portrait");
+
+  if ("IntersectionObserver" in globalThis) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animatedElements.forEach((el) => observer.observe(el));
+  } else {
+    animatedElements.forEach((el) => el.classList.add("visible"));
+  }
 
 
   // Animation typewriter sur les cards
@@ -371,10 +413,17 @@ const modal = document.getElementById("formModal");
 const emailLink = document.getElementById("emailLink");
 const emailFeedback = document.getElementById("emailFeedback");
 
-openBtn.onclick = () => { modal.style.display = "flex"; document.body.classList.add("modal-open"); };
-closeBtn.onclick = () => { modal.style.display = "none"; document.body.classList.remove("modal-open"); };
+if (openBtn && closeBtn && modal) {
+  openBtn.onclick = () => { modal.style.display = "flex"; document.body.classList.add("modal-open"); };
+  closeBtn.onclick = () => { modal.style.display = "none"; document.body.classList.remove("modal-open"); };
 
-globalThis.onclick = (e) => { if (e.target === modal) { modal.style.display = "none"; document.body.classList.remove("modal-open"); } };
+  globalThis.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    }
+  });
+}
 
 if (emailLink) {
   emailLink.addEventListener("click", async () => {
