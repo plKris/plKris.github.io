@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>if(!sessionStorage.getItem('pf_entry'))location.replace('/');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets de Kris Plesel : portfolio, application Symfony, CVVEN CodeIgniter — développeur web BTS SIO SLAM.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#090909">
+    <link rel="canonical" href="https://pleselkris.com/mesprojets">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pleselkris.com/mesprojets">
+    <meta property="og:title" content="Mes Projets — Kris Plesel">
+    <meta property="og:description" content="Projets de Kris Plesel : portfolio, application Symfony, CVVEN CodeIgniter — développeur web BTS SIO SLAM.">
+    <meta property="og:locale" content="fr_FR">
+    <title>Mes Projets - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mesprojets.css?v=20260616">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="/apropos" class="home-button">← Accueil</a>
+        <div class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span>Kris Plesel</span>
+        </div>
+        <div class="nav-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <section class="project-section active" id="project1">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2>Portfolio Personnel</h2>
+                    <p class="project-date">2025 - 2026</p>
+                    <p class="project-description">
+                        Conception et déploiement d'un site vitrine professionnel présentant mon parcours,
+                        mes compétences, mes projets et une veille technologique dynamique.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pleselkris.com" target="_blank" rel="noopener noreferrer" class="project-link">Voir en ligne</a>
+                        <a href="https://github.com/plKris/plKris.github.io" target="_blank" rel="noopener noreferrer" class="project-link">Code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image">
+                        <img src="/img/AcceuilPortfolio.png" alt="Page d'accueil de mon portfolio">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="school-projects-notice">
+        <p>Envie de voir mes projets scolaires ? <a href="/projets-scolaires" target="_blank" rel="noopener noreferrer" class="school-link">Découvrez-les ici</a></p>
+    </div>
+
+    <footer>
+        <div class="container foot">
+            <div class="brand">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span>Kris Plesel</span>
+            </div>
+            <div class="muted">© <span id="y"></span> — Tous droits réservés</div>
+            <div class="menu">
+                <a href="/apropos">Accueil</a>
+                <a href="/apropos">À propos</a>
+                <a href="/apropos#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Scroll pour naviguer</p>
+    </div>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="/projets.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#141414"/>
+  <rect x="1" y="1" width="598" height="398" fill="none" stroke="#262626" stroke-width="1"/>
+  <text x="300" y="175" font-family="Inter,system-ui,sans-serif" font-size="52" font-weight="700" fill="#f97316" text-anchor="middle">☕</text>
+  <text x="300" y="228" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="700" fill="#d4d4d4" text-anchor="middle">Java · Swing · JDBC</text>
+  <text x="300" y="260" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#666666" text-anchor="middle">Applications desktop orientées objet</text>
+</svg>

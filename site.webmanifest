@@ -1,6 +1,7 @@
 {
-  "name": "Portfolio PLESEL Kris",
-  "short_name": "Portfolio",
+  "name": "Portfolio — Kris Plesel",
+  "short_name": "Kris Plesel",
+  "description": "Portfolio de Kris Plesel, développeur web BTS SIO SLAM.",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -13,9 +14,16 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "theme_color": "#090909",
+  "background_color": "#090909",
+  "display": "standalone",
+  "start_url": "/apropos",
+  "lang": "fr"
 }

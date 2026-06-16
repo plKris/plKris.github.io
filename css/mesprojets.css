@@ -16,6 +16,8 @@ html, body {
   background: var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container { width: min(1100px, 92vw); margin-inline: auto; }

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>if(!sessionStorage.getItem('pf_entry'))location.replace('/');</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Certifications de Kris Plesel : PIX, SecNumAcadémie, Coursera IA, HackerRank, SoloLearn — BTS SIO SLAM.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#090909">
+  <link rel="canonical" href="https://pleselkris.com/certification">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pleselkris.com/certification">
+  <meta property="og:title" content="Certifications — Kris Plesel">
+  <meta property="og:description" content="Certifications de Kris Plesel : PIX, SecNumAcadémie, Coursera IA, HackerRank, SoloLearn — BTS SIO SLAM.">
+  <meta property="og:locale" content="fr_FR">
+  <title>Certifications — Kris Plesel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/apropos.css?v=20260616">
+
+  <style>
+    /* Remappage des anciennes variables vers le nouveau système */
+    :root {
+      --brand:   var(--accent);
+      --brand-2: #60a5fa;
+      --panel:   var(--surface);
+    }
+    /* Styles spécifiques adaptés au thème sombre */
+    body { 
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { width: min(1100px, 92vw); }
+    .back { 
+      text-decoration:none; color:var(--text); 
+      display:inline-flex; gap:.5rem; align-items:center; 
+      margin-bottom:1.5rem; 
+      transition: color .3s;
+    }
+    .back:hover { color:var(--brand); }
+
+    /* Conteneur principal de la carte (reprend l'apparence de vos .card) */
+    .cert-details-container { 
+      max-width:900px; margin:0 auto; 
+      background: var(--panel); 
+      padding:28px; border-radius:18px; 
+      border: 1px solid rgba(255,255,255,.06);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      color: var(--text); /* Assure que le texte est clair */
+      width: min(900px, 100%);
+    }
+    
+    .meta { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+    
+    .badge-status { 
+      display:inline-flex; align-items:center; gap:.5rem; 
+      padding:.4rem .7rem; border-radius:999px; font-weight:700; 
+      font-size: .9rem;
+    }
+    /* Couleurs de badge adaptées aux variables CSS */
+    .validated { 
+      background:rgba(110,231,183,0.2); 
+      color:var(--brand); 
+    }
+    .inprogress { 
+      background:rgba(251,191,36,0.2); 
+      color:#fcd34d; /* Jaune */
+    }
+    
+    .logo { 
+      width:72px; height:72px; border-radius:12px; 
+      background:var(--brand); display:flex; 
+      align-items:center; justify-content:center; 
+      font-weight:800; font-size: 1.8rem;
+      color: var(--panel); 
+    }
+    
+    .content-section { margin-top:1.5rem; line-height:1.7; }
+    .content-section h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: .5rem; color: var(--brand-2); }
+    .muted { color:var(--muted); font-size:.95rem; }
+
+    /* Contrôles et boutons (reprise des styles .cta et .ghost) */
+    .controls { display:flex; justify-content:space-between; gap:.75rem; margin-top:2rem; }
+    .controls a, .controls button { 
+      padding: 10px 14px; 
+      border-radius: 12px;
+      transition: .3s;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    /* Style pour les boutons "Précédent/Suivant" et "Basculer statut" (style ghost) */
+    .btn-ghost {
+      border: 1px solid rgba(255,255,255,.12); 
+      background: transparent; 
+      color: var(--text);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.05); }
+    
+    /* Style pour le bouton "Retour au profil" (style cta) */
+    .btn-cta {
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      color: #0b1020;
+    }
+    .btn-cta:hover { transform: translateY(-2px); }
+
+    .pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Espace entre les points */
+  margin-top: 30px; /* Espace au-dessus des points */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: var(--muted); /* Couleur pour les points inactifs (gris) */
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--brand); /* Couleur pour le point actif (votre couleur principale) */
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+    .ef3-guide {
+      max-width: 900px;
+      margin: 24px auto 0;
+      background: linear-gradient(150deg, rgba(110,231,183,.08), rgba(96,165,250,.08));
+      border: 1px solid rgba(110,231,183,.3);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+      opacity: 1;
+      transform: none;
+    }
+    .ef3-guide h2 {
+      margin: 0 0 8px;
+      color: var(--brand);
+      font-size: 1.45rem;
+    }
+    .ef3-guide p { margin: 0 0 12px; }
+    .ef3-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .ef3-box {
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .ef3-box h3 {
+      margin: 0 0 8px;
+      color: var(--brand-2);
+      font-size: 1rem;
+    }
+    .ef3-box ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.55;
+    }
+    .ef3-summary {
+      margin: 10px auto 14px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      width: min(900px, 100%);
+    }
+    .ef3-summary h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: var(--brand-2);
+    }
+    .presentation-view p {
+      margin: 0 0 12px;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .presentation-view {
+      opacity: 1;
+      transform: none;
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+    .presentation-actions {
+      margin-top: 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .ef3-summary ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.55;
+    }
+    .ef3-summary a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .summary-actions {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .summary-actions .btn-ghost,
+    .summary-actions .btn-cta,
+    .presentation-actions .btn-cta {
+      border-radius: 999px;
+      padding: 9px 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      font-weight: 700;
+      letter-spacing: .01em;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
+      box-shadow: 0 6px 16px rgba(0,0,0,.22);
+    }
+    .summary-actions .btn-ghost {
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+    .summary-actions .btn-ghost:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.28);
+    }
+    .summary-actions .btn-cta,
+    .presentation-actions .btn-cta {
+      background: linear-gradient(140deg, rgba(110,231,183,.26), rgba(96,165,250,.24));
+      color: #ebfff7;
+      border-color: rgba(110,231,183,.45);
+    }
+    .summary-actions .btn-cta:hover,
+    .presentation-actions .btn-cta:hover {
+      transform: translateY(-1px);
+      background: linear-gradient(140deg, rgba(110,231,183,.34), rgba(96,165,250,.32));
+      border-color: rgba(110,231,183,.75);
+      box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    }
+    .summary-actions .btn-ghost:focus-visible,
+    .summary-actions .btn-cta:focus-visible,
+    .presentation-actions .btn-cta:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(110,231,183,.3), 0 10px 20px rgba(0,0,0,.3);
+    }
+    .summary-cert-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .summary-status {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.04);
+    }
+    .summary-status.validated {
+      color: var(--brand);
+      border-color: rgba(110,231,183,.5);
+      background: rgba(110,231,183,.15);
+    }
+    .summary-status.inprogress {
+      color: #fcd34d;
+      border-color: rgba(251,191,36,.5);
+      background: rgba(251,191,36,.12);
+    }
+    .is-hidden { display: none; }
+
+    @media (max-width: 860px) {
+      body {
+        padding: 1rem;
+        align-items: flex-start;
+      }
+      .meta {
+        flex-wrap: wrap;
+      }
+      .controls {
+        flex-direction: column;
+      }
+      .controls > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .7rem;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .cert-details-container,
+      .ef3-summary {
+        padding: 16px;
+        border-radius: 14px;
+      }
+      .logo {
+        width: 58px;
+        height: 58px;
+        font-size: 1.3rem;
+      }
+      #certTitle {
+        font-size: clamp(1.4rem, 5.8vw, 1.9rem) !important;
+      }
+      .controls a,
+      .controls button {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .summary-cert-link {
+        display: inline-flex;
+        flex-wrap: wrap;
+        row-gap: 4px;
+      }
+      .presentation-actions {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <a class="back" id="topBackLink" href="/apropos">&larr; Retour au profil</a>
+
+    <nav class="ef3-summary is-hidden" id="summaryPanel" aria-label="Sommaire EF3">
+      <h3>Sommaire</h3>
+      <ul id="certSummaryList">
+        <li class="muted">Chargement des certifications...</li>
+      </ul>
+      <div class="summary-actions">
+        <button id="backToPresentationBtn" class="btn-ghost" type="button">Retour a la presentation</button>
+        <button id="openCertsBtn" class="btn-cta" type="button">Ouvrir les certifications</button>
+      </div>
+    </nav>
+
+    <section class="cert-details-container presentation-view" id="presentationPanel" aria-label="Presentation de Kris Plesel">
+      <h2 style="margin:0 0 14px; color: var(--brand);">Presentation de moi</h2>
+      <p>
+        Je m'appelle Kris Plesel, etudiant en BTS SIO option SLAM. Mon projet professionnel est de devenir
+        developpeur web et applicatif, avec un fort accent sur la qualite du code, la securite et l'experience utilisateur.
+      </p>
+      <p>
+        Dans mon parcours, je m'appuie sur les certifications pour consolider mes acquis techniques,
+        structurer ma progression et prouver concretement mes competences.
+      </p>
+      <p>
+        Cette demarche me permet de mieux preparer mon insertion professionnelle et d'aligner mes competences
+        avec les attentes du metier de developpeur.
+      </p>
+      <div class="presentation-actions">
+        <button id="presentationToSummaryBtn" class="btn-cta" type="button">Aller au sommaire</button>
+      </div>
+    </section>
+
+    <div class="cert-details-container is-hidden" id="certifications" role="region" aria-label="Détails des certifications">
+      <div class="meta">
+        <div class="logo" id="certLogo">📜</div>
+        <div>
+          <h1 id="certTitle" style="font-size: 2.2rem; margin: 0;">Certification</h1> 
+          <div id="certShort" class="muted">Résumé court</div>
+        </div>
+        <div style="margin-left:auto">
+          <div id="certStatus" class="badge-status validated" aria-live="polite">Validée</div>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h3>Ce que ça apporte</h3>
+        <p id="certBenefit">Points forts / apports...</p>
+
+        <h3>Détails</h3>
+        <p id="certDetails">Détails de l'épreuve, compétences évaluées, durée, outils.</p>
+
+        <h3>Parcours</h3>
+        <p id="certParcours">Parcours effectué pour obtenir la certification.</p>
+      </div>
+
+      <div class="controls">
+        <div>
+          <button id="prevBtn" class="btn-ghost">Précédent</button>
+          <button id="nextBtn" class="btn-ghost">Suivant</button>
+        </div>
+        <div>
+          <button id="toggleStatusBtn" class="btn-ghost" style="font-size: .9rem;">Basculer statut</button>
+          <a id="backToProfileBtn" href="/apropos" class="btn-cta">Retour au profil</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="paginationDots" class="pagination-dots is-hidden">
+        </div>
+    </div>
+
+  <script>
+    // Liste des certifications
+    let certifications = [
+      {
+        id: "pix",
+        title: "PIX",
+        short: "Maitrise des outils numeriques.",
+        benefit: "Validation progressive des competences numeriques : usage d’outils, securite de base, culture numerique.",
+        details: "Evaluation par domaines (information, communication, creation, protection). Exercices : manipulation fichiers, securite des mots de passe, recherche avancee.",
+        parcours: "Auto-formation et entrainements sur la plateforme PIX, tests blancs et correction par scenario.",
+        status: "validated",
+        logo: "PIX",
+      },
+      {
+        id: "secnum",
+        title: "SecNumAcademie - ANSSI",
+        short: "Bonnes pratiques en cybersecurite.",
+        benefit: "Connaissance des principes de securite applicative, gestion des donnees, bonnes pratiques pour limiter les vulnerabilites.",
+        details: "Modules sur chiffrement, gestion des acces, mises a jour, sensibilisation aux attaques courantes (phishing, injection SQL, XSS).",
+        parcours: "Formations modulaires en ligne, exercices et quiz de validation sur la plateforme ANSSI.",
+        status: "validated",
+        logo: "SN",
+      },
+      {
+        id: "coursera_ai_fundamentals",
+        title: "Coursera - AI Fundamentals",
+        short: "Comprendre les fondamentaux de l’intelligence artificielle.",
+        benefit: "Acquisition des concepts cles de l’IA : machine learning, deep learning, NLP et applications concretes en developpement logiciel.",
+        details: "Cours Coursera couvrant les bases theoriques et pratiques de l’IA, les modeles de langage et l’utilisation responsable des outils d’IA.",
+        parcours: "Formation en ligne avec videos, quiz et exercices pratiques sur la plateforme Coursera.",
+        status: "validated",
+        logo: "AI",
+      },
+      {
+        id: "coursera_ai_brainstorming",
+        title: "Coursera - AI for Brainstorming and Planning",
+        short: "Utiliser l’IA comme outil de creativite et de planification.",
+        benefit: "Maitrise des techniques d’IA generative pour generer des idees, structurer des projets et optimiser la phase de conception.",
+        details: "Cours axe sur l’application pratique de l’IA pour le brainstorming, la creation de plans de projet et l’organisation des taches.",
+        parcours: "Formation en ligne Coursera avec cas d’usage reels et exercices guides.",
+        status: "validated",
+        logo: "AI",
+      },
+      {
+        id: "coursera_ai_research",
+        title: "Coursera - AI for Research and Insights",
+        short: "Exploiter l’IA pour la recherche d’informations et l’analyse.",
+        benefit: "Capacite a utiliser des outils d’IA pour effectuer des recherches approfondies, synthetiser des donnees et extraire des insights pertinents.",
+        details: "Cours centre sur l’utilisation de l’IA pour la veille technologique, l’analyse de documents et la production de syntheses structurees.",
+        parcours: "Formation en ligne Coursera avec applications pratiques sur des cas concrets de recherche.",
+        status: "validated",
+        logo: "AI",
+      },
+      {
+        id: "hackerrank",
+        title: "HackerRank",
+        short: "Resolution de problemes algorithmiques et maitrise de langages.",
+        benefit: "Amelioration de la logique de programmation et capacite a resoudre des defis techniques varies (algorithmes, structures de donnees).",
+        details: "Exercices dans differents domaines (Data Structures, Algorithms, SQL) et langages (Java, Python, JavaScript).",
+        parcours: "Pratique reguliere et completion de challenges sur la plateforme HackerRank.",
+        status: "validated",
+        logo: "HR",
+      },
+      {
+        id: "sololearn",
+        title: "SoloLearn",
+        short: "Apprentissage interactif de langages de programmation.",
+        benefit: "Renforcement des connaissances en syntaxe de divers langages (SQL, C#, Python) via des modules interactifs.",
+        details: "Micro-lecons et quiz pour l’acquisition de competences specifiques en programmation.",
+        parcours: "Utilisation de l’application mobile et web avec suivi de progression.",
+        status: "validated",
+        logo: "SL",
+      },
+      {
+        id: "toeic",
+        title: "TOEIC - Anglais Professionnel",
+        short: "Certification de niveau d’anglais en contexte professionnel.",
+        benefit: "Validation des competences en anglais professionnel : comprehension ecrite et orale dans des situations de travail reelles.",
+        details: "Test standardise reconnu internationalement (score sur 990). Evalue la capacite a communiquer en anglais dans un cadre professionnel et technique.",
+        parcours: "Preparation via des exercices de comprehension, ecoute de podcasts professionnels et entrainement sur des tests blancs.",
+        status: "inprogress",
+        logo: "EN",
+      }
+
+    ];
+
+    // FONCTIONS POUR LA PERSISTANCE VIA LOCALSTORAGE
+    function loadCertifications() {
+        const storedData = localStorage.getItem('cert_statuses');
+        if (storedData) {
+            try {
+                const storedStatuses = JSON.parse(storedData);
+                certifications = certifications.map(cert => {
+                    const storedStatus = storedStatuses[cert.id];
+                    if (storedStatus) {
+                        return { ...cert, status: storedStatus };
+                    }
+                    return cert;
+                });
+            } catch (e) {
+                console.error("Erreur lors de la lecture du LocalStorage:", e);
+            }
+        }
+    }
+
+    function saveCertifications() {
+        const statusesToStore = certifications.reduce((acc, cert) => {
+            acc[cert.id] = cert.status;
+            return acc;
+        }, {});
+        localStorage.setItem('cert_statuses', JSON.stringify(statusesToStore));
+    }
+
+
+    // Récupère paramètre id pour ouvrir une certification spécifique
+    function getQueryParam(name) {
+      const params = new URLSearchParams(location.search);
+      return params.get(name);
+    }
+
+    let index = 0;
+    
+    // SÉLECTION DES ÉLÉMENTS DOM
+    const certTitle = document.getElementById('certTitle');
+    const certShort = document.getElementById('certShort');
+    const certBenefit = document.getElementById('certBenefit');
+    const certDetails = document.getElementById('certDetails');
+    const certParcours = document.getElementById('certParcours');
+    const certStatus = document.getElementById('certStatus');
+    const certLogo = document.getElementById('certLogo');
+    
+    // SÉLECTION DU CONTENEUR DES BOUTONS DE CONTRÔLE
+    const controlsDiv = document.querySelector('.controls > div:last-child');
+    const dotsContainer = document.getElementById('paginationDots');
+    const certContainer = document.getElementById('certifications');
+    const certSummaryList = document.getElementById('certSummaryList');
+    const summaryPanel = document.getElementById('summaryPanel');
+    const openCertsBtn = document.getElementById('openCertsBtn');
+    const backToPresentationBtn = document.getElementById('backToPresentationBtn');
+    const presentationPanel = document.getElementById('presentationPanel');
+    const presentationToSummaryBtn = document.getElementById('presentationToSummaryBtn');
+    const topBackLink = document.getElementById('topBackLink');
+
+    function updateTopBackLink() {
+      const isCertViewOpen = !certContainer.classList.contains('is-hidden');
+      const isSummaryVisible = !summaryPanel.classList.contains('is-hidden');
+      if (isCertViewOpen) {
+        topBackLink.textContent = '← Retour au sommaire';
+        topBackLink.setAttribute('href', '#summaryPanel');
+      } else {
+        topBackLink.textContent = '← Retour au profil';
+        topBackLink.setAttribute('href', '/apropos');
+      }
+    }
+
+    function showCertifications() {
+      summaryPanel.classList.add('is-hidden');
+      presentationPanel.classList.add('is-hidden');
+      certContainer.classList.remove('is-hidden');
+      dotsContainer.classList.remove('is-hidden');
+      updateTopBackLink();
+    }
+
+    function showPresentation() {
+      summaryPanel.classList.add('is-hidden');
+      certContainer.classList.add('is-hidden');
+      dotsContainer.classList.add('is-hidden');
+      presentationPanel.classList.remove('is-hidden');
+      updateTopBackLink();
+    }
+
+    function showSummary() {
+      summaryPanel.classList.remove('is-hidden');
+      presentationPanel.classList.add('is-hidden');
+      certContainer.classList.add('is-hidden');
+      dotsContainer.classList.add('is-hidden');
+      updateTopBackLink();
+    }
+
+    openCertsBtn.addEventListener('click', () => {
+      showCertifications();
+      certContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    backToPresentationBtn.addEventListener('click', () => {
+      showPresentation();
+      presentationPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    presentationToSummaryBtn.addEventListener('click', () => {
+      showSummary();
+      summaryPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    topBackLink.addEventListener('click', (e) => {
+      const isCertViewOpen = !certContainer.classList.contains('is-hidden');
+      if (isCertViewOpen) {
+        e.preventDefault();
+        showSummary();
+        summaryPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    function renderSummaryList() {
+      certSummaryList.innerHTML = '';
+      certifications.forEach((cert, i) => {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        const status = document.createElement('span');
+
+        link.href = '#certifications';
+        link.className = 'summary-cert-link';
+        link.textContent = cert.title;
+
+        status.className = `summary-status ${cert.status}`;
+        status.textContent = cert.status === 'validated' ? 'Validee' : 'En cours';
+
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          index = i;
+          showCertifications();
+          render(index);
+          certContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        link.appendChild(status);
+        li.appendChild(link);
+        certSummaryList.appendChild(li);
+      });
+    }
+
+    function createDots() {
+      dotsContainer.innerHTML = ''; // Efface les anciens dots
+      certifications.forEach((cert, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'dot';
+        if (i === index) {
+          dot.classList.add('active');
+        }
+        // Permet de cliquer sur le dot pour naviguer
+        dot.addEventListener('click', () => {
+          index = i;
+          render(index);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+
+    function render(i) {
+      const c = certifications[i];
+      certTitle.textContent = c.title;
+      certShort.textContent = c.short;
+      certBenefit.textContent = c.benefit;
+      certDetails.textContent = c.details;
+      certParcours.textContent = c.parcours;
+      certLogo.textContent = c.logo || '📜';
+
+      if (c.status === 'validated') {
+        certStatus.className = 'badge-status validated';
+        certStatus.innerHTML = '✔️ Validée';
+      } else {
+        certStatus.className = 'badge-status inprogress';
+        certStatus.innerHTML = '⏳ En cours';
+      }
+
+      // Mettre à jour l'URL
+      const url = new URL(location);
+      url.searchParams.set('id', c.id);
+      history.replaceState({}, '', url);
+
+      // LOGIQUE POUR LE LIEN DE DOCUMENT (Ajouté)
+      let docLink = document.getElementById('certDocLink');
+      if (docLink) {
+          docLink.remove();
+      }
+
+      if (c.documentUrl) {
+          docLink = document.createElement('a');
+          docLink.id = 'certDocLink';
+          docLink.href = c.documentUrl;
+          docLink.textContent = 'Voir le document 📜';
+          docLink.target = '_blank';
+          docLink.className = 'btn-ghost';
+          
+          const retourBtn = controlsDiv.querySelector('#backToProfileBtn'); 
+          controlsDiv.insertBefore(docLink, retourBtn);
+      }
+      const dots = dotsContainer.querySelectorAll('.dot');
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === i);
+      });
+      renderSummaryList();
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      index = (index - 1 + certifications.length) % certifications.length;
+      render(index);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      index = (index + 1) % certifications.length;
+      render(index);
+    });
+
+    // Le bouton bascule l'état ET le sauvegarde
+    document.getElementById('toggleStatusBtn').addEventListener('click', () => {
+      const c = certifications[index];
+      c.status = (c.status === 'validated') ? 'inprogress' : 'validated';
+      
+      saveCertifications(); 
+      
+      render(index);
+    });
+
+    // Raccourcis clavier
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+    });
+
+    // 🚀 INITIALISATION
+    
+    // 1. Charger les statuts persistants
+    loadCertifications();
+
+    // 2. Déterminer l'index initial
+    const idParam = getQueryParam('id');
+    if (idParam) {
+      const found = certifications.findIndex(c => c.id === idParam);
+      if (found >= 0) index = found;
+    }
+    
+    // 3. Rendu initial
+    createDots();
+    renderSummaryList();
+    render(index);
+    updateTopBackLink();
+</script>
+</body>
+</html>
