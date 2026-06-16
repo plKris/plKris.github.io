@@ -136,17 +136,6 @@ html, body {
 }
 .scroll-indicator p { font-size: .78rem; color: var(--muted); }
 
-/* ── School notice ──────────────────────────────────── */
-.school-projects-notice {
-  position: fixed; bottom: 5rem; right: 2rem;
-  background: var(--panel); padding: 14px 18px;
-  border-radius: 8px; border: 1px solid var(--border);
-  z-index: 1000; max-width: 280px;
-}
-.school-projects-notice p { margin: 0; font-size: .85rem; color: var(--muted); }
-.school-link { color: var(--accent); font-weight: 500; }
-.school-link:hover { text-decoration: underline; }
-
 /* ── Footer ─────────────────────────────────────────── */
 footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 24px; }
 .foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
@@ -168,7 +157,6 @@ footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 
   .project-links { justify-content: center; }
   .project-image { max-width: 400px; height: clamp(200px, 46vw, 300px); }
   .scroll-indicator { display: none; }
-  .school-projects-notice { position: static; margin: 12px auto 0; max-width: 92vw; }
   footer { margin-top: 24px; padding-bottom: 36px; }
 }
 
