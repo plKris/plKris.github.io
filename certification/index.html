@@ -238,8 +238,12 @@
       document.getElementById("detail-benefit").textContent = cert.benefit;
       document.getElementById("detail-details").textContent = cert.details;
       document.getElementById("detail-path").textContent = cert.path;
-      history.replaceState({}, "", `?id=${encodeURIComponent(cert.id)}#detail`);
-      if (shouldScroll) detail.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (shouldScroll) {
+        history.replaceState({}, "", `?id=${encodeURIComponent(cert.id)}#detail`);
+        detail.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else if (location.hash === "#detail") {
+        history.replaceState({}, "", `${location.pathname}${location.search}`);
+      }
     }
 
     certifications.forEach(cert => grid.appendChild(renderCard(cert)));
