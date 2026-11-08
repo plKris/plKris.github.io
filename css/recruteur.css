@@ -227,7 +227,7 @@ section { padding: 72px 0; }
 .r-footer-links a:hover { color: var(--text); }
 .r-muted { font-size: .82rem; color: var(--muted); }
 
-/* ── Plateformes freelance ──────────────────────────── */
+/* ── Profils professionnels ────────────────────────── */
 #plateformes { padding: 72px 0 40px; }
 
 .r-platforms-outer {
@@ -394,6 +394,30 @@ section { padding: 72px 0; }
     header.side-nav.is-open .r-nav-links { display: flex !important; }
     header.side-nav .r-nav-links a { width: 100%; justify-content: flex-start; }
   }
+
+  @media (min-width: 641px) {
+    header.side-nav,
+    header.side-nav:hover,
+    header.side-nav:focus-within,
+    header.side-nav.is-open {
+      width: max-content !important;
+      transition: none !important;
+    }
+    header.side-nav .nav-label {
+      width: auto !important;
+      opacity: 1 !important;
+      transition: none !important;
+    }
+  }
+  @media (max-width: 640px) {
+    header.side-nav {
+      bottom: max(8px, env(safe-area-inset-bottom)) !important;
+      border-radius: 16px !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,.24) !important;
+    }
+    header.side-nav .side-nav-head { min-height: 38px; }
+    header.side-nav .r-brand { font-size: .88rem; }
+  }
 }
 
 /* ── Focus visible ──────────────────────────────────── */
@@ -433,6 +457,48 @@ section { padding: 72px 0; }
   section { padding: 52px 0; }
 }
 
+@media (min-width: 641px) {
+  header.side-nav,
+  header.side-nav:hover,
+  header.side-nav:focus-within,
+  header.side-nav.is-open {
+    width: max-content !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 640px) {
+  header.side-nav {
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.24) !important;
+  }
+}
+
+/* Final stable navigation override */
+@media (min-width: 641px) {
+  header.side-nav {
+    inset: 18px 50% auto auto !important;
+    width: max-content !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    transform: translateX(50%) !important;
+    transition: none !important;
+  }
+  header.side-nav .nav-label { width: auto !important; opacity: 1 !important; transition: none !important; }
+}
+@media (max-width: 640px) {
+  header.side-nav {
+    inset: auto 12px max(8px, env(safe-area-inset-bottom)) 12px !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* Collapsible navigation rail */
 .side-nav {
   position: fixed;
@@ -464,4 +530,49 @@ section { padding: 72px 0; }
   .side-nav { top: 50%; left: 10px; }
   .side-nav .menu-toggle { display: inline-flex; margin: 0; padding: 7px; border: 0; }
   .side-nav.is-open, .side-nav:focus-within { width: min(218px, calc(100vw - 20px)); }
+}
+
+/* Final stable navigation override */
+@media (min-width: 641px) {
+  header.side-nav {
+    inset: 18px 50% auto auto !important;
+    width: max-content !important;
+    height: auto !important;
+    transform: translateX(50%) !important;
+    transition: none !important;
+  }
+  header.side-nav .r-nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 2px !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  header.side-nav .r-nav-links a {
+    width: auto !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    box-sizing: border-box !important;
+    padding: 8px 11px !important;
+    line-height: 1.2 !important;
+  }
+  header.side-nav .nav-label { width: auto !important; opacity: 1 !important; transition: none !important; }
+}
+@media (max-width: 640px) {
+  header.side-nav {
+    inset: auto 12px max(8px, env(safe-area-inset-bottom)) 12px !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  header.side-nav .r-nav-links {
+    display: none !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin: 0 0 7px !important;
+  }
+  header.side-nav.is-open .r-nav-links { display: flex !important; }
 }

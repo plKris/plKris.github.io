@@ -336,3 +336,65 @@ footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 
   .navigation .project-menu { display: none; flex-direction: column; align-items: stretch; gap: 3px; margin: 0 0 7px; padding: 5px; background: rgba(0,0,0,.24); border-radius: 14px; }
   .navigation.is-open .project-menu { display: flex; }
 }
+
+@media (min-width: 601px) {
+  .navigation.side-nav,
+  .navigation.side-nav:hover,
+  .navigation.side-nav:focus-within,
+  .navigation.side-nav.is-open {
+    width: max-content !important;
+    transition: none !important;
+  }
+  .navigation.side-nav .nav-label {
+    width: auto !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .navigation.side-nav {
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.24) !important;
+  }
+  .navigation .side-nav-head { min-height: 38px; }
+  .navigation .brand { font-size: .88rem; }
+}
+
+@media (min-width: 601px) {
+  .navigation.side-nav,
+  .navigation.side-nav:hover,
+  .navigation.side-nav:focus-within,
+  .navigation.side-nav.is-open {
+    width: max-content !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .navigation.side-nav {
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.24) !important;
+  }
+}
+
+/* Final stable navigation override */
+@media (min-width: 601px) {
+  .navigation.side-nav {
+    inset: 18px 50% auto auto !important;
+    width: max-content !important;
+    height: auto !important;
+    transform: translateX(50%) !important;
+    transition: none !important;
+  }
+  .navigation.side-nav .nav-label { width: auto !important; opacity: 1 !important; transition: none !important; }
+}
+@media (max-width: 600px) {
+  .navigation.side-nav {
+    inset: auto 12px max(8px, env(safe-area-inset-bottom)) 12px !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
