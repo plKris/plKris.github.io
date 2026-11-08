@@ -28,17 +28,23 @@ button { font: inherit; }
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: 10px;
   z-index: 10;
-  background: rgba(9, 9, 9, .92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  width: min(1100px, calc(100% - 24px));
+  margin: 10px auto 0;
+  background: rgba(17,17,17,.72);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.24);
 }
 
 .nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; font-size: .92rem; font-weight: 700; }
 .brand-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-links { display: flex; align-items: center; gap: 8px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
 .nav-links a { color: var(--muted); font-size: .84rem; padding: 8px 10px; border-radius: 5px; }
 .nav-links a:hover { color: var(--text); background: rgba(255,255,255,.05); }
 .nav-links .nav-cta { border: 1px solid rgba(249,115,22,.55); color: var(--text); }
@@ -98,11 +104,11 @@ h1 { max-width: 700px; font-size: clamp(2.4rem, 6vw, 4.7rem); }
 }
 
 @media (max-width: 620px) {
+  .site-header { top: 6px; margin-top: 6px; }
   .container { width: min(100% - 28px, 1100px); }
-  .nav { min-height: 62px; align-items: flex-start; padding: 14px 0; }
-  .nav-links { justify-content: flex-end; gap: 2px; }
-  .nav-links a { padding: 5px; font-size: .73rem; text-align: center; }
-  .nav-links a:not(.nav-cta) { display: none; }
+  .nav { min-height: 62px; align-items: center; padding: 10px 0; gap: 10px; }
+  .nav-links { flex: 1; justify-content: flex-start; gap: 2px; }
+  .nav-links a { flex: 0 0 auto; padding: 7px; font-size: .73rem; text-align: center; white-space: nowrap; }
   .cert-hero { padding: 70px 0 64px; }
   .hero-intro { font-size: .95rem; }
   .hero-actions, .button { width: 100%; }

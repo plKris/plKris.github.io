@@ -18,6 +18,11 @@
   <meta property="og:image:alt" content="Certifications de Kris Plesel">
   <title>Certifications — Kris Plesel</title>
   <link rel="stylesheet" href="/css/certification.css?v=20261108">
+  <script>
+    if (location.hash === "#detail") {
+      history.replaceState(null, "", `${location.pathname}${location.search}`);
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -236,7 +241,7 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
     const requestedId = new URLSearchParams(location.search).get("id");
-    showDetail(requestedId, Boolean(requestedId));
+    showDetail(requestedId, false);
   </script>
 </body>
 </html>

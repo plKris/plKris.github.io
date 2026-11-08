@@ -33,16 +33,21 @@ img { max-width: 100%; height: auto; display: block; }
    HEADER
 ═══════════════════════════════════════════ */
 header {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(9,9,9,.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  position: sticky; top: 10px; z-index: 100;
+  width: min(1100px, calc(100% - 24px)); margin: 10px auto 0;
+  background: rgba(17,17,17,.72);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.24);
 }
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 8px; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: .92rem; }
 .brand-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 
-.main-menu { display: flex; gap: 2px; }
+.main-menu { display: flex; gap: 2px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.main-menu::-webkit-scrollbar { display: none; }
 .main-menu a {
   font-size: .83rem; color: var(--muted);
   padding: 6px 10px; border-radius: 5px;
@@ -603,18 +608,18 @@ body.modal-open > *:not(.modal) { filter: blur(3px); pointer-events: none; user-
 }
 
 @media (max-width: 760px) {
-  .nav { flex-wrap: wrap; row-gap: 8px; }
-  .menu-toggle { display: inline-flex; margin-left: auto; }
+  header { top: 6px; margin-top: 6px; }
+  .nav { flex-wrap: nowrap; gap: 10px; }
+  .menu-toggle { display: none; }
   section, #veille-techno, footer {
     opacity: 1; transform: none; animation: none;
   }
   .main-menu {
-    width: 100%; display: none; flex-direction: column;
-    gap: 4px; padding: 8px;
-    border: 1px solid var(--border); border-radius: 8px; background: var(--surface);
+    flex: 1; width: auto; display: flex; flex-direction: row;
+    gap: 4px; padding: 3px 0;
+    border: 0; border-radius: 0; background: transparent;
   }
-  .main-menu.is-open { display: flex; }
-  .main-menu a { width: 100%; text-align: center; }
+  .main-menu a { flex: 0 0 auto; width: auto; text-align: center; white-space: nowrap; }
 
   .hero { padding: 60px 0 48px; }
   .hero-inner { grid-template-columns: 1fr; gap: 32px; }

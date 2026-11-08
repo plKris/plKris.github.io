@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
             let currentSection = 0;
             let isScrolling = false;
             let touchStartY = 0;
+            let touchStartX = 0;
+            const projectsContainer = document.querySelector('.projects-container');
+            const projectControls = document.querySelectorAll('[data-project-direction]');
             
             updateProgressBar();
             
@@ -40,29 +43,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 1000);
             });
             
-            window.addEventListener('touchstart', function(e) {
+            function handleSwipeStart(e) {
                 touchStartY = e.changedTouches[0].screenY;
-            });
-            
-            window.addEventListener('touchend', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }
+
+            function handleSwipeEnd(e) {
                 if (isScrolling) return;
-                
+
                 const touchEndY = e.changedTouches[0].screenY;
+                const touchEndX = e.changedTouches[0].screenX;
                 const diffY = touchEndY - touchStartY;
-                
-                if (Math.abs(diffY) < 50) return;
-                
+                const diffX = touchEndX - touchStartX;
+
+                if (Math.abs(diffY) < 45 || Math.abs(diffY) < Math.abs(diffX)) return;
+
                 isScrolling = true;
-                
                 if (diffY < 0) {
                     navigateToNext();
                 } else {
                     navigateToPrev();
                 }
-                
                 setTimeout(function() {
                     isScrolling = false;
-                }, 1000);
+                }, 700);
+            }
+
+            (projectsContainer || window).addEventListener('touchstart', handleSwipeStart, { passive: true });
+            (projectsContainer || window).addEventListener('touchend', handleSwipeEnd, { passive: true });
+
+            projectControls.forEach(function(control) {
+                control.addEventListener('click', function() {
+                    if (control.dataset.projectDirection === 'next') {
+                        navigateToNext();
+                    } else {
+                        navigateToPrev();
+                    }
+                });
             });
             
             function navigateToNext() {

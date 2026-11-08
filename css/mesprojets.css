@@ -23,12 +23,17 @@ html, body {
 
 /* ── Navigation ─────────────────────────────────────── */
 .navigation {
-  position: fixed; top: 0; left: 0; width: 100%;
-  padding: 14px 5%;
+  position: fixed; top: 10px; left: 50%; width: min(1100px, calc(100% - 24px));
+  transform: translateX(-50%);
+  padding: 11px 16px;
   display: flex; justify-content: space-between; align-items: center;
   z-index: 1000;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  background: rgba(20,20,20,.72);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.24);
 }
 
 .home-button {
@@ -132,6 +137,18 @@ html, body {
   100% { opacity: 0; top: 18px; }
 }
 .scroll-indicator p { font-size: .78rem; color: var(--muted); }
+.project-controls {
+  display: none;
+}
+.project-control {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 9px 12px;
+  background: var(--panel);
+  color: var(--muted);
+  font: inherit;
+  font-size: .78rem;
+}
 
 /* ── Footer ─────────────────────────────────────────── */
 footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 24px; }
@@ -154,11 +171,22 @@ footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 
   .project-links { justify-content: center; }
   .project-image { max-width: 400px; height: clamp(200px, 46vw, 300px); }
   .scroll-indicator { display: none; }
+  .project-controls {
+    position: fixed;
+    z-index: 1000;
+    bottom: 18px;
+    left: 6%;
+    right: 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .project-control { flex: 1; }
   footer { margin-top: 24px; padding-bottom: 36px; }
 }
 
 @media (max-width: 600px) {
-  .navigation { padding: 10px 5%; gap: .6rem; flex-wrap: wrap; }
+  .navigation { top: 6px; padding: 9px 10px; gap: .6rem; }
   .brand { width: 100%; justify-content: center; order: 3; }
   .nav-progress { width: 100%; order: 2; }
   .home-button { order: 1; }
