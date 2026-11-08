@@ -210,6 +210,13 @@ footer { padding: 28px 0 36px; border-top: 1px solid var(--border); margin-top: 
   .project-link { width: 100%; max-width: 300px; text-align: center; }
 }
 
+@media (max-width: 968px) {
+  .project-controls {
+    bottom: calc(max(14px, env(safe-area-inset-bottom)) + 66px);
+    z-index: 900;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-section, .progress-bar, .project-link, .home-button {
     transition-duration: 0.001ms;
