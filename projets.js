@@ -5,10 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
             let isScrolling = false;
             let touchStartY = 0;
             
-            // Initialisation
             updateProgressBar();
             
-            // Gestion du scroll à la souris
             window.addEventListener('wheel', function(e) {
                 if (isScrolling) return;
                 
@@ -25,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 1000);
             });
             
-            // Navigation au clavier
             window.addEventListener('keydown', function(e) {
+                if (!['ArrowDown', 'PageDown', 'ArrowUp', 'PageUp'].includes(e.key)) return;
                 if (isScrolling) return;
                 
                 isScrolling = true;
@@ -42,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 1000);
             });
             
-            // Navigation tactile pour mobiles
             window.addEventListener('touchstart', function(e) {
                 touchStartY = e.changedTouches[0].screenY;
             });

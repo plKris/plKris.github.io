@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <script>if(!sessionStorage.getItem('pf_entry'))location.replace('/');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Espace recruteur — Kris Plesel</title>
   <meta name="description" content="Espace recruteur de Kris Plesel : CV, compétences, expérience et contact direct.">
+  <meta name="author" content="Kris Plesel">
   <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#090909">
   <link rel="canonical" href="https://pleselkris.com/recruteur">
   <meta property="og:type" content="website">
@@ -15,14 +16,36 @@
   <meta property="og:description" content="Espace recruteur de Kris Plesel : CV, compétences, expérience et contact direct.">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="https://pleselkris.com/img/AcceuilPortfolio.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta property="og:image:alt" content="Espace recruteur de Kris Plesel">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://pleselkris.com/recruteur#profile",
+    "url": "https://pleselkris.com/recruteur",
+    "name": "Espace recruteur — Kris Plesel",
+    "isPartOf": {
+      "@id": "https://pleselkris.com/#website"
+    },
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://pleselkris.com/#person",
+      "name": "Kris Plesel",
+      "url": "https://pleselkris.com/apropos",
+      "jobTitle": "Développeur web full-stack",
+      "sameAs": [
+        "https://github.com/plKris",
+        "https://www.linkedin.com/in/pleselkris/",
+        "https://www.malt.fr/profile/krisplesel",
+        "https://comeup.com/fr/@krisplesel1"
+      ]
+    }
+  }
+  </script>
   <link rel="stylesheet" href="/css/recruteur.css?v=20260616">
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="container r-nav">
       <div class="r-brand">
@@ -31,54 +54,51 @@
       </div>
       <nav class="r-nav-links">
         <a href="/apropos" class="r-back">← Portfolio</a>
-        <a href="/documents/CV_Kris_PLESEL_Alternant_Developpeur.pdf" target="_blank" rel="noopener noreferrer" class="r-cv-btn">Télécharger le CV</a>
+        <a href="/documents/CV Kris Plesel - Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="r-cv-btn">Télécharger le CV</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- ── HERO ─────────────────────────────────────────── -->
     <section class="r-hero">
       <div class="container">
-        <p class="r-avail">Disponible · Alternance · Septembre 2026</p>
+        <p class="r-avail">Disponible pour de nouvelles opportunités</p>
         <h1>Kris Plesel</h1>
-        <p class="r-role">Développeur web — BTS SIO SLAM</p>
+        <p class="r-role">Développeur web full-stack</p>
         <p class="r-pitch">
-          Étudiant en BTS SIO SLAM avec 3 stages en développement web et des projets livrés en production.
-          Je cherche une alternance pour poursuivre en licence et progresser sur des sujets concrets.
+          Développeur web avec 3 expériences en entreprise et des projets livrés en production.
+          Je recherche de nouvelles opportunités pour contribuer à des produits et services concrets.
         </p>
         <div class="r-hero-actions">
-          <a class="r-cta" href="/documents/CV_Kris_PLESEL_Alternant_Developpeur.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="r-cta" href="/documents/CV Kris Plesel - Portfolio.pdf" target="_blank" rel="noopener noreferrer">
             Télécharger le CV (PDF)
           </a>
-          <a class="r-ghost" href="mailto:krisplesel@gmail.com">krisplesel@gmail.com</a>
+          <a class="r-ghost js-email" href="#contact">Me contacter</a>
           <a class="r-ghost" href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <!-- ── STATS ─────────────────────────────────────────── -->
     <div class="r-stats-bar">
       <div class="container r-stats-inner">
         <div class="r-stat">
           <span class="r-stat-num">3</span>
-          <span class="r-stat-label">stages en entreprise</span>
+          <span class="r-stat-label">expériences en entreprise</span>
         </div>
         <div class="r-stat-sep" aria-hidden="true"></div>
         <div class="r-stat">
           <span class="r-stat-num">2 ans</span>
-          <span class="r-stat-label">de formation en développement web</span>
+          <span class="r-stat-label">de pratique du développement web</span>
         </div>
         <div class="r-stat-sep" aria-hidden="true"></div>
         <div class="r-stat">
-          <span class="r-stat-num">Licence</span>
-          <span class="r-stat-label">objectif de poursuite d'études</span>
+          <span class="r-stat-num">Full-stack</span>
+          <span class="r-stat-label">développement web et API</span>
         </div>
       </div>
     </div>
 
-    <!-- ── COMPÉTENCES ───────────────────────────────────── -->
     <section id="competences">
       <div class="container">
         <h2 class="r-title">Compétences</h2>
@@ -160,7 +180,6 @@
       </div>
     </section>
 
-    <!-- ── EXPÉRIENCE ────────────────────────────────────── -->
     <section id="experience" class="r-alt-bg">
       <div class="container">
         <h2 class="r-title">Expérience</h2>
@@ -206,7 +225,6 @@
       </div>
     </section>
 
-    <!-- ── PROJETS ────────────────────────────────────────── -->
     <section id="projets">
       <div class="container">
         <h2 class="r-title">Projets</h2>
@@ -252,7 +270,6 @@
       </div>
     </section>
 
-    <!-- ── PLATEFORMES FREELANCE ────────────────────────── -->
     <section id="plateformes">
       <div class="container">
         <h2 class="r-title">Mes profils freelance</h2>
@@ -261,29 +278,24 @@
       <div class="r-platforms-outer">
         <div class="r-platforms-track">
           <a href="https://www.malt.fr/profile/krisplesel" target="_blank" rel="noopener noreferrer" class="r-platform-card">
-            <img src="https://www.google.com/s2/favicons?domain=malt.fr&sz=64" alt="" class="r-platform-logo" loading="lazy">
+            <span class="r-platform-logo" aria-hidden="true">M</span>
             <span class="r-platform-name">Malt</span>
           </a>
-          <a href="https://www.freelance-informatique.fr/cv-developpeur-web-java-260725P001" target="_blank" rel="noopener noreferrer" class="r-platform-card">
-            <img src="https://www.google.com/s2/favicons?domain=freelance-informatique.fr&sz=64" alt="" class="r-platform-logo" loading="lazy">
-            <span class="r-platform-name">Freelance-informatique</span>
-          </a>
-          <a href="https://www.upwork.com/freelancers/~013cf275505c71ec0f" target="_blank" rel="noopener noreferrer" class="r-platform-card">
-            <img src="https://www.google.com/s2/favicons?domain=upwork.com&sz=64" alt="" class="r-platform-logo" loading="lazy">
-            <span class="r-platform-name">Upwork</span>
+          <a href="https://comeup.com/fr/@krisplesel1" target="_blank" rel="noopener noreferrer" class="r-platform-card">
+            <span class="r-platform-logo" aria-hidden="true">C</span>
+            <span class="r-platform-name">ComeUp</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ── CONTACT ───────────────────────────────────────── -->
     <section id="contact" class="r-contact-block">
       <div class="container">
-        <p class="r-contact-pre">Pour discuter d'une alternance</p>
-        <a href="mailto:krisplesel@gmail.com" class="r-contact-email">krisplesel@gmail.com</a>
+        <p class="r-contact-pre">Pour discuter d'une opportunité</p>
+        <a href="#contact" class="r-contact-email js-email">Me contacter</a>
         <div class="r-contact-links">
           <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer" class="r-contact-link">LinkedIn</a>
-          <a href="/documents/CV_Kris_PLESEL_Alternant_Developpeur.pdf" target="_blank" rel="noopener noreferrer" class="r-contact-link">CV PDF</a>
+          <a href="/documents/CV Kris Plesel - Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="r-contact-link">CV PDF</a>
           <a href="/apropos" class="r-contact-link">Portfolio complet</a>
         </div>
       </div>
@@ -299,8 +311,9 @@
       </div>
       <div class="r-footer-links">
         <a href="/apropos">Portfolio</a>
-        <a href="/epreuve">Épreuves BTS</a>
         <a href="/certification">Certifications</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/politique-confidentialite">Confidentialité</a>
       </div>
       <span class="r-muted">© <span id="y"></span></span>
     </div>
@@ -308,6 +321,12 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+    document.querySelectorAll('.js-email').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'mailto:' + ['krisplesel', 'gmail.com'].join('@');
+      });
+    });
 
     (function() {
       var track = document.querySelector('.r-platforms-track');
@@ -316,7 +335,7 @@
       if (!items.length) return;
 
       requestAnimationFrame(function() {
-        var gap = parseFloat(getComputedStyle(track).gap) || 14;
+        var gap = Number.parseFloat(getComputedStyle(track).gap) || 14;
         var itemW = items[0].getBoundingClientRect().width;
         var oneSetPx = items.length * (itemW + gap);
 

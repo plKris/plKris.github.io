@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <script>if(!sessionStorage.getItem('pf_entry'))location.replace('/');</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Certifications de Kris Plesel : PIX, SecNumAcadémie, Coursera IA, HackerRank, SoloLearn — BTS SIO SLAM.">
+  <meta name="description" content="Certifications professionnelles de Kris Plesel : cybersécurité, développement web et intelligence artificielle.">
+  <meta name="author" content="Kris Plesel">
   <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#090909">
   <link rel="canonical" href="https://pleselkris.com/certification">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pleselkris.com/certification">
   <meta property="og:title" content="Certifications — Kris Plesel">
-  <meta property="og:description" content="Certifications de Kris Plesel : PIX, SecNumAcadémie, Coursera IA, HackerRank, SoloLearn — BTS SIO SLAM.">
+  <meta property="og:description" content="Certifications professionnelles de Kris Plesel : cybersécurité, développement web et intelligence artificielle.">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="https://pleselkris.com/img/AcceuilPortfolio.png">
+  <meta property="og:image:alt" content="Certifications professionnelles de Kris Plesel">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://pleselkris.com/certification#certifications",
+    "url": "https://pleselkris.com/certification",
+    "name": "Certifications — Kris Plesel",
+    "description": "Certifications professionnelles de Kris Plesel en développement web, cybersécurité et intelligence artificielle.",
+    "isPartOf": { "@id": "https://pleselkris.com/#website" },
+    "author": { "@id": "https://pleselkris.com/#person" }
+  }
+  </script>
   <title>Certifications — Kris Plesel</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/apropos.css?v=20260616">
 
   <style>
-    /* Remappage des anciennes variables vers le nouveau système */
     :root {
       --brand:   var(--accent);
       --brand-2: #60a5fa;
       --panel:   var(--surface);
     }
-    /* Styles spécifiques adaptés au thème sombre */
     body { 
       padding: 2rem;
       min-height: 100vh;
@@ -45,14 +54,13 @@
     }
     .back:hover { color:var(--brand); }
 
-    /* Conteneur principal de la carte (reprend l'apparence de vos .card) */
     .cert-details-container { 
       max-width:900px; margin:0 auto; 
       background: var(--panel); 
       padding:28px; border-radius:18px; 
       border: 1px solid rgba(255,255,255,.06);
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      color: var(--text); /* Assure que le texte est clair */
+      color: var(--text);
       width: min(900px, 100%);
     }
     
@@ -63,14 +71,13 @@
       padding:.4rem .7rem; border-radius:999px; font-weight:700; 
       font-size: .9rem;
     }
-    /* Couleurs de badge adaptées aux variables CSS */
     .validated { 
       background:rgba(110,231,183,0.2); 
       color:var(--brand); 
     }
     .inprogress { 
       background:rgba(251,191,36,0.2); 
-      color:#fcd34d; /* Jaune */
+      color:#fcd34d;
     }
     
     .logo { 
@@ -85,17 +92,15 @@
     .content-section h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: .5rem; color: var(--brand-2); }
     .muted { color:var(--muted); font-size:.95rem; }
 
-    /* Contrôles et boutons (reprise des styles .cta et .ghost) */
     .controls { display:flex; justify-content:space-between; gap:.75rem; margin-top:2rem; }
     .controls a, .controls button { 
       padding: 10px 14px; 
       border-radius: 12px;
-      transition: .3s;
+      transition: color .3s, background-color .3s, border-color .3s, transform .3s;
       font-weight: 600;
       text-decoration: none;
     }
     
-    /* Style pour les boutons "Précédent/Suivant" et "Basculer statut" (style ghost) */
     .btn-ghost {
       border: 1px solid rgba(255,255,255,.12); 
       background: transparent; 
@@ -103,7 +108,6 @@
     }
     .btn-ghost:hover { background: rgba(255,255,255,.05); }
     
-    /* Style pour le bouton "Retour au profil" (style cta) */
     .btn-cta {
       background: linear-gradient(90deg, var(--brand), var(--brand-2));
       color: #0b1020;
@@ -114,14 +118,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px; /* Espace entre les points */
-  margin-top: 30px; /* Espace au-dessus des points */
+  gap: 12px;
+  margin-top: 30px;
 }
 
 .dot {
   width: 10px;
   height: 10px;
-  background: var(--muted); /* Couleur pour les points inactifs (gris) */
+  background: var(--muted);
   border-radius: 50%;
   cursor: pointer;
   opacity: 0.4;
@@ -129,7 +133,7 @@
 }
 
 .dot.active {
-  background: var(--brand); /* Couleur pour le point actif (votre couleur principale) */
+  background: var(--brand);
   opacity: 1;
   transform: scale(1.2);
 }
@@ -314,8 +318,8 @@
         height: 58px;
         font-size: 1.3rem;
       }
-      #certTitle {
-        font-size: clamp(1.4rem, 5.8vw, 1.9rem) !important;
+      body #certTitle {
+        font-size: clamp(1.4rem, 5.8vw, 1.9rem);
       }
       .controls a,
       .controls button {
@@ -351,8 +355,8 @@
     <section class="cert-details-container presentation-view" id="presentationPanel" aria-label="Presentation de Kris Plesel">
       <h2 style="margin:0 0 14px; color: var(--brand);">Presentation de moi</h2>
       <p>
-        Je m'appelle Kris Plesel, etudiant en BTS SIO option SLAM. Mon projet professionnel est de devenir
-        developpeur web et applicatif, avec un fort accent sur la qualite du code, la securite et l'experience utilisateur.
+        Je m'appelle Kris Plesel, développeur web full-stack. Mon projet professionnel est de concevoir des
+        applications web et métiers, avec un fort accent sur la qualité du code, la sécurité et l'expérience utilisateur.
       </p>
       <p>
         Dans mon parcours, je m'appuie sur les certifications pour consolider mes acquis techniques,
@@ -406,8 +410,13 @@
         </div>
     </div>
 
+  <footer style="max-width:860px;margin:48px auto 0;padding:20px 6vw;border-top:1px solid #1e1e1e;">
+    <a href="/mentions-legales">Mentions légales</a>
+    <a href="/politique-confidentialite">Confidentialité</a>
+    <a href="/apropos">Portfolio</a>
+  </footer>
+
   <script>
-    // Liste des certifications
     let certifications = [
       {
         id: "pix",
@@ -492,7 +501,6 @@
 
     ];
 
-    // FONCTIONS POUR LA PERSISTANCE VIA LOCALSTORAGE
     function loadCertifications() {
         const storedData = localStorage.getItem('cert_statuses');
         if (storedData) {
@@ -520,7 +528,6 @@
     }
 
 
-    // Récupère paramètre id pour ouvrir une certification spécifique
     function getQueryParam(name) {
       const params = new URLSearchParams(location.search);
       return params.get(name);
@@ -528,7 +535,6 @@
 
     let index = 0;
     
-    // SÉLECTION DES ÉLÉMENTS DOM
     const certTitle = document.getElementById('certTitle');
     const certShort = document.getElementById('certShort');
     const certBenefit = document.getElementById('certBenefit');
@@ -537,7 +543,6 @@
     const certStatus = document.getElementById('certStatus');
     const certLogo = document.getElementById('certLogo');
     
-    // SÉLECTION DU CONTENEUR DES BOUTONS DE CONTRÔLE
     const controlsDiv = document.querySelector('.controls > div:last-child');
     const dotsContainer = document.getElementById('paginationDots');
     const certContainer = document.getElementById('certifications');

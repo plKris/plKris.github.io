@@ -4,24 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio — Kris Plesel</title>
-    <meta name="description" content="Portfolio de Kris Plesel : développeur web, BTS SIO SLAM, 3 stages, en recherche d'alternance.">
+    <meta name="description" content="Portfolio professionnel de Kris Plesel : développeur web full-stack, expérience en entreprise et projets livrés.">
+    <meta name="author" content="Kris Plesel">
     <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow,max-image-preview:large">
     <meta name="theme-color" content="#090909">
     <link rel="canonical" href="https://pleselkris.com/apropos">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pleselkris.com/apropos">
     <meta property="og:title" content="Portfolio — Kris Plesel">
-    <meta property="og:description" content="Portfolio de Kris Plesel : développeur web, BTS SIO SLAM, 3 stages, en recherche d'alternance.">
+    <meta property="og:description" content="Portfolio professionnel de Kris Plesel : développeur web full-stack, expérience en entreprise et projets livrés.">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:image" content="https://pleselkris.com/img/AcceuilPortfolio.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta property="og:image:alt" content="Portfolio de Kris Plesel, développeur web full-stack">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://pleselkris.com/#person",
+          "name": "Kris Plesel",
+          "url": "https://pleselkris.com/apropos",
+          "jobTitle": "Développeur web full-stack",
+          "description": "Développeur web full-stack spécialisé dans la conception d'applications web, d'API et de bases de données.",
+          "image": "https://pleselkris.com/img/AcceuilPortfolio.png",
+          "sameAs": [
+            "https://github.com/plKris",
+            "https://www.linkedin.com/in/pleselkris/",
+            "https://www.malt.fr/profile/krisplesel",
+            "https://comeup.com/fr/@krisplesel1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://pleselkris.com/#website",
+          "url": "https://pleselkris.com/",
+          "name": "Portfolio de Kris Plesel",
+          "description": "Portfolio professionnel de Kris Plesel, développeur web full-stack.",
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://pleselkris.com/#person" }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://pleselkris.com/apropos#profile",
+          "url": "https://pleselkris.com/apropos",
+          "name": "Portfolio — Kris Plesel",
+          "isPartOf": { "@id": "https://pleselkris.com/#website" },
+          "mainEntity": { "@id": "https://pleselkris.com/#person" }
+        }
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="/css/apropos.css?v=20260616">
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="container nav">
       <div class="brand">
@@ -44,7 +82,6 @@
 
   <main>
 
-    <!-- ── HERO ─────────────────────────────────────────── -->
     <section class="hero" id="accueil">
       <div class="container">
         <div class="hero-inner">
@@ -52,21 +89,21 @@
           <div class="hero-left">
             <div class="hero-badge">
               <span class="hero-badge-dot"></span>
-              Disponible · Alternance sept. 2026
+              Disponible pour de nouvelles opportunités
             </div>
             <h1 class="hero-tagline">Je construis des<br>applications web<br>robustes et soignées.</h1>
-            <p class="hero-sub">Kris Plesel · BTS SIO SLAM · Développeur web full-stack</p>
-            <p class="lead">3 stages livrés en entreprise, des projets full-stack de A à Z — backend, frontend, base de données. Je cherche une alternance pour septembre 2026.</p>
+            <p class="hero-sub">Kris Plesel · Développeur web full-stack</p>
+            <p class="lead">3 expériences en entreprise et des projets full-stack de A à Z — backend, frontend, base de données. Disponible pour de nouvelles opportunités.</p>
             <div class="hero-actions">
               <a class="cta" href="#projets">Voir mes projets</a>
-              <a class="ghost" href="/documents/CV_Kris_PLESEL_Alternant_Developpeur.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
+              <a class="ghost" href="/documents/CV Kris Plesel - Portfolio.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
             </div>
             <div class="hero-socials">
               <a href="https://github.com/plKris" target="_blank" rel="noopener noreferrer">GitHub</a>
               <span aria-hidden="true">·</span>
               <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <span aria-hidden="true">·</span>
-              <a href="mailto:krisplesel@gmail.com">krisplesel@gmail.com</a>
+              <a href="#contact-form">Me contacter</a>
             </div>
           </div>
 
@@ -94,7 +131,7 @@
               <div class="hero-stats">
                 <div class="hero-stat">
                   <span class="hero-stat-n">3</span>
-                  <span class="hero-stat-l">stages</span>
+                  <span class="hero-stat-l">expériences</span>
                 </div>
                 <div class="hero-stat">
                   <span class="hero-stat-n">5</span>
@@ -102,7 +139,7 @@
                 </div>
                 <div class="hero-stat">
                   <span class="hero-stat-n">2 ans</span>
-                  <span class="hero-stat-l">formation</span>
+                  <span class="hero-stat-l">pratique web</span>
                 </div>
               </div>
             </div>
@@ -112,7 +149,6 @@
       </div>
     </section>
 
-    <!-- ── ESPACE RECRUTEUR ──────────────────────────────── -->
     <div class="recruiter-strip">
       <div class="container recruiter-inner">
         <div>
@@ -121,12 +157,11 @@
         </div>
         <div class="recruiter-actions">
           <a class="cta" href="/recruteur">Ouvrir l'espace recruteur</a>
-          <a class="ghost" href="/documents/CV_Kris_PLESEL_Alternant_Developpeur.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
+          <a class="ghost" href="/documents/CV Kris Plesel - Portfolio.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
         </div>
       </div>
     </div>
 
-    <!-- ── EXPÉRIENCE ────────────────────────────────────── -->
     <section id="experience">
       <div class="container">
         <h2 class="section-title">Expérience</h2>
@@ -172,7 +207,6 @@
       </div>
     </section>
 
-    <!-- ── COMPÉTENCES ───────────────────────────────────── -->
     <section id="competences">
       <div class="container">
         <h2 class="section-title">Compétences</h2>
@@ -254,7 +288,6 @@
       </div>
     </section>
 
-    <!-- ── PROJETS ────────────────────────────────────────── -->
     <section id="projets">
       <div class="container">
         <h2 class="section-title">Projets</h2>
@@ -315,11 +348,10 @@
       </div>
     </section>
 
-    <!-- ── CONTACT ───────────────────────────────────────── -->
     <section id="contact" class="contact-block">
       <div class="container">
         <p class="contact-eyebrow">Envie de travailler ensemble ?</p>
-        <a href="mailto:krisplesel@gmail.com" id="emailLink" data-email="krisplesel@gmail.com" class="contact-email">krisplesel@gmail.com</a>
+        <a href="#contact-form" id="emailLink" data-user="krisplesel" data-domain="gmail.com" class="contact-email">Me contacter</a>
         <div class="contact-links">
           <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
           <a href="https://github.com/plKris" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
@@ -329,7 +361,6 @@
       </div>
     </section>
 
-    <!-- ── VEILLE TECHNOLOGIQUE ──────────────────────────── -->
     <section id="veille-techno">
       <div class="container">
         <div class="section-header">
@@ -347,22 +378,22 @@
             <p>Pour rester à jour et sélectionner des informations fiables, j'ai utilisé les outils suivants :</p>
             <ul class="sources-list">
               <li class="source-item">
-                <img src="https://feedly.com/favicon.ico" alt="Feedly Logo">
+                <span class="source-icon" aria-hidden="true">F</span>
                 <a href="https://feedly.com" target="_blank" rel="noopener noreferrer">Feedly</a>
                 <span class="source-info">Agrégation et organisation des flux RSS de blogs dev & IA</span>
               </li>
               <li class="source-item">
-                <img src="https://www.google.com/favicon.ico" alt="Google Alerts Logo">
+                <span class="source-icon" aria-hidden="true">G</span>
                 <a href="https://www.google.com/alerts" target="_blank" rel="noopener noreferrer">Google Alerts</a>
                 <span class="source-info">Alertes personnalisées pour GitHub Copilot et IA</span>
               </li>
               <li class="source-item">
-                <img src="https://abs.twimg.com/favicons/twitter.ico" alt="X Logo">
+                <span class="source-icon" aria-hidden="true">X</span>
                 <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
                 <span class="source-info">Veille en temps réel, threads experts et actualités sur IA</span>
               </li>
               <li class="source-item">
-                <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" alt="Reddit Logo">
+                <span class="source-icon" aria-hidden="true">R</span>
                 <a href="https://www.reddit.com/r/programming/" target="_blank" rel="noopener noreferrer">Reddit /r/programming</a>
                 <span class="source-info">Discussions et retours d'expérience sur outils IA</span>
               </li>
@@ -372,7 +403,7 @@
         </div>
 
         <div class="veille-mutualisee-card">
-          <span class="veille-mutualisee-badge">BTS SIO SLAM - Travail collectif</span>
+          <span class="veille-mutualisee-badge">Veille technologique</span>
           <h3>Veille technologique mutualisée en classe</h3>
           <p>En plus de ma veille personnelle, notre classe a mis en commun ses recherches afin de partager les sujets, comparer les sources et centraliser les actualités importantes.</p>
           <a class="veille-mutualisee-link" href="https://rayaneww.github.io/VeilleSIO2026/" target="_blank" rel="noopener noreferrer">Accéder au site commun de veille</a>
@@ -387,19 +418,19 @@
           <div class="card theme-card">
             <h4>Thème 1 : Sécurité et failles dans le code généré</h4>
             <div id="articles-theme1" class="theme-articles-list">
-              <p class="muted">⏳ Chargement des articles...</p>
+              <p class="muted">Chargement des articles...</p>
             </div>
           </div>
           <div class="card theme-card">
             <h4>Thème 2 : Confidentialité des données et Propriété Intellectuelle</h4>
             <div id="articles-theme2" class="theme-articles-list">
-              <p class="muted">⏳ Chargement des articles...</p>
+              <p class="muted">Chargement des articles...</p>
             </div>
           </div>
           <div class="card theme-card">
             <h4>Thème 3 : La "confiance aveugle" et l'impact sur les compétences</h4>
             <div id="articles-theme3" class="theme-articles-list">
-              <p class="muted">⏳ Chargement des articles...</p>
+              <p class="muted">Chargement des articles...</p>
             </div>
           </div>
         </div>
@@ -407,10 +438,10 @@
         <div id="articles-container" style="margin-top: 40px;">
           <div class="section-header" style="margin-top: 0;">
             <h3>Dernières actualités</h3>
-            <p class="muted">Les articles les plus récents issus de ma veille.</p>
+            <p class="muted" id="veille-updated">Mise à jour automatique quotidienne.</p>
           </div>
           <div id="liste-globale-veille" class="latest-articles-grid">
-            <p class="muted">⏳ Chargement des articles...</p>
+            <p class="muted">Chargement des articles...</p>
           </div>
           <div class="veille-more-wrap">
             <button id="btn-afficher-plus-veille" class="cta" type="button" style="display: none;">Afficher plus</button>
@@ -419,7 +450,6 @@
       </div>
     </section>
 
-    <!-- ── EASTER EGG MOBILE ─────────────────────────────── -->
     <section id="mobile-easter-egg" aria-label="Mini jeu mobile caché">
       <div class="container">
         <div class="section-header mobile-egg-header">
@@ -494,7 +524,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="container foot">
       <div class="brand">
@@ -508,34 +537,41 @@
         <a href="#contact">Contact</a>
         <a href="https://github.com/plKris" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/pleselkris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/politique-confidentialite">Confidentialité</a>
       </div>
     </div>
   </footer>
 
-  <!-- Modal contact -->
   <div id="formModal" class="modal">
     <div class="modal-content">
       <span id="closeFormBtn" class="close">&times;</span>
       <h2>Contactez-moi</h2>
-      <form action="https://formspree.io/f/xwpnzarv" method="POST">
-        <label for="contact-name">Nom :</label>
-        <input id="contact-name" type="text" name="nom" required>
-        <label for="contact-email">Email :</label>
+      <form id="contact-form" action="https://forms.formward.eu/f/805e7181-33ae-4990-bc5d-5ed21ff9d636" method="POST">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" type="text" name="name" required>
+        <label for="contact-email">Email</label>
         <input id="contact-email" type="email" name="email" required>
-        <label for="contact-message">Message :</label>
+        <label for="contact-message">Message</label>
         <textarea id="contact-message" name="message" rows="5" required></textarea>
-        <input type="text" name="_gotcha" style="display:none">
-        <input type="hidden" name="_redirect" value="https://pleselkris.com/apropos">
+        <div class="honeypot" aria-hidden="true">
+          <label for="contact-gotcha">Website</label>
+          <input id="contact-gotcha" type="text" name="_gotcha" aria-hidden="true" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+        <label class="consent-label">
+          <input type="checkbox" name="consentement" required>
+          <span>J'accepte le traitement de mes données pour recevoir une réponse. <a href="/politique-confidentialite">Politique de confidentialité</a></span>
+        </label>
         <button type="submit">Envoyer</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
 
   <script>
-    sessionStorage.setItem('pf_entry', '1');
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // Menu mobile
     const menuToggleBtn = document.getElementById("menuToggleBtn");
     const mainMenu = document.getElementById("mainMenu");
 
@@ -560,7 +596,6 @@
       globalThis.addEventListener("resize", () => { if (globalThis.innerWidth > 760) closeMobileMenu(); });
     }
 
-    // Intersection Observer
     const animated = document.querySelectorAll("section, .card, .tl-item, .proj-item, footer");
     if ("IntersectionObserver" in globalThis) {
       const obs = new IntersectionObserver(entries => {
@@ -571,7 +606,6 @@
       animated.forEach(el => el.classList.add("visible"));
     }
 
-    // Modal
     const openBtn = document.getElementById("openFormBtn");
     const closeBtn = document.getElementById("closeFormBtn");
     const modal = document.getElementById("formModal");
@@ -586,10 +620,49 @@
       });
     }
 
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+    if (contactForm && formStatus) {
+      contactForm.addEventListener("submit", async event => {
+        event.preventDefault();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        formStatus.textContent = "Envoi en cours…";
+        formStatus.className = "form-status";
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(contactForm)
+          });
+          let result = null;
+          try { result = await response.json(); } catch { result = null; }
+
+          if (response.ok && result?.ok === true) {
+            contactForm.reset();
+            formStatus.textContent = "Merci, votre message a bien été envoyé.";
+            formStatus.className = "form-status is-success";
+          } else if (response.status === 402) {
+            throw new Error("Le service de réception est temporairement indisponible. Merci de réessayer plus tard.");
+          } else if (response.status === 429) {
+            throw new Error("Trop de messages envoyés récemment. Merci de patienter avant de réessayer.");
+          } else {
+            throw new Error(result?.error || "Impossible d’envoyer le message. Merci de réessayer.");
+          }
+        } catch (error) {
+          formStatus.textContent = error instanceof Error ? error.message : "Une erreur est survenue. Merci de réessayer.";
+          formStatus.className = "form-status is-error";
+        } finally {
+          submitButton.disabled = false;
+        }
+      });
+    }
+
     if (emailLink && emailFeedback) {
       emailLink.addEventListener("click", async e => {
         e.preventDefault();
-        const email = emailLink.dataset.email || "krisplesel@gmail.com";
+        const email = `${emailLink.dataset.user}@${emailLink.dataset.domain}`;
         try {
           if (navigator.clipboard?.writeText) {
             await navigator.clipboard.writeText(email);
@@ -602,7 +675,6 @@
       });
     }
 
-    // ── Mini jeu morpion ──────────────────────────────────
     (function initMobileEasterEgg() {
       const board = document.getElementById("mobile-egg-board");
       const status = document.getElementById("mobile-egg-status");
@@ -621,7 +693,6 @@
       render();
     })();
 
-    // ── Switcher jeux ─────────────────────────────────────
     (function initGameSwitcher() {
       const switches = Array.from(document.querySelectorAll(".mobile-egg-switch"));
       const games = Array.from(document.querySelectorAll(".mobile-egg-game"));
@@ -639,7 +710,6 @@
       switches.forEach(b => b.addEventListener("click", ()=>activateGame(b.dataset.gameTarget)));
     })();
 
-    // ── Allumettes ────────────────────────────────────────
     (function initMatchEgg() {
       const board=document.getElementById("match-egg-board"), status=document.getElementById("match-egg-status"), resetBtn=document.getElementById("match-egg-reset"), takeBtns=Array.from(document.querySelectorAll(".match-egg-take"));
       if (!board||!status||!resetBtn||!takeBtns.length) return;
@@ -652,7 +722,6 @@
       render();
     })();
 
-    // ── Puissance 4 ───────────────────────────────────────
     function cloneBoard(b) { return b.map(r=>r.slice()); }
     function boardKey(b,d,m) { return `${d}|${m?1:0}|${b.map(r=>r.join("")).join("/")}`; }
     globalThis.initConnect4Egg = function() {
@@ -681,7 +750,6 @@
       resetBtn.addEventListener("click",()=>{bs=new Array(R).fill(null).map(()=>new Array(C).fill(""));active=true;busy=false;cells=[];setS("Choisis une colonne");render();});
     };
   </script>
-
-  <script src="/google-alerts-loader.js"></script>
+  <script src="/veille.js"></script>
 </body>
 </html>

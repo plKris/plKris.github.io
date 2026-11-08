@@ -3,7 +3,7 @@
   --surface:  #111111;
   --border:   #1e1e1e;
   --text:     #ebebeb;
-  --muted:    #666666;
+  --muted:    #a3a3a3;
   --accent:   #f97316;
   --accent-dim: rgba(249,115,22,.09);
 }
@@ -16,7 +16,6 @@ html, body {
   color: var(--text);
   line-height: 1.65;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "kern" 1, "liga" 1;
@@ -79,7 +78,6 @@ header {
   background: var(--accent); color: #090909;
   font-weight: 700; font-size: .92rem;
   border: 2px solid var(--accent);
-  transition: filter .15s, transform .15s;
 }
 .r-cta:hover { filter: brightness(1.08); transform: translateY(-1px); }
 .r-ghost {
@@ -191,7 +189,7 @@ section { padding: 72px 0; }
 .r-contact-block .container { display: grid; gap: 18px; }
 .r-contact-pre {
   font-size: .8rem; font-weight: 700; letter-spacing: .14em;
-  text-transform: uppercase; color: rgba(0,0,0,.5);
+  text-transform: uppercase; color: #090909;
 }
 .r-contact-email {
   font-size: clamp(1.4rem, 3.5vw, 2.8rem);
@@ -204,11 +202,11 @@ section { padding: 72px 0; }
 .r-contact-links { display: flex; gap: 10px; flex-wrap: wrap; }
 .r-contact-link {
   font-size: .88rem; font-weight: 700;
-  color: rgba(0,0,0,.7); border: 2px solid rgba(0,0,0,.2);
+  color: #090909; border: 2px solid rgba(0,0,0,.6);
   border-radius: 6px; padding: 8px 18px;
   transition: background .15s, border-color .15s, color .15s;
 }
-.r-contact-link:hover { background: rgba(0,0,0,.1); border-color: rgba(0,0,0,.4); color: #090909; }
+.r-contact-link:hover { background: #ea580c; border-color: #431407; color: #090909; }
 
 /* ── Footer ─────────────────────────────────────────── */
 .r-footer { padding: 28px 0 48px; border-top: 1px solid var(--border); }
@@ -235,7 +233,6 @@ section { padding: 72px 0; }
   display: flex;
   gap: 14px;
   width: max-content;
-  animation: r-marquee 28s linear infinite;
 }
 .r-platforms-track:hover { animation-play-state: paused; }
 
@@ -256,7 +253,6 @@ section { padding: 72px 0; }
   border-radius: 10px;
   background: var(--surface);
   text-decoration: none;
-  transition: border-color .2s, transform .2s, box-shadow .2s;
   flex-shrink: 0;
 }
 .r-platform-card:hover {
@@ -282,8 +278,20 @@ section { padding: 72px 0; }
 }
 .r-platform-card:hover .r-platform-name { color: var(--text); }
 
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  .r-cta { transition: filter .15s, transform .15s; }
+  .r-platform-card { transition: border-color .2s, transform .2s, box-shadow .2s; }
+  .r-platforms-track { animation: r-marquee 28s linear infinite; }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .r-platforms-track { animation: none; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.001ms;
+    animation-duration: 0.001ms;
+    animation-iteration-count: 1;
+  }
 }
 
 /* ── Focus visible ──────────────────────────────────── */
