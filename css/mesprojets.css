@@ -83,7 +83,6 @@ html, body {
 }
 .project-date { color: var(--muted); margin-bottom: 14px; font-family: 'JetBrains Mono', monospace; font-size: .82rem; }
 .project-description { font-size: .98rem; line-height: 1.6; margin-bottom: 20px; color: var(--muted); }
-
 .technologies { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .tech-tag {
   background: rgba(255,255,255,.04);

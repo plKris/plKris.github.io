@@ -201,6 +201,9 @@ section { padding: 72px 0; }
 .r-contact-email:hover { text-decoration-color: #090909; }
 .r-contact-links { display: flex; gap: 10px; flex-wrap: wrap; }
 .r-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: .88rem; font-weight: 700;
   color: #090909; border: 2px solid rgba(0,0,0,.6);
   border-radius: 6px; padding: 8px 18px;
@@ -267,6 +270,14 @@ section { padding: 72px 0; }
   border-radius: 8px;
   object-fit: contain;
   background: rgba(255,255,255,.06);
+}
+.social-logo {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border-radius: 4px;
+  margin: 0;
 }
 
 .r-platform-name {
