@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-11-10T14:59:03.516471+00:00",
+  "updatedAt": "2026-11-11T14:29:52.171715+00:00",
   "themes": {
     "articles-theme1": [
+      {
+        "title": "Appel de Paris pour la sécurité de l'intelligence artificielle - La France au Royaume-Uni",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOanJrSXI5WEluMi1lRU1ESDQtRjgtdW1LblgyNHQ0Qkg2bUlvRTNLdlhyeWJWeGlTcmpYSGxCdjdOUXBlckFmZXd6WTFMZFRaT2FMM0pDUDNJam5ldzNTd3IxbTJWcmJvNGViQ05yeHNWd1VQT0kxbDMxYlR4V3J5azl3akxrelpzTThNTFF6Vnp4QjFxaUQxOGtR?oc=5",
+        "pubDate": "Wed, 11 Nov 2026 11:55:21 GMT",
+        "description": "Appel de Paris pour la sécurité de l'intelligence artificielle La France au Royaume-Uni"
+      },
       {
         "title": "AppSec agentique pour un développement à la vitesse de l’IA - Snyk",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mbTlCYUY4bDBMRXA1NEZVLUhqMDk0bVR1Z0ZVSC10YUI2ZXIzU1d0VEh1NGtxQkFIZVVmRkJJTzdIYy1oMmxaeTlLN2w4ckZlLVJFV2UxeHFMX2lyaVRpaFhBcUVUQQ?oc=5",
@@ -13,12 +19,6 @@
         "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYcnV2UFZvYms0MjVYcTM4MmhSZ19qZFBYaWdiNHZSNDJ6UFlJNzhCOVRYdWx0ODRRaWhaWTN2UUphV2xRaUFWWHJyR3oyY1VFcm1Od1Q3aw?oc=5",
         "pubDate": "Thu, 22 Oct 2026 07:00:00 GMT",
         "description": "Asie-Pacifique : le PNUD veut placer le développement au cœur des stratégies de sécurité UN News"
-      },
-      {
-        "title": "Nir Peleg, DG de la sécurité des systèmes d'information pour les équipes terrain chez JFrog : «La gouvernance doit fonctionner à la vitesse des agents » - Le Monde Informatique",
-        "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOcGdBUUR3ZVRRTzFPNEVvMkQxR1Rod0d4cEdCeFRCS1NNVWxOVXRXLU9HdGlxOHNVUGVWcmdBRTNyalJnLVdVRlVhVGltejRCcHpjVlJlVTJHRXJlYmYzMm9PUGdsOGIzazJpcG1DYVJuTVVlZ1JwUi1XQUY3dkRVQ010LWM1Z3VCZWhzQW1zeFJNRVRGb0V1QlhlRlNMV1dUYW1sM0pTTU9uNVlMWWVCbXowaXVTMkFQR2JUeHMyVlVoT0w5dE9kTkp3cVJWbTE5V1NMdi1wOFg0TzlwVFpGTzVUSTZhT1dlaWVYcDFnTHRvQ1VOUEZHLVplQWhGX0hwYUwzLThBanl0ekJELXFGcm93OGFvSWI5LVNRVk9tWU1DMGtlZW9tWlp4ZkI2blNQS3Fv0gG3AkFVX3lxTE5ELU01c180TVVIcjhaZUJuSGt6Q1FGbTBnR090OU5hOENKellMbFdLOXg0bmZxaFZLcjBxNVVwazhkVEhjeXd0T2ZFcVZWdGNCSVpBRDZhNlNJNkR3eTVYMHl3Wm1LREVHVEtNdjBvYzFxSm5xNHBpTVN3bEotaXFocURHU0EyZnBpOG9XY0VVdzBGb0dsQ1l4emk4LWtYT3g4amNjaFF4YkVrN0J4eFlCSzNMT0dQLUZjbEQxY0FnVVE4ZGptMGNwbHBtTFh1MGVzVVljVGxZNWljUk9BcHJhWEhhZVlSUTdnYkNIeld6TTBuRUVHM1hmam80VWZ4cG5zV3NLY2dwaTBQUlBkcUE1TW1ZXzFfeEFvejlzbm5SZlZjaWpXTkl1U3E0SDI5cnhnaDRUallz?oc=5",
-        "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-        "description": "Nir Peleg, DG de la sécurité des systèmes d'information pour les équipes terrain chez JFrog : «La gouvernance doit fonctionner à la vitesse des agents » Le Monde Informatique"
       }
     ],
     "articles-theme2": [
@@ -124,6 +124,12 @@
       "description": "Risque de plus de 50 morts ou d'un milliard de dollars de dégâts : Anthropic propose de fixer un seuil pour encadrer l’IA lanouvellerepublique.fr"
     },
     {
+      "title": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis - Cyberattaque.org",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3dQQTRSaE5JTHhmOGZhMFRiSTFRdmtoLWxPV3pDemVJUGp5SXBqbG1OQzBzVVhNUWJwUzQtWlh5U0lCclVBTE9pUUxtcU5IRzhwZ1ozZWVzblJHTUM1ajZvbjZDZzB3TEtFTWctN2dSNTFIbDdDd1ViZ09veEhTdU1OUVVfRDc1TnZfcHRkTWV2UkY1dlk2QmxrMkRSTndKX29MQQ?oc=5",
+      "pubDate": "Mon, 02 Nov 2026 06:10:07 GMT",
+      "description": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis Cyberattaque.org"
+    },
+    {
       "title": "Siri s’ouvre aux développeurs, sauf en Europe, et ça compte vite - Servicesmobiles.fr",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSVk4SHNIUnh3T2J3T09Xb3p1bnZfS2lWQXBBRXZncU9nNjJTTWdKdnViUmZ4SFNGY09jSjhib2Y1bDhGNVBSQzhNcWJwVHhoM2thY3dGNWZEeTZBbG4xbDZNNXFpVGF1UllpeGI3Vnc0N05mWVYta2JHYXNWbTREb2hkY0o4aE1zT1RFWDlpalFGSzVoQkJ4UG1yU2EtbWRn?oc=5",
       "pubDate": "Mon, 09 Nov 2026 11:00:54 GMT",
@@ -154,22 +160,16 @@
       "description": "Failles PHP : pourquoi de nombreux sites ont soudainement été mis « en maintenance » Le Monde.fr"
     },
     {
+      "title": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano - Mon Carnet – de l'actualité numérique",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNmlRUTFfZWpMamhaOTUzTDNSMVRIX3o4YUZFbG1EVDVaeFlhbWRZLUZ0QWU4bC1oeTlxODFTbm1LdXBkb2tycU50S1hXYlM1bkg0MWh0U1lsdWEzUkw3Q2lpbE1LdndfUGlmbnEzT05YQ25vQ3QyV0lCQnE2WlBCNmxTWlA5NnZORU51bnVvazVVWllnUXdFOXRSTDRDejlHOE5QQ184bUdvN01jeTNxbHFrOHJNNUkwNm5xdGxHLThpZThxQUE?oc=5",
+      "pubDate": "Tue, 10 Nov 2026 18:16:43 GMT",
+      "description": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano Mon Carnet – de l'actualité numérique"
+    },
+    {
       "title": "Un développeur Bitcoin imagine un piège qui ferait perdre leurs propres BTC aux pirates quantiques - TradingView",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB0Qy0xNkhPNUdWeXVMTS1qUUZEazAxeE5MMVVZM0RVcGZPenZSUlg0MzY1aF9DSnVfUXd1VzhmLXZla0JYUUJYZEp0UWhNT3ZHN0YtTHBhNnRqbGlNd1FmWnVPNW5xcml1VFhuMA?oc=5",
       "pubDate": "Fri, 06 Nov 2026 23:00:00 GMT",
       "description": "Un développeur Bitcoin imagine un piège qui ferait perdre leurs propres BTC aux pirates quantiques TradingView"
-    },
-    {
-      "title": "Piratage de Railway, jusqu'à 100 000 workspaces à risque - Pasquale Pillitteri",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVVN2ZzZsZ3R6ZE9Md2FaUVlRd2pFOVdlbG8tZHIwR2d5UTRNYjc4WUhtZHYwMDBnU2RNa0VodmlzLW9TYVJpbVo5ckc0SlpubUJVa0Q5OGRZUUhmSEcyVW1HZTdZN3MxWXlJc1VtelFwb2ZhTDNOaDhPem5wQ1pSQ01QaF9EbmJiSkQ2NGlrRWlrZjVrVVVnWTQ3SjJzUQ?oc=5",
-      "pubDate": "Fri, 23 Oct 2026 07:00:00 GMT",
-      "description": "Piratage de Railway, jusqu'à 100 000 workspaces à risque Pasquale Pillitteri"
-    },
-    {
-      "title": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS - Snyk",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAydEk3TnpwanA4ckJnby1iemp6SzdmOThkQTNFTnVDdE5CdWdmekJhWVl1Rkh0SkxTR0stVktsX29OSzhoaE1fOENLYWRsVWtXZ2dPcTFXWm4yZVloc19uZVA4VWJ4RFp2WTVZ?oc=5",
-      "pubDate": "Mon, 09 Nov 2026 17:56:01 GMT",
-      "description": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS Snyk"
     }
   ]
 }
