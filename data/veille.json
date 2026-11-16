@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T14:02:10.414207+00:00",
+  "updatedAt": "2026-11-16T15:58:02.175502+00:00",
   "themes": {
     "articles-theme1": [
       {
@@ -29,16 +29,16 @@
         "description": "IA & souveraineté : pourquoi l’IA gratuite est devenue le maillon faible des PME françaises ? Archimag"
       },
       {
-        "title": "Des « petites mains » de l’IA portent plainte pour infraction aux règles de protection des données - Le Monde.fr",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNeWVzQWdsX3hoWUdqNGIxUFloRmlUYjJ6cmJ5U3NSSHhTelRBMkEwa1YyLUswR2JmbnlvNUZzYm14d045NGF2R1lhRE1iOWY0cll4M1lrOEQ1elZxOE1ONjNJTk1xOXAxS3RzeVl2TUFyZHJxeHhGWVNJOHNfdC15MHJxeGUzS1F3SjFJWENwZC1MWldhMXR6SjZSNTBNTXgzdl91VnAtWDNYXzFLc3JiTlRQNGM4bW9hR0dObWZwaTduQlN0M3g4RjUxQkdzVkhzNVpRMWl6bWZfUXBfOGxuWkh0ZEExZ1R6d2luaHpOY3FTSkh2T3c?oc=5",
-        "pubDate": "Tue, 27 Oct 2026 07:00:00 GMT",
-        "description": "Des « petites mains » de l’IA portent plainte pour infraction aux règles de protection des données Le Monde.fr"
-      },
-      {
         "title": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs - Cyberattaque.org",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcF95NW5sc19kQ0FNRmNNbnNYVHBobzc4d1F6ZU0wMXpOLXVyNjlVeFlZNGpsSkJJa295V2NCaUN6S2pEVWtzdm9uTElqX0hVa1d2RzJLbXdSdlhDWmp1OE0xLURfeXYwWktZZ1c4RExUOHpVcndlNVBJWV8wOWFwOVhfaUgtbEc3YUZwazVxSDNmMUVNZzVQUExQYWQ5MERIUXhtV19yVWZsbmZLVlN6YjJ4OVpPdFVkQi00?oc=5",
         "pubDate": "Tue, 10 Nov 2026 05:35:01 GMT",
         "description": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs Cyberattaque.org"
+      },
+      {
+        "title": "Cursor : une clé volée chez Fireworks AI à l’origine d’une cyberattaque - Le Monde Informatique",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWksyMjBEUWUzd2pkWTh1cjI4WFpta0RES1NpYzQwaWhNOWZTc3JwYlNZSFg5OW9Hb2d4X1FITUR5SF9IYmVLY0pmR19zajlfLUpmYUkzVnVBbGtrQXdDR2hKWmpSbTZoSDNnN0pKdzBvN2EtM1ZZN0RqZUNkc2hZdnpxVEc0UkY2UkdLRzFmM2dFX1Q5dmJGUndsVkxsTjc4UDdhaVdsQjBJNjBrQk4w?oc=5",
+        "pubDate": "Mon, 16 Nov 2026 07:39:57 GMT",
+        "description": "Cursor : une clé volée chez Fireworks AI à l’origine d’une cyberattaque Le Monde Informatique"
       }
     ],
     "articles-theme3": [
@@ -70,16 +70,16 @@
       "description": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS Snyk"
     },
     {
-      "title": "L’IA change la donne : comment former les développeurs ? - Programmez!",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaElReGxyVG9VNmRKY0tZcnh0MjR2S3g1bGUwLTFXUVdfWGRBTm9sY2VTYTJoNW1wdXlCNUV5VmhkWGV5dy1pMmc5Q2xOTmU1RVFPOGE4V05qOXpMWWpZaEdEcjJIVlRpTGVENU5paXZkc2piblBNdUpWV2hiZVhPS3R4N0FzYXJ0Z2FiWlVhcTZ2T2tnOUVmV1JrRQ?oc=5",
-      "pubDate": "Tue, 20 Oct 2026 07:00:00 GMT",
-      "description": "L’IA change la donne : comment former les développeurs ? Programmez!"
-    },
-    {
       "title": "Données d’entraînement : le risque juridique peut retomber sur l’entreprise cliente - InformatiqueNews",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQjQxSjhrUy1YSzd1b1VQRmJWVUdzTXJyXzRycmJkSFRpRnV2QTd3V0dHTVl1NXpFMk83MXpRN0JybWpQSFY2VnlIWFp1NnVCa05RMnFhN29IeUM5ZFl0Y21pa0ZEUEk5Qy1TZ1UxWHp3V1czYXR6SzF6MDNhUWhLUjZjSHloanNmRUJrYjJR?oc=5",
       "pubDate": "Fri, 13 Nov 2026 07:30:00 GMT",
       "description": "Données d’entraînement : le risque juridique peut retomber sur l’entreprise cliente InformatiqueNews"
+    },
+    {
+      "title": "OpenAI et Google révèlent une faille critique dans PHP - Brief IA",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbmwtNV9MbzV0SFFIbEp0TVc0bzFyS3pPM1RlSFNscm5BS3NQdFF3RzdPdXI0WkMxY05QVERmb3lORGpuU1V4MGFRLTF4N1h5N3ZOcG9qZXVTT0JwZzlKTkJaYmJEaVlKdGFJSE9TX2NLakp0TGtDcFRFUlJNdEdTY2JVRTFNcmQ0M2VGVmNB?oc=5",
+      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "description": "OpenAI et Google révèlent une faille critique dans PHP Brief IA"
     },
     {
       "title": "« Si vous vous opposez aux développeurs, vous perdez à coup sûr » : comment GitHub, la plateforme IA de Microsoft, résiste à la concurrence féroce d'Anthropic et OpenAI - Les Echos",
@@ -94,12 +94,6 @@
       "description": "Anthropic soumet en privé un projet de loi fédéral sur l'IA Le Monde Informatique"
     },
     {
-      "title": "OpenAI et Google révèlent une faille critique dans PHP - Brief IA",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbmwtNV9MbzV0SFFIbEp0TVc0bzFyS3pPM1RlSFNscm5BS3NQdFF3RzdPdXI0WkMxY05QVERmb3lORGpuU1V4MGFRLTF4N1h5N3ZOcG9qZXVTT0JwZzlKTkJaYmJEaVlKdGFJSE9TX2NLakp0TGtDcFRFUlJNdEdTY2JVRTFNcmQ0M2VGVmNB?oc=5",
-      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "description": "OpenAI et Google révèlent une faille critique dans PHP Brief IA"
-    },
-    {
       "title": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis - Cyberattaque.org",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3dQQTRSaE5JTHhmOGZhMFRiSTFRdmtoLWxPV3pDemVJUGp5SXBqbG1OQzBzVVhNUWJwUzQtWlh5U0lCclVBTE9pUUxtcU5IRzhwZ1ozZWVzblJHTUM1ajZvbjZDZzB3TEtFTWctN2dSNTFIbDdDd1ViZ09veEhTdU1OUVVfRDc1TnZfcHRkTWV2UkY1dlk2QmxrMkRSTndKX29MQQ?oc=5",
       "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
@@ -112,22 +106,10 @@
       "description": "Des sites web du monde entier, exposés à deux failles de cybersécurité, contraints à des maintenances d’urgence Ouest-France"
     },
     {
-      "title": "Failles « critiques » de sécurité : une vulnérabilité détectée grâce à un modèle IA d’OpenAI - Le Soir",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTVc4RWVCVVQ4eVh0TnhtSWtuOFU4WHJBM3RSckU4eWlvdXUwRXI1V0tFVVZJSWRVbFoyMjl6aGJKbmluZFpxaE5veVRFNHZRU2cwZUdZT2xYVDBUcFVISVhqTG9hUjBJSlFxdlhkQmM0QV9fVUdWVWVFNHRCQzg4WXc0QVpZZlVhbHlYU3VRZnItaXVTWlZDNDlOQ3ZQbXdQTmtsOTZoTFQ0ZVg5ZHR2aXY5UHFWWHJIQlZwclA4MGY?oc=5",
-      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "description": "Failles « critiques » de sécurité : une vulnérabilité détectée grâce à un modèle IA d’OpenAI Le Soir"
-    },
-    {
       "title": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève - ITforBusiness.fr",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVWFCbTJ3Y19veS1lNTRfOEJ1NDBpTGZfWlhKNDVNVkprUW51VWE5Q25VSHNMZTV6V0QxTU5vTzhYdFdTM2gyZ0E2dklZanQtNGs4RkZ2V1dVdS1mNk0zRXR4aERKSnA4MjNJTXBjeWpzZlJUeERHNUotSWE3WEE?oc=5",
       "pubDate": "Fri, 13 Nov 2026 07:00:56 GMT",
       "description": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève ITforBusiness.fr"
-    },
-    {
-      "title": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA - Zonebourse Suisse",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMG5qbVZLVGNoVlpSLXdKNnpiQk82aG9OT3YwaWpIaTIxeXJWUTF4VWZ4UkhXQ2FuVzFtZDdOblUzY3RzaUZROE04bS1zVlduRkpiNHV5dWlCclFZRmNvU0VuMjduZldaNlIwWi12Z3dPdUhNWXl3NElnSGw3ZWIzUXJ2SkUzVFVzcUdQRU9Geks5UTAycmhjWURHeVg0bDFoUnM5RHk5VHNFYWJxX2drbGMtT1lwV0dlZC01U21MTE95cnZxTlVydFl1bEs4VnhzWjV1Y2d4Ykl2SDNUV1N3S2xYODBUOWN1RG9oZEtOOA?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 03:16:30 GMT",
-      "description": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA Zonebourse Suisse"
     },
     {
       "title": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA - Cryptoast",
@@ -136,16 +118,28 @@
       "description": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA Cryptoast"
     },
     {
+      "title": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés - OpenAI",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tbXFJbjhEd2FFcVh3VHdOSVVOeXo0RTlNdmc3M0FQQnF3WUktR2Zqa1BhYVJReE9KYWs0TUJ4V0tZM0NsX1hQbkVfX3NlaFljbWJUclo1QXA4dS1yOUZtSkU1aVJEZw?oc=5",
+      "pubDate": "Thu, 05 Nov 2026 08:00:00 GMT",
+      "description": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés OpenAI"
+    },
+    {
+      "title": "Failles « critiques » de sécurité : une vulnérabilité détectée grâce à un modèle IA d’OpenAI - Le Soir",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTVc4RWVCVVQ4eVh0TnhtSWtuOFU4WHJBM3RSckU4eWlvdXUwRXI1V0tFVVZJSWRVbFoyMjl6aGJKbmluZFpxaE5veVRFNHZRU2cwZUdZT2xYVDBUcFVISVhqTG9hUjBJSlFxdlhkQmM0QV9fVUdWVWVFNHRCQzg4WXc0QVpZZlVhbHlYU3VRZnItaXVTWlZDNDlOQ3ZQbXdQTmtsOTZoTFQ0ZVg5ZHR2aXY5UHFWWHJIQlZwclA4MGY?oc=5",
+      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "description": "Failles « critiques » de sécurité : une vulnérabilité détectée grâce à un modèle IA d’OpenAI Le Soir"
+    },
+    {
+      "title": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA - Zonebourse Suisse",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMG5qbVZLVGNoVlpSLXdKNnpiQk82aG9OT3YwaWpIaTIxeXJWUTF4VWZ4UkhXQ2FuVzFtZDdOblUzY3RzaUZROE04bS1zVlduRkpiNHV5dWlCclFZRmNvU0VuMjduZldaNlIwWi12Z3dPdUhNWXl3NElnSGw3ZWIzUXJ2SkUzVFVzcUdQRU9Geks5UTAycmhjWURHeVg0bDFoUnM5RHk5VHNFYWJxX2drbGMtT1lwV0dlZC01U21MTE95cnZxTlVydFl1bEs4VnhzWjV1Y2d4Ykl2SDNUV1N3S2xYODBUOWN1RG9oZEtOOA?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 03:16:30 GMT",
+      "description": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA Zonebourse Suisse"
+    },
+    {
       "title": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano - Mon Carnet – de l'actualité numérique",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNmlRUTFfZWpMamhaOTUzTDNSMVRIX3o4YUZFbG1EVDVaeFlhbWRZLUZ0QWU4bC1oeTlxODFTbm1LdXBkb2tycU50S1hXYlM1bkg0MWh0U1lsdWEzUkw3Q2lpbE1LdndfUGlmbnEzT05YQ25vQ3QyV0lCQnE2WlBCNmxTWlA5NnZORU51bnVvazVVWllnUXdFOXRSTDRDejlHOE5QQ184bUdvN01jeTNxbHFrOHJNNUkwNm5xdGxHLThpZThxQUE?oc=5",
       "pubDate": "Tue, 10 Nov 2026 18:16:43 GMT",
       "description": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano Mon Carnet – de l'actualité numérique"
-    },
-    {
-      "title": "Risque de plus de 50 morts ou d'un milliard de dollars de dégâts : Anthropic propose de fixer un seuil pour encadrer l’IA - lanouvellerepublique.fr",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNQWdsT3pYNDdpdGRVWnhMWEdEUmFrYlRMM1N4TkZNNndydkVnSFUyRXJNNWhQZmZCeE1DMml5UEVRQnJKM21QRUY2VC13aGs2OU5ROE1VNWFmUEl6U3IxbDRSQjBZbFc1NzJWWVBobjBKa2dvcTFSNjdxci1LMEdDX2U5M1RYTWQzVkZFMEVhQmQta3g2TUE4UmNRNzRrVi1aR1FYMmV2ajdBcmRvMFBIcnAxdHhJQi1mWnpQVnBNbUx0WWZwWG55dGZhVk9QZlJNb2ZDUFFOUFF2YWpwY1lEaUxMNk5XdndsWHE1RDBuN3VuN0J3OVZrcnZ0WHRYMWZvajdqOXdn?oc=5",
-      "pubDate": "Sat, 17 Oct 2026 07:00:00 GMT",
-      "description": "Risque de plus de 50 morts ou d'un milliard de dollars de dégâts : Anthropic propose de fixer un seuil pour encadrer l’IA lanouvellerepublique.fr"
     },
     {
       "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
@@ -166,10 +160,16 @@
       "description": "Libre et open source express: apocalypse de vulnérabilité, entrep ... ZDNET"
     },
     {
-      "title": "La solution de Bitcoin Core pour un nœud de minage défectueux : le redémarrer - BeInCrypto",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53NzJUY3BvNVlPVktKVlJvOHpJTmJkZm5VWEtOWmU0dFlGc3dtbU5JNGxUNnBYbVI0LVFfY2lHTXFuMnY2VTN2VzZmVDFxY3oyQUIzWkpRTGtxX3VISTVRWTBZZGV4S1A3RWxWU2pB?oc=5",
-      "pubDate": "Wed, 11 Nov 2026 14:38:00 GMT",
-      "description": "La solution de Bitcoin Core pour un nœud de minage défectueux : le redémarrer BeInCrypto"
+      "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
+      "pubDate": "Thu, 12 Nov 2026 23:00:00 GMT",
+      "description": "Dangers de l’IA | Pour la suite de l’humanité La Presse"
+    },
+    {
+      "title": "Moins de postes pour les jeunes : comment l'IA transforme déjà le marché de l'emploi - Investir Les Echos",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPeHUtdF9ieUhOR3I1ZW9ocmVkWExYN1E2cUlEX2hjZ2xnWVFHWmVXb0l3MmRNS0pJZ3h0dklxamNNMnh4WlRXRnZENVpjc01vOFZESDZ4Y0szMFhOVHVBOGVYVG5qbHVOLVljWndYS2FpS29JdjI3MEdhMDcyeFJaODhrYWNRMVZha1kyemhKZ3JiWXRDRERkbGZxaEFGYkcxLUE5MVVZckFpa3dkNS1NT0RhXzdqb2Z2VThpeXVNVmQ3aXc3dzZ5dVI1NlNTZHhJWWZMbTVjNzhiOXJsR3hONE13V2lSdDg?oc=5",
+      "pubDate": "Thu, 12 Nov 2026 09:27:27 GMT",
+      "description": "Moins de postes pour les jeunes : comment l'IA transforme déjà le marché de l'emploi Investir Les Echos"
     }
   ]
 }
