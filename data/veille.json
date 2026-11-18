@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-11-17T16:09:42.156105+00:00",
+  "updatedAt": "2026-11-18T15:46:35.466541+00:00",
   "themes": {
     "articles-theme1": [
+      {
+        "title": "Appel de Paris pour la sécurité de l'intelligence artificielle - La France au Royaume-Uni",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOanJrSXI5WEluMi1lRU1ESDQtRjgtdW1LblgyNHQ0Qkg2bUlvRTNLdlhyeWJWeGlTcmpYSGxCdjdOUXBlckFmZXd6WTFMZFRaT2FMM0pDUDNJam5ldzNTd3IxbTJWcmJvNGViQ05yeHNWd1VQT0kxbDMxYlR4V3J5azl3akxrelpzTThNTFF6Vnp4QjFxaUQxOGtR?oc=5",
+        "pubDate": "Wed, 11 Nov 2026 11:55:21 GMT",
+        "description": "Appel de Paris pour la sécurité de l'intelligence artificielle La France au Royaume-Uni"
+      },
       {
         "title": "Asie-Pacifique : le PNUD veut placer le développement au cœur des stratégies de sécurité - UN News",
         "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYcnV2UFZvYms0MjVYcTM4MmhSZ19qZFBYaWdiNHZSNDJ6UFlJNzhCOVRYdWx0ODRRaWhaWTN2UUphV2xRaUFWWHJyR3oyY1VFcm1Od1Q3aw?oc=5",
@@ -13,12 +19,6 @@
         "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOcGdBUUR3ZVRRTzFPNEVvMkQxR1Rod0d4cEdCeFRCS1NNVWxOVXRXLU9HdGlxOHNVUGVWcmdBRTNyalJnLVdVRlVhVGltejRCcHpjVlJlVTJHRXJlYmYzMm9PUGdsOGIzazJpcG1DYVJuTVVlZ1JwUi1XQUY3dkRVQ010LWM1Z3VCZWhzQW1zeFJNRVRGb0V1QlhlRlNMV1dUYW1sM0pTTU9uNVlMWWVCbXowaXVTMkFQR2JUeHMyVlVoT0w5dE9kTkp3cVJWbTE5V1NMdi1wOFg0TzlwVFpGTzVUSTZhT1dlaWVYcDFnTHRvQ1VOUEZHLVplQWhGX0hwYUwzLThBanl0ekJELXFGcm93OGFvSWI5LVNRVk9tWU1DMGtlZW9tWlp4ZkI2blNQS3Fv0gG3AkFVX3lxTE5ELU01c180TVVIcjhaZUJuSGt6Q1FGbTBnR090OU5hOENKellMbFdLOXg0bmZxaFZLcjBxNVVwazhkVEhjeXd0T2ZFcVZWdGNCSVpBRDZhNlNJNkR3eTVYMHl3Wm1LREVHVEtNdjBvYzFxSm5xNHBpTVN3bEotaXFocURHU0EyZnBpOG9XY0VVdzBGb0dsQ1l4emk4LWtYT3g4amNjaFF4YkVrN0J4eFlCSzNMT0dQLUZjbEQxY0FnVVE4ZGptMGNwbHBtTFh1MGVzVVljVGxZNWljUk9BcHJhWEhhZVlSUTdnYkNIeld6TTBuRUVHM1hmam80VWZ4cG5zV3NLY2dwaTBQUlBkcUE1TW1ZXzFfeEFvejlzbm5SZlZjaWpXTkl1U3E0SDI5cnhnaDRUallz?oc=5",
         "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
         "description": "Nir Peleg, DG de la sécurité des systèmes d'information pour les équipes terrain chez JFrog : «La gouvernance doit fonctionner à la vitesse des agents » Le Monde Informatique"
-      },
-      {
-        "title": "“Les personnes qui travaillent dans la sécurité de l’IA ont intérêt à majorer le risque d’extinction humaine” - Le Nouvel Obs",
-        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSFc3NTBZNnRBU2tKT3lqanpXbk5OS2ZNeDNiUmZmQW51aW1VUGxhYzZ2MXlVcHVpSEk1MjdFd3RLYnFheDl0SzJZSnRja0xmN3dGRXFwUk04d2t2aHhVUU5rRmFpMXhIT25CSXd1anIwX2VMeUttdjljOW40dHd0Vk9wX3R2YUlXVlBTXzVUUHI5TDY3X0RrZ25xVzNseVZ0dWVTM2g0TkwxWDBhWFhyTzZFTGY5YThOcmxrR0pVOTlFNEE5RU1YVXh3S3h4cURhVk0ya3IySXVTMTMwTTFoVnNtZnJrNzJjZGNrVzhhWjJfY3pvczB6WVh3?oc=5",
-        "pubDate": "Mon, 19 Oct 2026 07:00:00 GMT",
-        "description": "“Les personnes qui travaillent dans la sécurité de l’IA ont intérêt à majorer le risque d’extinction humaine” Le Nouvel Obs"
       }
     ],
     "articles-theme2": [
@@ -64,6 +64,12 @@
   },
   "global": [
     {
+      "title": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA - ActuIA",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON3o0ZXdsTGN5THNvdkFCRnp6ZTJHVThyRTRTSHlwaEdSbUJfZzJTWXlVU3RsRW1OZVh4YS1HN3Q0WktaQ0o3M2Zvd2dZTjZtVExKc19yRTV3ZnB1aEE0MGVhbk5vQW5FTURMY01sWGRkSF95c2V0YjI4dE8td0ljRkt6Mk5BNzhTbVhoVUZnMTdKWHBPU2drM1BRODVkcU94ZGlVdA?oc=5",
+      "pubDate": "Wed, 18 Nov 2026 09:00:00 GMT",
+      "description": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA ActuIA"
+    },
+    {
       "title": "La société de capital-risque Flagship investit 100 millions de livres sterling pour créer des entreprises phar - Boursorama",
       "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQV1ZiYWJfMzhiWU15eW9rWTMyWktVVk5hM3d0WjBOalpFMWUzeXhmcWM2aGVrbjNSZXZ2QzBRR1RZZHJ3NjNUSkhGa0d4emRVTUZ6Z3loMXg0d1prdEtwRVFNMlVxdTRlQnZWZy01U2pOTGVjVjdET3JpbjhxaUFVWWp1LUZFRUN5d1lUbDZyTVFzMlN0aGZ3YjJTLWlLOHlWdDd5VVpOVEhtT0FsaWdpWGp6ZlFjSkpBc0RHRUZXSVV2STQ2RUozZlF0NlBtYzZ3Z2VIUUFISkR2bVBrX1pwa1RGMHFMTlFSQllIOTd5aFYzcTVjRlZFR1BxRi1aM1ZTb1pjZUVhdHBtT0hldVhscHVHbXJCNEYwVDc4MnJtRXRza2tqQ1RLOXNORUFLUzZZejFPVzVlQmhGMURQUjJIUE42MTdRU2RwMTZqRmdOSEJyTVXSAdMCQVVfeXFMUFdWYmFiXzM4YllNeXlva1kzMlpLVVZOYTN3dFowTmpaRTFlM3l4ZnFjNmhla24zUmV2dkMwUUdUWWRydzYzVEpIRmtHeHpkVU1Gemd5aDF4NHdaa3RLcEVRTTJVcXU0ZUJ2VmctNVNqTkxlY1Y3RE9yaW44cWlBVVlqdS1GRUVDeXdZVGw2ck1RczJTdGhmd2IyUy1pSzh5VnQ3eVVaTlRIbU9BbGlnaVhqemZRY0pKQXNER0VGV0lVdkk0NkVKM2ZRdDZQbWM2d2dlSFFBSEpEdm1Qa19acGtURjBxTE5RUkJZSDk3eWhWM3E1Y0ZWRUdQcUYtWjNWU29aY2VFYXRwbU9IZXVYbHB1R21yQjRGMFQ3ODJybUV0c2trakNUSzlzTkVBS1M2WXoxT1c1ZUJoRjFEUFIySFBONjE3UVNkcDE2akZnTkhCck1V?oc=5",
       "pubDate": "Mon, 16 Nov 2026 19:17:27 GMT",
@@ -82,34 +88,22 @@
       "description": "Données d’entraînement : le risque juridique peut retomber sur l’entreprise cliente InformatiqueNews"
     },
     {
-      "title": "OpenAI et Google révèlent une faille critique dans PHP - Brief IA",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbmwtNV9MbzV0SFFIbEp0TVc0bzFyS3pPM1RlSFNscm5BS3NQdFF3RzdPdXI0WkMxY05QVERmb3lORGpuU1V4MGFRLTF4N1h5N3ZOcG9qZXVTT0JwZzlKTkJaYmJEaVlKdGFJSE9TX2NLakp0TGtDcFRFUlJNdEdTY2JVRTFNcmQ0M2VGVmNB?oc=5",
-      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "description": "OpenAI et Google révèlent une faille critique dans PHP Brief IA"
-    },
-    {
       "title": "« Si vous vous opposez aux développeurs, vous perdez à coup sûr » : comment GitHub, la plateforme IA de Microsoft, résiste à la concurrence féroce d'Anthropic et OpenAI - Les Echos",
       "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNUFRXN19tME1ralNYSmg2NWZMS0FhalpZRDNfTnRuZHhQeFEzQ01acFhqcEpCVjZ4VWpYc1lUbGJTSE1wdWY3RU92WnNQdk9TZEJyMXZBR3RlSmM3TDBGaHZjMHhtZ2pMWGJTUEwxdFNxMVBGbzJxaDAtdDJ6YndlZXAzMjF3djhGcEJUTlVlLUliZ3ZraTFKNEZubXg4V1JEY3ZadGkxM1RFM0ltRWJrLUVsY2VMUzRqVFM3STdyZEppY0JMQnR3YXRaRW9LZ2FnanpacDRNM1cwVEJPVnVqdHNmV3NBdGRJc3ZXMlZhaDI2ZThXc3lvTy1UX0RCMTVTV1Y5MTYya3ZfQUdWWXp4dnhPN2VxLUN6aVFnMTlnQkZTWUNROVBCLUpSLWNjWXJycEZMclV0UU1JMWlvVTNsZk1sUmZzT29UdHVFWg?oc=5",
       "pubDate": "Thu, 29 Oct 2026 07:00:00 GMT",
       "description": "« Si vous vous opposez aux développeurs, vous perdez à coup sûr » : comment GitHub, la plateforme IA de Microsoft, résiste à la concurrence féroce d'Anthropic et OpenAI Les Echos"
     },
     {
+      "title": "OpenAI et Google révèlent une faille critique dans PHP - Brief IA",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbmwtNV9MbzV0SFFIbEp0TVc0bzFyS3pPM1RlSFNscm5BS3NQdFF3RzdPdXI0WkMxY05QVERmb3lORGpuU1V4MGFRLTF4N1h5N3ZOcG9qZXVTT0JwZzlKTkJaYmJEaVlKdGFJSE9TX2NLakp0TGtDcFRFUlJNdEdTY2JVRTFNcmQ0M2VGVmNB?oc=5",
+      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "description": "OpenAI et Google révèlent une faille critique dans PHP Brief IA"
+    },
+    {
       "title": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis - Cyberattaque.org",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3dQQTRSaE5JTHhmOGZhMFRiSTFRdmtoLWxPV3pDemVJUGp5SXBqbG1OQzBzVVhNUWJwUzQtWlh5U0lCclVBTE9pUUxtcU5IRzhwZ1ozZWVzblJHTUM1ajZvbjZDZzB3TEtFTWctN2dSNTFIbDdDd1ViZ09veEhTdU1OUVVfRDc1TnZfcHRkTWV2UkY1dlk2QmxrMkRSTndKX29MQQ?oc=5",
       "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
       "description": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis Cyberattaque.org"
-    },
-    {
-      "title": "Des sites web du monde entier, exposés à deux failles de cybersécurité, contraints à des maintenances d’urgence - Ouest-France",
-      "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNVXN3ZWF5N05LcEFYM0I4Smhhbm82Tk1PRnduVTFHa2NHOHFfUTdMZFlwNG1ZaGVuVmQ3Q0RKNTJlS1Q4WmFRRURrODRadndFQ25VTEFvaWlFamtRN012bHBtUC1zbHF3eTRabGtKMUxmU0R5bU5aTC1VenJ0R29xb1I2WmJLd2tFRmpSUzFCSzhVdzFsY3ZBME8zQ29IaFNoUWVZXzB4WkdFMFJGbUUwRnVfX3VrVHNSV0FYLURTcVpDT1l4RWlBVlFYLTRiTUNzbUlHQUN1UUJiaHFSMW1uNWU4MWpSRTR3aTUwblFheXhwZmh6OE5zVHczcEpOb0lNWGttYnphNG5UT3RRT29Yby1aR2F0YXNKWk0zYzd3TQ?oc=5",
-      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "description": "Des sites web du monde entier, exposés à deux failles de cybersécurité, contraints à des maintenances d’urgence Ouest-France"
-    },
-    {
-      "title": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève - ITforBusiness.fr",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVWFCbTJ3Y19veS1lNTRfOEJ1NDBpTGZfWlhKNDVNVkprUW51VWE5Q25VSHNMZTV6V0QxTU5vTzhYdFdTM2gyZ0E2dklZanQtNGs4RkZ2V1dVdS1mNk0zRXR4aERKSnA4MjNJTXBjeWpzZlJUeERHNUotSWE3WEE?oc=5",
-      "pubDate": "Fri, 13 Nov 2026 07:00:56 GMT",
-      "description": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève ITforBusiness.fr"
     },
     {
       "title": "L'I.A continue ses ravages dans le jeu vidéo : 54 % des développeurs licenciés toujours sans emploi et ça ne va pas s'arranger - JeuxVideo.com",
@@ -124,6 +118,12 @@
       "description": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA Cryptoast"
     },
     {
+      "title": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA - Zonebourse Suisse",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMG5qbVZLVGNoVlpSLXdKNnpiQk82aG9OT3YwaWpIaTIxeXJWUTF4VWZ4UkhXQ2FuVzFtZDdOblUzY3RzaUZROE04bS1zVlduRkpiNHV5dWlCclFZRmNvU0VuMjduZldaNlIwWi12Z3dPdUhNWXl3NElnSGw3ZWIzUXJ2SkUzVFVzcUdQRU9Geks5UTAycmhjWURHeVg0bDFoUnM5RHk5VHNFYWJxX2drbGMtT1lwV0dlZC01U21MTE95cnZxTlVydFl1bEs4VnhzWjV1Y2d4Ykl2SDNUV1N3S2xYODBUOWN1RG9oZEtOOA?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 03:16:30 GMT",
+      "description": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA Zonebourse Suisse"
+    },
+    {
       "title": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano - Mon Carnet – de l'actualité numérique",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNmlRUTFfZWpMamhaOTUzTDNSMVRIX3o4YUZFbG1EVDVaeFlhbWRZLUZ0QWU4bC1oeTlxODFTbm1LdXBkb2tycU50S1hXYlM1bkg0MWh0U1lsdWEzUkw3Q2lpbE1LdndfUGlmbnEzT05YQ25vQ3QyV0lCQnE2WlBCNmxTWlA5NnZORU51bnVvazVVWllnUXdFOXRSTDRDejlHOE5QQ184bUdvN01jeTNxbHFrOHJNNUkwNm5xdGxHLThpZThxQUE?oc=5",
       "pubDate": "Tue, 10 Nov 2026 18:16:43 GMT",
@@ -136,16 +136,16 @@
       "description": "Failles « critiques » de sécurité : une vulnérabilité détectée grâce à un modèle IA d’OpenAI Le Soir"
     },
     {
-      "title": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA - Zonebourse Suisse",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMG5qbVZLVGNoVlpSLXdKNnpiQk82aG9OT3YwaWpIaTIxeXJWUTF4VWZ4UkhXQ2FuVzFtZDdOblUzY3RzaUZROE04bS1zVlduRkpiNHV5dWlCclFZRmNvU0VuMjduZldaNlIwWi12Z3dPdUhNWXl3NElnSGw3ZWIzUXJ2SkUzVFVzcUdQRU9Geks5UTAycmhjWURHeVg0bDFoUnM5RHk5VHNFYWJxX2drbGMtT1lwV0dlZC01U21MTE95cnZxTlVydFl1bEs4VnhzWjV1Y2d4Ykl2SDNUV1N3S2xYODBUOWN1RG9oZEtOOA?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 03:16:30 GMT",
-      "description": "Le risque de crédit de SoftBank atteint un plus-haut de quatre ans, l’action s’effondre sur fond d’inquiétudes liées à l’IA Zonebourse Suisse"
+      "title": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code - Pause Hardware",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAySXN1NUxYQnR5WUZaNjdwakx3LVJCQWV5QzBEUWpLM1JYVGVXUjh3bUl5NUEzRFNDc2h1QWJRbm5NMERZVWMzbTZSOVpXNUExTU5OVXJpemFKdWtxaHFib3Zid2xISHFyV3lOSDJWcDNMU3lDYWREbA?oc=5",
+      "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
+      "description": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code Pause Hardware"
     },
     {
-      "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTUNaRHMtN2dTelNhNXk1aGYwb0Y1aXFBX0hWdHJjMGVSZWZmX01hRWRCb1dlaW02anJqa1Fhay1QckdfZ1o0djVHS1Y1SXhzbUstQTBzdUQ2Wk1SeUFyVUE5SmVpTzV4TEVyeENkbnJsbFk1RGdUcWZybWtoUFRmb3pwT0RDRFpTRmIzWUhyVmdZNWFpM19Qb0FZWHVFVGI1d2xUTDd5V2VWVGdFb05ucHFfd1k1cTY5UERrM3lSU2F3Z1dOQXVXU0o0eGhHOTZWOXBuWDc5Wi00d3RyQnVZZnBxcTBINEFVem04TnNKZE9HRWdUeFE?oc=5",
-      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
-      "description": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? Frandroid"
+      "title": "Des sites web du monde entier, exposés à deux failles de cybersécurité, contraints à des maintenances d’urgence - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNVXN3ZWF5N05LcEFYM0I4Smhhbm82Tk1PRnduVTFHa2NHOHFfUTdMZFlwNG1ZaGVuVmQ3Q0RKNTJlS1Q4WmFRRURrODRadndFQ25VTEFvaWlFamtRN012bHBtUC1zbHF3eTRabGtKMUxmU0R5bU5aTC1VenJ0R29xb1I2WmJLd2tFRmpSUzFCSzhVdzFsY3ZBME8zQ29IaFNoUWVZXzB4WkdFMFJGbUUwRnVfX3VrVHNSV0FYLURTcVpDT1l4RWlBVlFYLTRiTUNzbUlHQUN1UUJiaHFSMW1uNWU4MWpSRTR3aTUwblFheXhwZmh6OE5zVHczcEpOb0lNWGttYnphNG5UT3RRT29Yby1aR2F0YXNKWk0zYzd3TQ?oc=5",
+      "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "description": "Des sites web du monde entier, exposés à deux failles de cybersécurité, contraints à des maintenances d’urgence Ouest-France"
     },
     {
       "title": "Failles PHP : pourquoi de nombreux sites ont soudainement été mis « en maintenance » - Le Monde.fr",
@@ -154,22 +154,22 @@
       "description": "Failles PHP : pourquoi de nombreux sites ont soudainement été mis « en maintenance » Le Monde.fr"
     },
     {
-      "title": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code - Pause Hardware",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAySXN1NUxYQnR5WUZaNjdwakx3LVJCQWV5QzBEUWpLM1JYVGVXUjh3bUl5NUEzRFNDc2h1QWJRbm5NMERZVWMzbTZSOVpXNUExTU5OVXJpemFKdWtxaHFib3Zid2xISHFyV3lOSDJWcDNMU3lDYWREbA?oc=5",
+      "title": "Libre et open source express: apocalypse de vulnérabilité, entrep ... - ZDNET",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNzFaMGUya0Z0Z3BwdEd2WmhkQXltZDVtWEV3WlhFTktzYWtFNG0xVUFWTnhvdlZtdDF1WDE4dmJVci1DTWpvSmJmZ1dZdmxLbUZqV0F4bGVkeUd0VjhGejdWTmdCQURmUlIyWDM2ZlpqeVhaeUdLdjdnTG1iUHByUjB3TUtvVWJKVHZSWFpZTWxkV2ZkbC1YS1o5b1ljTVNfNHppZ3BTdkxIeVl4cmVNR0xDSVRKOHUzX1BqRTBIaUxod0QtZzV1V1Q1eS1ZTU0yaDllSnoxcFNjZU95V0hpOEdWSHVRNFFPWmNrb1JpSVMyNl9yRHVSS1Nsbw?oc=5",
       "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
-      "description": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code Pause Hardware"
+      "description": "Libre et open source express: apocalypse de vulnérabilité, entrep ... ZDNET"
+    },
+    {
+      "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTUNaRHMtN2dTelNhNXk1aGYwb0Y1aXFBX0hWdHJjMGVSZWZmX01hRWRCb1dlaW02anJqa1Fhay1QckdfZ1o0djVHS1Y1SXhzbUstQTBzdUQ2Wk1SeUFyVUE5SmVpTzV4TEVyeENkbnJsbFk1RGdUcWZybWtoUFRmb3pwT0RDRFpTRmIzWUhyVmdZNWFpM19Qb0FZWHVFVGI1d2xUTDd5V2VWVGdFb05ucHFfd1k1cTY5UERrM3lSU2F3Z1dOQXVXU0o0eGhHOTZWOXBuWDc5Wi00d3RyQnVZZnBxcTBINEFVem04TnNKZE9HRWdUeFE?oc=5",
+      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
+      "description": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? Frandroid"
     },
     {
       "title": "Moins de postes pour les jeunes : comment l'IA transforme déjà le marché de l'emploi - Investir Les Echos",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPeHUtdF9ieUhOR3I1ZW9ocmVkWExYN1E2cUlEX2hjZ2xnWVFHWmVXb0l3MmRNS0pJZ3h0dklxamNNMnh4WlRXRnZENVpjc01vOFZESDZ4Y0szMFhOVHVBOGVYVG5qbHVOLVljWndYS2FpS29JdjI3MEdhMDcyeFJaODhrYWNRMVZha1kyemhKZ3JiWXRDRERkbGZxaEFGYkcxLUE5MVVZckFpa3dkNS1NT0RhXzdqb2Z2VThpeXVNVmQ3aXc3dzZ5dVI1NlNTZHhJWWZMbTVjNzhiOXJsR3hONE13V2lSdDg?oc=5",
       "pubDate": "Thu, 12 Nov 2026 09:27:27 GMT",
       "description": "Moins de postes pour les jeunes : comment l'IA transforme déjà le marché de l'emploi Investir Les Echos"
-    },
-    {
-      "title": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? - InformatiqueNews",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWktITjFCNjhYWENQdkNYcm5IaHc3ZGpfM2pjdE5YU1ljVHRwRm5vemlxdmltUWVaVHNEVWNLdldteXdHbTZnSVFiYmxUNmRKOHk4YTkxZklIMGtieWdOTWJLRWNudXJFbVk3TElHY0ZrQXRHZlRoS0UyRXZjYjNLend5WTVqbWtlZU5tNk1STUkzUlU?oc=5",
-      "pubDate": "Tue, 27 Oct 2026 07:00:00 GMT",
-      "description": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? InformatiqueNews"
     }
   ]
 }
