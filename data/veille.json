@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:44:37.189867+00:00",
+  "updatedAt": "2026-11-22T14:40:43.180232+00:00",
   "themes": {
     "articles-theme1": [
       {
@@ -9,24 +9,24 @@
         "description": "Appel de Paris pour la sécurité de l'intelligence artificielle La France au Royaume-Uni"
       },
       {
+        "title": "Grande marche pour la sécurité de l’IA à Paris ce samedi - mesinfos",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYk16Y0JsZndSbFlCNXE5OEVZYXhhdG9KSkptbGZFRFhBc1NDVFpkdE1ETzl6WlI5RWdjbGZuQmZlaUdSYjktZW9JOEk1eEFuYTdZUVIxWlFYTWtJZy12SXEzUzVRb1FSZHJuc2o4SXo0YkszdHRLMHA3SDVrMVptVjB2OEdSZTZ3dl9ac203Z0hQLXlzMWhjTVVHdmhFeWhQWHc?oc=5",
+        "pubDate": "Fri, 13 Nov 2026 08:00:00 GMT",
+        "description": "Grande marche pour la sécurité de l’IA à Paris ce samedi mesinfos"
+      },
+      {
         "title": "Oracle et OpenAI s’allient pour traquer les failles de sécurité de l’IA en entreprise - ZDNET",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDQzWXZuSlRrNUp5Tkx4bENWcUVNU2h6b3k3NFJNbzlZX1F2VG1OYnhqRG9oeFF6ZndwckhZY2FOYW44Q0FpTnE4djNkVWFiaXJNWGtvOHNrYlQ1TWxSUm9hLU1oaHpnNUFFWHI3T3lCT1dFSFdPYmdnU0VxLVdOdFg4MWZtWFBsWDQzOUduYTJuRWx0NXVDRmZJLUY2NGFSajZqWjd1LTZZcUVXeVQydTdiTGFrSWI3d3h5cndnN0pDUnZF?oc=5",
         "pubDate": "Wed, 28 Oct 2026 07:00:00 GMT",
         "description": "Oracle et OpenAI s’allient pour traquer les failles de sécurité de l’IA en entreprise ZDNET"
-      },
-      {
-        "title": "Déclaration jointe à l’appel de Paris pour la sécurité de l’intelligence artificielle - Premier ministre du Canada",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQR2N0Z0RSdEwxMjJ4dXFTV0ZVUWtmRU1sV2JNNlFMRzR3M1o3a3NOZU1jZlNWdDN3eS1WT2xkamktYU5KaFk2ZXQ3ajhtTTVSU0VGNGdCQUM2SUlqbFJZZTBlVEstNGpmVnRNamRURWFOVTBqZURWalhmTV9xZWYxRkpyalNycTZUa0pqeXpabEJVLW8tOExSNFQ0Qi1HcWltSGhRSkZPREJsMm4xU19vQlpNSHlvbWNoN2NxN2JB?oc=5",
-        "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
-        "description": "Déclaration jointe à l’appel de Paris pour la sécurité de l’intelligence artificielle Premier ministre du Canada"
       }
     ],
     "articles-theme2": [
       {
-        "title": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs - Cyberattaque.org",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcF95NW5sc19kQ0FNRmNNbnNYVHBobzc4d1F6ZU0wMXpOLXVyNjlVeFlZNGpsSkJJa295V2NCaUN6S2pEVWtzdm9uTElqX0hVa1d2RzJLbXdSdlhDWmp1OE0xLURfeXYwWktZZ1c4RExUOHpVcndlNVBJWV8wOWFwOVhfaUgtbEc3YUZwazVxSDNmMUVNZzVQUExQYWQ5MERIUXhtV19yVWZsbmZLVlN6YjJ4OVpPdFVkQi00?oc=5",
+        "title": "Anthropic dévoile Claude Fable 5.2 et Mythos 5.2, plus rapides et plus performants en code - Le Monde Informatique",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORnNpWG5ualJmXzNLUTBsX0Z5NDRwS0dYVFBPQkZkLTJNSGkyVGVIcHBlRnhpQXNJVHhGZmNXRktxMDd2UGYtS25ZdTB0WlBkVHNYX2FFenhSQ3I2cDFfamVRSWdwOFFXVW1ZTjhfUUlJN2dfUXA4SnJpb1drNHE5Ri1ic3FON2R4MVE0MVZkQzFtV1VTVXFwbF9mOTk?oc=5",
         "pubDate": "Tue, 10 Nov 2026 08:00:00 GMT",
-        "description": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs Cyberattaque.org"
+        "description": "Anthropic dévoile Claude Fable 5.2 et Mythos 5.2, plus rapides et plus performants en code Le Monde Informatique"
       },
       {
         "title": "Claude Fable 5.2 : la propriété du code fait bondir la consolidation - Brief IA",
@@ -35,10 +35,10 @@
         "description": "Claude Fable 5.2 : la propriété du code fait bondir la consolidation Brief IA"
       },
       {
-        "title": "IA : Meta lance Muse Ember, un modèle léger pour réduire les coûts des agents - Le Monde Informatique",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNODdnQWd4ZU1hZHlQYkFIQmZfRkY0ZEdBNy1sZDlHZXRKNkVUZ1ByX2NYNnlyYXZXc3Z6eFFTaDQ1QVpxNi1lcmxtSC1RazdJVmxzWmN4d2JvZHVuTk9UWUJZak9QTDVvOWV6NUhvOWo5aTJ4SFdwRXNrMEpRWVp0amZPYWVPTm9RdlVtdFhRNkg0RnRlLVBHbnRsWng?oc=5",
-        "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
-        "description": "IA : Meta lance Muse Ember, un modèle léger pour réduire les coûts des agents Le Monde Informatique"
+        "title": "Fuite de données chez DEKRA : les informations personnelles de candidats au code de la route exposées - French Breaches",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV2JwWGxQZnV5RFpxenR6MVQ0Qjd0UURTVEJpankybmIzSVJGanJuSTNpbnlXRHkzQllpMllzT2lvT2hacEN4dkRsQWxnWWZSZDlITi1vWWUyVUlRMVZ5ZUdjWUdZZzhpclZfRzdnYVlacTdSQlRMd2ZkX043NDc0NE16dE5MMjhxaHZFOWxpMzEyQzE4RUYwVXNoUjVRT2MyQV8xUnVxZ2pKZ1htOGc?oc=5",
+        "pubDate": "Wed, 04 Nov 2026 08:00:00 GMT",
+        "description": "Fuite de données chez DEKRA : les informations personnelles de candidats au code de la route exposées French Breaches"
       }
     ],
     "articles-theme3": [
@@ -64,6 +64,12 @@
   },
   "global": [
     {
+      "title": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA - ActuIA",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON3o0ZXdsTGN5THNvdkFCRnp6ZTJHVThyRTRTSHlwaEdSbUJfZzJTWXlVU3RsRW1OZVh4YS1HN3Q0WktaQ0o3M2Zvd2dZTjZtVExKc19yRTV3ZnB1aEE0MGVhbk5vQW5FTURMY01sWGRkSF95c2V0YjI4dE8td0ljRkt6Mk5BNzhTbVhoVUZnMTdKWHBPU2drM1BRODVkcU94ZGlVdA?oc=5",
+      "pubDate": "Wed, 18 Nov 2026 09:00:00 GMT",
+      "description": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA ActuIA"
+    },
+    {
       "title": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS - Snyk",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAydEk3TnpwanA4ckJnby1iemp6SzdmOThkQTNFTnVDdE5CdWdmekJhWVl1Rkh0SkxTR0stVktsX29OSzhoaE1fOENLYWRsVWtXZ2dPcTFXWm4yZVloc19uZVA4VWJ4RFp2WTVZ?oc=5",
       "pubDate": "Mon, 09 Nov 2026 17:56:01 GMT",
@@ -82,12 +88,6 @@
       "description": "Données d’entraînement : le risque juridique peut retomber sur l’entreprise cliente InformatiqueNews"
     },
     {
-      "title": "Une faille dans le langage de programmation Java expose les systèmes informatiques au piratage, selon des Etat - Boursorama",
-      "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNdWlJaUNFSHRnRThDUWw3RDZtM0dDbDRVblBjQkE0NUotYnBkWUNJeGZLYkpNbU1QSzBlcnVfcTMzT2Jqa3ViWXNNdVBoRGo0QUtuR3M3Zk5aQjhDWWlOR1hHRnJQLVRpTGtZQzByNEVLVkYxV1hFbWh3SDdYZTBXWGVWdUxsVHFrYjhlRWNJZTNaLTlYdUV3TlNCMG5INlpCRUFOQjZGWmpOSndsZVczenRpZmRLUzVIcHBYZ3hGaU16WWRvNGxsMkM0WlRuMkZzN1dDZ3p3ZEhpbG9yUHFnLWktN0RTVFp1NVJIOVp5UUp6Vmk1bEc0c3BBTjZDX3JJVFdhclJQWUFVVUNxWTVUaU1ZcjM4TzEzU19MNdIBnAJBVV95cUxNdWlJaUNFSHRnRThDUWw3RDZtM0dDbDRVblBjQkE0NUotYnBkWUNJeGZLYkpNbU1QSzBlcnVfcTMzT2Jqa3ViWXNNdVBoRGo0QUtuR3M3Zk5aQjhDWWlOR1hHRnJQLVRpTGtZQzByNEVLVkYxV1hFbWh3SDdYZTBXWGVWdUxsVHFrYjhlRWNJZTNaLTlYdUV3TlNCMG5INlpCRUFOQjZGWmpOSndsZVczenRpZmRLUzVIcHBYZ3hGaU16WWRvNGxsMkM0WlRuMkZzN1dDZ3p3ZEhpbG9yUHFnLWktN0RTVFp1NVJIOVp5UUp6Vmk1bEc0c3BBTjZDX3JJVFdhclJQWUFVVUNxWTVUaU1ZcjM4TzEzU19MNQ?oc=5",
-      "pubDate": "Wed, 18 Nov 2026 17:06:49 GMT",
-      "description": "Une faille dans le langage de programmation Java expose les systèmes informatiques au piratage, selon des Etat Boursorama"
-    },
-    {
       "title": "AI est à la fois une cible et un outil pour l’acteur malveillant​​ ​ - Recorded Future",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5US0p0TjVJclhDZlpyYWwyR0ZpNHhGWlRGbFMwTEhiekxmYTZCOFNHYm1QYkNhQWxCMU9rOUZvb2xaQW90VHRRcVhhUjIybHNGZlhXS3haWk9OZ3BJZ0ZqTzBhUmtMek5xUTVvb1RINGtudFZPU3pfLWRB?oc=5",
       "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
@@ -100,16 +100,16 @@
       "description": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis Cyberattaque.org"
     },
     {
-      "title": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève - ITforBusiness.fr",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVWFCbTJ3Y19veS1lNTRfOEJ1NDBpTGZfWlhKNDVNVkprUW51VWE5Q25VSHNMZTV6V0QxTU5vTzhYdFdTM2gyZ0E2dklZanQtNGs4RkZ2V1dVdS1mNk0zRXR4aERKSnA4MjNJTXBjeWpzZlJUeERHNUotSWE3WEE?oc=5",
-      "pubDate": "Fri, 13 Nov 2026 08:00:00 GMT",
-      "description": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève ITforBusiness.fr"
-    },
-    {
       "title": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA - Cryptoast",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdHNOQ1RkZ0c2STVKMi1qdnVqUVgwR3Ywc2l0MVFybkNnZHN2VGhPNkxOZGFOd1NvcEZUbWNIdkVJdzZ4b0ZtcEhyLVFnZXJfN2R3SW9uUEtDeTRMNW9Id3ZnMXhCdlMxQXMwRWsxM0RvWUZDanlIanljQ202QW9aTmlkUXUtaWEwSGV5XzNWU2Q?oc=5",
       "pubDate": "Mon, 26 Oct 2026 07:00:00 GMT",
       "description": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA Cryptoast"
+    },
+    {
+      "title": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève - ITforBusiness.fr",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVWFCbTJ3Y19veS1lNTRfOEJ1NDBpTGZfWlhKNDVNVkprUW51VWE5Q25VSHNMZTV6V0QxTU5vTzhYdFdTM2gyZ0E2dklZanQtNGs4RkZ2V1dVdS1mNk0zRXR4aERKSnA4MjNJTXBjeWpzZlJUeERHNUotSWE3WEE?oc=5",
+      "pubDate": "Fri, 13 Nov 2026 08:00:00 GMT",
+      "description": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève ITforBusiness.fr"
     },
     {
       "title": "L'I.A continue ses ravages dans le jeu vidéo : 54 % des développeurs licenciés toujours sans emploi et ça ne va pas s'arranger - JeuxVideo.com",
@@ -124,12 +124,6 @@
       "description": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano Mon Carnet – de l'actualité numérique"
     },
     {
-      "title": "Harriet Farlow appelle à fixer le risque acceptable pour l'IA - Brief IA",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMDVoNGNNVWxOc0hETVZaTjhtOTBnLVMxdTZaYUpfaEdOWDhLYVNLdi05SG9ZLWNVbUpWalI1X3hja0lGM21zbVZhNllJODJucnRydzR6c1JfM3NuQTdEYWVtOEZQVFd4ZzYyYTJxOWJlazhDQkRkcmdHTXJKZW1TYmc2R2ZienFJQWpWQldmYmt1UW1QbzZr?oc=5",
-      "pubDate": "Fri, 20 Nov 2026 19:28:59 GMT",
-      "description": "Harriet Farlow appelle à fixer le risque acceptable pour l'IA Brief IA"
-    },
-    {
       "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
       "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
@@ -142,16 +136,16 @@
       "description": "Anthropic IPO Buy wait or avoid Seven questions investors should ask Saxo"
     },
     {
-      "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTUNaRHMtN2dTelNhNXk1aGYwb0Y1aXFBX0hWdHJjMGVSZWZmX01hRWRCb1dlaW02anJqa1Fhay1QckdfZ1o0djVHS1Y1SXhzbUstQTBzdUQ2Wk1SeUFyVUE5SmVpTzV4TEVyeENkbnJsbFk1RGdUcWZybWtoUFRmb3pwT0RDRFpTRmIzWUhyVmdZNWFpM19Qb0FZWHVFVGI1d2xUTDd5V2VWVGdFb05ucHFfd1k1cTY5UERrM3lSU2F3Z1dOQXVXU0o0eGhHOTZWOXBuWDc5Wi00d3RyQnVZZnBxcTBINEFVem04TnNKZE9HRWdUeFE?oc=5",
-      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
-      "description": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? Frandroid"
-    },
-    {
       "title": "Vulnérabilité EMBRACE, Codex et VS Code toujours sans correctif - Pasquale Pillitteri",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONVBGUVJqMEJsMl9OSGNSVXduYmE5LThrMW94S0VnMWhrbGtGNWNwN1RLUXVTcFk0R1NaOXVjd3A5UElrTlNmMXoyQUNRX1BUUC1zNERJQURMUWZLRm9IdlZPSUI5c1NFWUdxcGRGNHBBalgzNklONExfWVdxaVF1UVN5Y2dtOTRic0VTTjR2MTg?oc=5",
       "pubDate": "Thu, 29 Oct 2026 07:00:00 GMT",
       "description": "Vulnérabilité EMBRACE, Codex et VS Code toujours sans correctif Pasquale Pillitteri"
+    },
+    {
+      "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTUNaRHMtN2dTelNhNXk1aGYwb0Y1aXFBX0hWdHJjMGVSZWZmX01hRWRCb1dlaW02anJqa1Fhay1QckdfZ1o0djVHS1Y1SXhzbUstQTBzdUQ2Wk1SeUFyVUE5SmVpTzV4TEVyeENkbnJsbFk1RGdUcWZybWtoUFRmb3pwT0RDRFpTRmIzWUhyVmdZNWFpM19Qb0FZWHVFVGI1d2xUTDd5V2VWVGdFb05ucHFfd1k1cTY5UERrM3lSU2F3Z1dOQXVXU0o0eGhHOTZWOXBuWDc5Wi00d3RyQnVZZnBxcTBINEFVem04TnNKZE9HRWdUeFE?oc=5",
+      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
+      "description": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? Frandroid"
     },
     {
       "title": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code - Pause Hardware",
@@ -166,10 +160,16 @@
       "description": "Libre et open source express: apocalypse de vulnérabilité, entrep ... ZDNET"
     },
     {
-      "title": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? - InformatiqueNews",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWktITjFCNjhYWENQdkNYcm5IaHc3ZGpfM2pjdE5YU1ljVHRwRm5vemlxdmltUWVaVHNEVWNLdldteXdHbTZnSVFiYmxUNmRKOHk4YTkxZklIMGtieWdOTWJLRWNudXJFbVk3TElHY0ZrQXRHZlRoS0UyRXZjYjNLend5WTVqbWtlZU5tNk1STUkzUlU?oc=5",
-      "pubDate": "Tue, 27 Oct 2026 07:00:00 GMT",
-      "description": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? InformatiqueNews"
+      "title": "La mise à niveau Glamsterdam d'Ethereum risque de perturber jusqu'à 15 000 applications automatisées - CoinDesk",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbWVJQ2tBUld2b3d4RzNjc0lDX2JSSldtR2F6UmpsTEdYVFpwUlVRMDBtLWc0NXFFdUE0VzJyTWhOV3NrOHRGUDRPUkNxN1JpS2REZzlKaWFlcjE0YXgxVTAzOTNvM1RiVmFMV3VVZXJLOE1yNzNldkZvR3RubUdrWk1BUS1Ma3dFTGhCUld2elMzS0NBS1ptX1BxVlVINlVPeF9ldk9Sdm4zdHpGU1pNU3Vn?oc=5",
+      "pubDate": "Tue, 17 Nov 2026 13:02:56 GMT",
+      "description": "La mise à niveau Glamsterdam d'Ethereum risque de perturber jusqu'à 15 000 applications automatisées CoinDesk"
+    },
+    {
+      "title": "Cybersécurité : les failles détectées augmentent de 30 % - Brief IA",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZnZsRm9nTHdCbzZ2T2hFWndFejlzbVllMnlWSTdUZ2U0Wm5waEJHNjc0UUV3bWgyRFpHWk5rYVE0SmEwSEp5Q2hIaUdoRVc5M0g4ak5wNnp0NUJ6NXllQnhuUWNVLVlVLWFjc08wYVlGOWt1MHFrMzBBcC1XWmljWDltZFktcDZfN0Jj?oc=5",
+      "pubDate": "Wed, 18 Nov 2026 20:03:03 GMT",
+      "description": "Cybersécurité : les failles détectées augmentent de 30 % Brief IA"
     }
   ]
 }
