@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-11-23T18:22:06.126094+00:00",
+  "updatedAt": "2026-11-24T17:53:52.249529+00:00",
   "themes": {
     "articles-theme1": [
       {
         "title": "Appel de Paris pour la sécurité de l'intelligence artificielle - La France au Royaume-Uni",
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOanJrSXI5WEluMi1lRU1ESDQtRjgtdW1LblgyNHQ0Qkg2bUlvRTNLdlhyeWJWeGlTcmpYSGxCdjdOUXBlckFmZXd6WTFMZFRaT2FMM0pDUDNJam5ldzNTd3IxbTJWcmJvNGViQ05yeHNWd1VQT0kxbDMxYlR4V3J5azl3akxrelpzTThNTFF6Vnp4QjFxaUQxOGtR?oc=5",
-        "pubDate": "Wed, 11 Nov 2026 11:55:21 GMT",
+        "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
         "description": "Appel de Paris pour la sécurité de l'intelligence artificielle La France au Royaume-Uni"
       },
       {
-        "title": "Déclaration jointe à l’appel de Paris pour la sécurité de l’intelligence artificielle - Premier ministre du Canada",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQR2N0Z0RSdEwxMjJ4dXFTV0ZVUWtmRU1sV2JNNlFMRzR3M1o3a3NOZU1jZlNWdDN3eS1WT2xkamktYU5KaFk2ZXQ3ajhtTTVSU0VGNGdCQUM2SUlqbFJZZTBlVEstNGpmVnRNamRURWFOVTBqZURWalhmTV9xZWYxRkpyalNycTZUa0pqeXpabEJVLW8tOExSNFQ0Qi1HcWltSGhRSkZPREJsMm4xU19vQlpNSHlvbWNoN2NxN2JB?oc=5",
-        "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
-        "description": "Déclaration jointe à l’appel de Paris pour la sécurité de l’intelligence artificielle Premier ministre du Canada"
+        "title": "EN DIRECT - Débat au Conseil de sécurité sur le règlement des conflits à l'ère des changements technologiques - UN News",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xeFJVWVhOdmF4SjEwSnVaanhBcFZmX1VZZ19OdTUzR3BaN3d1TmU3ZURVR0trcXpnSGJOTU1MRUdtUGIyZHRDVGY2NlB4aEozMDlsM2NSYw?oc=5",
+        "pubDate": "Tue, 24 Nov 2026 15:09:17 GMT",
+        "description": "EN DIRECT - Débat au Conseil de sécurité sur le règlement des conflits à l'ère des changements technologiques UN News"
       },
       {
         "title": "Oracle et OpenAI s’allient pour traquer les failles de sécurité de l’IA en entreprise - ZDNET",
@@ -35,24 +35,24 @@
         "description": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs Cyberattaque.org"
       },
       {
-        "title": "Meilleurs outils de design-to-code comparés: analyse détaillée - AIMultiple",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtcTBBMmtPaXk1ODFQeTZoaHlvZFE4X3F5RUl1X1hxWk80bTdRTXpETTEzSWVzdk5fdmdmQ1hxVGxmSlRqM2ppbWRtc1lCQjE1SFE?oc=5",
-        "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
-        "description": "Meilleurs outils de design-to-code comparés: analyse détaillée AIMultiple"
+        "title": "Des dizaines de sites grand public, dont ceux d'Ikea, d'HSBC ou de CNN, attaqués pour récupérer les données financières d'utilisateurs - franceinfo",
+        "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQRkJXM21GSS1SenlBV3RES1piWXdnek9WSWQ0a0tWczB0ZEhlUENzMFEtQVh0WTRXcWdZT3ByU3F5R0NOYjRIc2ctQ2loWnU0emx2ZEhqUE1VZXlLYm1HbHNyU1RlR3BqTmlRS0ZSVk11UlhCZHlkY2tmY2lzbklXOHJrMnJzaE13Wk1UcWRkWGJ3eEMwdmYxeWlJTzR1SkFHa1ZyR2JzZkpzcjAyOXJ4LU5lSnVsZnFWQVYxaWZBaENBZ3RJWWR5ZjdOdjVoRkc0bDZPaHBQek5xWFNHWmdncXRHT1dPS0V2VTRXczM5WGtVd0dVRzlWYzZxR2ktT2xLQ19jaTY3WHFOT3lBMUpYWWtQdGJtUFktVEdGSVZpRy14Q0lTaGNvMG9aZlU2MXM1QnhkUjl1TTdPTTA?oc=5",
+        "pubDate": "Wed, 18 Nov 2026 08:30:59 GMT",
+        "description": "Des dizaines de sites grand public, dont ceux d'Ikea, d'HSBC ou de CNN, attaqués pour récupérer les données financières d'utilisateurs franceinfo"
       }
     ],
     "articles-theme3": [
+      {
+        "title": "Développeurs : comment l’IA transforme le métier - libnanews.com",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE90MmlzanJsOGFMcjRQY19pbkdOZGpLQU1OdDFmT1lJQXlsYjI3VVlyeEJwV0VyZ201STdXRGVSUjZKajBwMmFESDJWbjRFb2dLLUFTQW5yeGc0N3VNVTZ0OGV2bGR0bG5QaVFuVWdkVkk2ajRNR19r?oc=5",
+        "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
+        "description": "Développeurs : comment l’IA transforme le métier libnanews.com"
+      },
       {
         "title": "« Le matin, je fais cuire mes oeufs, mon bacon, et je prompte, je prompte, je prompte… » : à San Francisco, ces développeurs qui ont vu leur métier percuté par l'IA - Les Echos",
         "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPUHBXYjhZRG9rSVF6MVJOQU9nN1RmX0ZWY0JUUC00dVRVQU9yaVY1Q3FGcmVOaDhiQkxjdkNoanh1aThzckhvNkZsQnhUa3czeUNXLWlyQ3h6dnVqMmRHRDZnUFlhY1VyWUVSaHJLTWdwSnItVDJXYWwtdUhRTi1BcjU2elZkNEs0X1pKRVNES1ZHOVhyR1NYWkpEOXlDSm5uenV2R0ttWVJoSkFPRUw2THBfWDNULUNmLWVKaXFVbjZWazFBSFZ0V1duX0N0S29nQzFqU0U2UjFMbW4xeEU4WE1BUVFncHpzVGxFQmQyajlTVk0tdnE2R2lucHVVYTZvWXN3dGVkb0F1akhWZmRkbzUwbHJLS1ZHSnVLaEhHZTZOWU5BR2w1WGQ2aU5hdm1PblptNnY2Z1pycGFvYU5BZA?oc=5",
         "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
         "description": "« Le matin, je fais cuire mes oeufs, mon bacon, et je prompte, je prompte, je prompte… » : à San Francisco, ces développeurs qui ont vu leur métier percuté par l'IA Les Echos"
-      },
-      {
-        "title": "3 idées reçues qui freinent l’adoption de l’IA générative dans votre entreprise - IBM",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMTFUQXhneW5UMVM5NjY4bERvVlk4VFp4b1J4UDM5dG5NQ2Y3Q0V1ckoxSVA5b1lBbVRNcFY5dWNYS2tQM0FFTFY4Qy04LXQ1eVdiNTBRVVp5VnB4VVVvYlo4Z3hYUkNCTWhldUtIX3pzZXdJTUdUeHdrOEZjNVVrUUVNamwtRkstNzdqdi01Z2xsc0pmOC1FMjNHUGZoREtWQVE?oc=5",
-        "pubDate": "Sat, 14 Nov 2026 20:57:37 GMT",
-        "description": "3 idées reçues qui freinent l’adoption de l’IA générative dans votre entreprise IBM"
       },
       {
         "title": "\"Ce que l’IA ne peut pas faire\" : les stratégies des jeunes diplômés en maths et en informatique pour trouver du travail - L'Etudiant",
@@ -66,14 +66,8 @@
     {
       "title": "Les développeurs de Bitcoin Core corrigent une vulnérabilité découverte avec l'IA - Cryptoast",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcHNNbzhnWmlCT0FjLTBxazc1ald1QlExUGRkTmhabzlmXzF6WnNzYm96cnBWdDUwNDdOU3pMMU53WWdNNDJpUEd5aWh5TFZRYVhDYi1pYVRzdWNwNl9GNUQ3MjVZTzhoZkFTZEFGRlNORGNtRmNKQlBoTkp2NWhNTnhFTWl6SFNtT19jNjg0VUZWaGJR?oc=5",
-      "pubDate": "Mon, 23 Nov 2026 15:03:08 GMT",
+      "pubDate": "Mon, 23 Nov 2026 15:13:43 GMT",
       "description": "Les développeurs de Bitcoin Core corrigent une vulnérabilité découverte avec l'IA Cryptoast"
-    },
-    {
-      "title": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA - ActuIA",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON3o0ZXdsTGN5THNvdkFCRnp6ZTJHVThyRTRTSHlwaEdSbUJfZzJTWXlVU3RsRW1OZVh4YS1HN3Q0WktaQ0o3M2Zvd2dZTjZtVExKc19yRTV3ZnB1aEE0MGVhbk5vQW5FTURMY01sWGRkSF95c2V0YjI4dE8td0ljRkt6Mk5BNzhTbVhoVUZnMTdKWHBPU2drM1BRODVkcU94ZGlVdA?oc=5",
-      "pubDate": "Wed, 18 Nov 2026 09:00:00 GMT",
-      "description": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA ActuIA"
     },
     {
       "title": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS - Snyk",
@@ -88,16 +82,46 @@
       "description": "Données d’entraînement : le risque juridique peut retomber sur l’entreprise cliente InformatiqueNews"
     },
     {
+      "title": "Avec l’IA, les entreprises vont-elles recommencer à développer leurs logiciels ? - ITforBusiness.fr",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11SUNqQk9PVWczaFRfM1pvWmFZNGRlcjJ0clIzRnNGMmpRckg1LTRoc0FsemRTbThGNGxXdkRuUnB0RHB2NWtzTHlVZ1NzZVRZeF9zQ0otQU9RTHRaeDFlVVo3LXQ2cW9OSUZvck15bVlGVFpGeVJSZw?oc=5",
+      "pubDate": "Tue, 24 Nov 2026 14:31:21 GMT",
+      "description": "Avec l’IA, les entreprises vont-elles recommencer à développer leurs logiciels ? ITforBusiness.fr"
+    },
+    {
+      "title": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis - Cyberattaque.org",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3dQQTRSaE5JTHhmOGZhMFRiSTFRdmtoLWxPV3pDemVJUGp5SXBqbG1OQzBzVVhNUWJwUzQtWlh5U0lCclVBTE9pUUxtcU5IRzhwZ1ozZWVzblJHTUM1ajZvbjZDZzB3TEtFTWctN2dSNTFIbDdDd1ViZ09veEhTdU1OUVVfRDc1TnZfcHRkTWV2UkY1dlk2QmxrMkRSTndKX29MQQ?oc=5",
+      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
+      "description": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis Cyberattaque.org"
+    },
+    {
       "title": "AI est à la fois une cible et un outil pour l’acteur malveillant​​ ​ - Recorded Future",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5US0p0TjVJclhDZlpyYWwyR0ZpNHhGWlRGbFMwTEhiekxmYTZCOFNHYm1QYkNhQWxCMU9rOUZvb2xaQW90VHRRcVhhUjIybHNGZlhXS3haWk9OZ3BJZ0ZqTzBhUmtMek5xUTVvb1RINGtudFZPU3pfLWRB?oc=5",
       "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
       "description": "AI est à la fois une cible et un outil pour l’acteur malveillant​​ ​ Recorded Future"
     },
     {
-      "title": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève - ITforBusiness.fr",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVWFCbTJ3Y19veS1lNTRfOEJ1NDBpTGZfWlhKNDVNVkprUW51VWE5Q25VSHNMZTV6V0QxTU5vTzhYdFdTM2gyZ0E2dklZanQtNGs4RkZ2V1dVdS1mNk0zRXR4aERKSnA4MjNJTXBjeWpzZlJUeERHNUotSWE3WEE?oc=5",
-      "pubDate": "Fri, 13 Nov 2026 08:00:00 GMT",
-      "description": "Gartner : l’IA rebat les cartes des talents… et fragilise la relève ITforBusiness.fr"
+      "title": "MegaETH devient MEGA : 30 millions de dollars pour lancer un marché d’inférence IA - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuMFdTa2lzOTRQYm9UdDN6WV9ZZlJLSzBBOU9JeWxjUl9QX3Q1RlFJdzJGYjIwNlA3OHVkc3hpZzJ3ck1BX0owVU9lUkxvNVBYR0x5Y3BtTzdIZThMZnJvekJCNGtDbXNjUFQwMg?oc=5",
+      "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
+      "description": "MegaETH devient MEGA : 30 millions de dollars pour lancer un marché d’inférence IA TradingView"
+    },
+    {
+      "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
+      "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
+      "description": "Dangers de l’IA | Pour la suite de l’humanité La Presse"
+    },
+    {
+      "title": "« Il risque d’y avoir de la casse » : expert-comptable, un métier très exposé à l’IA - Le Point",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSC04cXRvUWFJVXM3Z0hsbzBUeFBnWXowY1JrdUkzQUJCSkFSQ3M1c1daNEt3QmN3RHltaE1ZcV9QRXZYc1ZiQ09oWXc1Zk90ZzNPM3VmZUM5MW5fejhhdkxzZUJWcHotT2dwUExZVmJGWnRvSFpGU01qUU51eEFoYnFMenZuYmRzYUhoM1VvVnZhemVYMUw2Z3NBd0pHY0xBVm41czM4UnJGY1VacHRaTEVCd1NFQVd6OFQ3b2JkVkdqWUlRODMwUlFYS3IxTHo3?oc=5",
+      "pubDate": "Tue, 10 Nov 2026 08:00:00 GMT",
+      "description": "« Il risque d’y avoir de la casse » : expert-comptable, un métier très exposé à l’IA Le Point"
+    },
+    {
+      "title": "IA : le recrutement face au risque de tarir l'expertise - Brief IA",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeGphM3hoN2RhOHNua2lpcEMwdGotMlZJM3VMb2xreTcwMjhzMWxJdkRmSWEweXc2N0NkUUxzTTBWUW9oUE9DRVUwN0RCM3FxNGplaExoSm1UNGJHWU5xd01WRXlEQzJ5ZGJxWHNYcjUzbzc4Ulk4RzNuUDN3OEotWGVDelBGUUt4aF9fdQ?oc=5",
+      "pubDate": "Tue, 17 Nov 2026 09:34:50 GMT",
+      "description": "IA : le recrutement face au risque de tarir l'expertise Brief IA"
     },
     {
       "title": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano - Mon Carnet – de l'actualité numérique",
@@ -106,16 +130,16 @@
       "description": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano Mon Carnet – de l'actualité numérique"
     },
     {
-      "title": "Harriet Farlow appelle à fixer le risque acceptable pour l'IA - Brief IA",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMDVoNGNNVWxOc0hETVZaTjhtOTBnLVMxdTZaYUpfaEdOWDhLYVNLdi05SG9ZLWNVbUpWalI1X3hja0lGM21zbVZhNllJODJucnRydzR6c1JfM3NuQTdEYWVtOEZQVFd4ZzYyYTJxOWJlazhDQkRkcmdHTXJKZW1TYmc2R2ZienFJQWpWQldmYmt1UW1QbzZr?oc=5",
-      "pubDate": "Fri, 20 Nov 2026 19:28:59 GMT",
-      "description": "Harriet Farlow appelle à fixer le risque acceptable pour l'IA Brief IA"
+      "title": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés - OpenAI",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tbXFJbjhEd2FFcVh3VHdOSVVOeXo0RTlNdmc3M0FQQnF3WUktR2Zqa1BhYVJReE9KYWs0TUJ4V0tZM0NsX1hQbkVfX3NlaFljbWJUclo1QXA4dS1yOUZtSkU1aVJEZw?oc=5",
+      "pubDate": "Thu, 05 Nov 2026 08:00:00 GMT",
+      "description": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés OpenAI"
     },
     {
-      "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
-      "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
-      "description": "Dangers de l’IA | Pour la suite de l’humanité La Presse"
+      "title": "Siri s’ouvre aux développeurs, sauf en Europe, et ça compte vite - Servicesmobiles.fr",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSVk4SHNIUnh3T2J3T09Xb3p1bnZfS2lWQXBBRXZncU9nNjJTTWdKdnViUmZ4SFNGY09jSjhib2Y1bDhGNVBSQzhNcWJwVHhoM2thY3dGNWZEeTZBbG4xbDZNNXFpVGF1UllpeGI3Vnc0N05mWVYta2JHYXNWbTREb2hkY0o4aE1zT1RFWDlpalFGSzVoQkJ4UG1yU2EtbWRn?oc=5",
+      "pubDate": "Mon, 09 Nov 2026 11:00:54 GMT",
+      "description": "Siri s’ouvre aux développeurs, sauf en Europe, et ça compte vite Servicesmobiles.fr"
     },
     {
       "title": "L'I.A continue ses ravages dans le jeu vidéo : 54 % des développeurs licenciés toujours sans emploi et ça ne va pas s'arranger - JeuxVideo.com",
@@ -136,40 +160,16 @@
       "description": "Vulnérabilité EMBRACE, Codex et VS Code toujours sans correctif Pasquale Pillitteri"
     },
     {
-      "title": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? - Frandroid",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTUNaRHMtN2dTelNhNXk1aGYwb0Y1aXFBX0hWdHJjMGVSZWZmX01hRWRCb1dlaW02anJqa1Fhay1QckdfZ1o0djVHS1Y1SXhzbUstQTBzdUQ2Wk1SeUFyVUE5SmVpTzV4TEVyeENkbnJsbFk1RGdUcWZybWtoUFRmb3pwT0RDRFpTRmIzWUhyVmdZNWFpM19Qb0FZWHVFVGI1d2xUTDd5V2VWVGdFb05ucHFfd1k1cTY5UERrM3lSU2F3Z1dOQXVXU0o0eGhHOTZWOXBuWDc5Wi00d3RyQnVZZnBxcTBINEFVem04TnNKZE9HRWdUeFE?oc=5",
-      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
-      "description": "Pourquoi la puce RTX Spark de Nvidia risque bien de changer la manière dont on utilise l’IA ? Frandroid"
-    },
-    {
       "title": "Libre et open source express: apocalypse de vulnérabilité, entrep ... - ZDNET",
       "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNzFaMGUya0Z0Z3BwdEd2WmhkQXltZDVtWEV3WlhFTktzYWtFNG0xVUFWTnhvdlZtdDF1WDE4dmJVci1DTWpvSmJmZ1dZdmxLbUZqV0F4bGVkeUd0VjhGejdWTmdCQURmUlIyWDM2ZlpqeVhaeUdLdjdnTG1iUHByUjB3TUtvVWJKVHZSWFpZTWxkV2ZkbC1YS1o5b1ljTVNfNHppZ3BTdkxIeVl4cmVNR0xDSVRKOHUzX1BqRTBIaUxod0QtZzV1V1Q1eS1ZTU0yaDllSnoxcFNjZU95V0hpOEdWSHVRNFFPWmNrb1JpSVMyNl9yRHVSS1Nsbw?oc=5",
       "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
       "description": "Libre et open source express: apocalypse de vulnérabilité, entrep ... ZDNET"
     },
     {
-      "title": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code - Pause Hardware",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAySXN1NUxYQnR5WUZaNjdwakx3LVJCQWV5QzBEUWpLM1JYVGVXUjh3bUl5NUEzRFNDc2h1QWJRbm5NMERZVWMzbTZSOVpXNUExTU5OVXJpemFKdWtxaHFib3Zid2xISHFyV3lOSDJWcDNMU3lDYWREbA?oc=5",
-      "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
-      "description": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code Pause Hardware"
-    },
-    {
-      "title": "La mise à niveau Glamsterdam d'Ethereum risque de perturber jusqu'à 15 000 applications automatisées - CoinDesk",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbWVJQ2tBUld2b3d4RzNjc0lDX2JSSldtR2F6UmpsTEdYVFpwUlVRMDBtLWc0NXFFdUE0VzJyTWhOV3NrOHRGUDRPUkNxN1JpS2REZzlKaWFlcjE0YXgxVTAzOTNvM1RiVmFMV3VVZXJLOE1yNzNldkZvR3RubUdrWk1BUS1Ma3dFTGhCUld2elMzS0NBS1ptX1BxVlVINlVPeF9ldk9Sdm4zdHpGU1pNU3Vn?oc=5",
-      "pubDate": "Tue, 17 Nov 2026 13:02:56 GMT",
-      "description": "La mise à niveau Glamsterdam d'Ethereum risque de perturber jusqu'à 15 000 applications automatisées CoinDesk"
-    },
-    {
-      "title": "Ethereum repousse sa mise à jour face à une hausse massive des coûts - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SQ2oxRDlPVnBCcWhEdXluT05EbjhxRVJvVG1NZElPSUFkNkRtWWY1dzhOeHN3UU5IeTlKLVhfaldlNHpyQ2N6c1RPbTJJY09YX3NXSlFqOFQxX0xBMGFqa0ExNlVwWmlsYnFqRQ?oc=5",
-      "pubDate": "Fri, 20 Nov 2026 15:00:00 GMT",
-      "description": "Ethereum repousse sa mise à jour face à une hausse massive des coûts TradingView"
-    },
-    {
-      "title": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? - InformatiqueNews",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWktITjFCNjhYWENQdkNYcm5IaHc3ZGpfM2pjdE5YU1ljVHRwRm5vemlxdmltUWVaVHNEVWNLdldteXdHbTZnSVFiYmxUNmRKOHk4YTkxZklIMGtieWdOTWJLRWNudXJFbVk3TElHY0ZrQXRHZlRoS0UyRXZjYjNLend5WTVqbWtlZU5tNk1STUkzUlU?oc=5",
-      "pubDate": "Tue, 27 Oct 2026 07:00:00 GMT",
-      "description": "Quand le modèle Qwen appelle Pékin : un risque caché dans les modèles IA chinois ? InformatiqueNews"
+      "title": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA - Cryptoast",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdHNOQ1RkZ0c2STVKMi1qdnVqUVgwR3Ywc2l0MVFybkNnZHN2VGhPNkxOZGFOd1NvcEZUbWNIdkVJdzZ4b0ZtcEhyLVFnZXJfN2R3SW9uUEtDeTRMNW9Id3ZnMXhCdlMxQXMwRWsxM0RvWUZDanlIanljQ202QW9aTmlkUXUtaWEwSGV5XzNWU2Q?oc=5",
+      "pubDate": "Mon, 26 Oct 2026 07:00:00 GMT",
+      "description": "Bitcoin Core modifie sa politique de sécurité pour les failles détectées par l'IA Cryptoast"
     }
   ]
 }
