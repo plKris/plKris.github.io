@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-25T17:20:20.673360+00:00",
+  "updatedAt": "2026-11-26T17:00:08.001533+00:00",
   "themes": {
     "articles-theme1": [
       {
-        "title": "Appel de Paris pour la sécurité de l'intelligence artificielle - La France au Royaume-Uni",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOanJrSXI5WEluMi1lRU1ESDQtRjgtdW1LblgyNHQ0Qkg2bUlvRTNLdlhyeWJWeGlTcmpYSGxCdjdOUXBlckFmZXd6WTFMZFRaT2FMM0pDUDNJam5ldzNTd3IxbTJWcmJvNGViQ05yeHNWd1VQT0kxbDMxYlR4V3J5azl3akxrelpzTThNTFF6Vnp4QjFxaUQxOGtR?oc=5",
-        "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
-        "description": "Appel de Paris pour la sécurité de l'intelligence artificielle La France au Royaume-Uni"
+        "title": "Appel de Paris pour la sécurité de l'intelligence artificielle. - La France en Italie",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTXNlNnI2bkszMklsNXltSW5NS2NPMk54RFJneU5xTWEwREE1WktuWElSc2xuSWV1UFpjOGRFSVhZeGNicjB4ZzBEejE0VmpiNkUtUVB3MXlPSHptRS1hd2V6alVVZlJ2cVd4WVB5SjR1MFBFQnY5Q2xYUWdGMzBtd2RBVTdrVVMyaWhRTnBjZjFCdWJiSV9aelNB?oc=5",
+        "pubDate": "Thu, 26 Nov 2026 16:47:45 GMT",
+        "description": "Appel de Paris pour la sécurité de l'intelligence artificielle. La France en Italie"
       },
       {
         "title": "Solutions de sécurité de l’IA en 2026 : les outils pour sécuriser l’IA - wiz.io",
@@ -23,22 +23,22 @@
     ],
     "articles-theme2": [
       {
-        "title": "Anthropic lance Claude Ship pour automatiser la revue et la validation du code - Le Monde Informatique",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ3hDNlhST1Fua0c5NnRPQW1wUk9TeUlzOUp0WFplRGRqSVhZY3RteW5UR0lvaUEyR2JyZzRmbHZRb1JFTlhGd0M0aFlERHZpSkd5dDFGRXVrc3hLRGEzSV9mRkRiYXQxeG4tXzhYSXRKaG9taldaSUJpS21Dd2NvRG9TMnQ2VmNHUGo0WEt4aVRXcTFJdktqbDBSOU5qRjBNYzlDLVJvN01RXzFEZ3BweklnRUxJM3BoSmhtaDR6SnlzZw?oc=5",
-        "pubDate": "Wed, 25 Nov 2026 07:00:00 GMT",
-        "description": "Anthropic lance Claude Ship pour automatiser la revue et la validation du code Le Monde Informatique"
-      },
-      {
         "title": "L'IA va-t-elle rendre le no-code obsolète ? - JDN",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUVU2SjVnOUhkUm43MkE0dHdCMDhOREd0ejBmNy16WHBLSk95eTZlclhaWU5qd2dQVGpNdnkzQnQ1RF80eTBIR0VGZmJCNXZYbzlZX1duX3dLalRNRFpxSENNVmNWbUhTSDM4aTIzaUJrYktOZ2VsRmg2OW1iUnhFLXhwWjJtVHQzN05zd0VtXzVEZHFLa2t2MmNOdGR3MmxyMW5WTkhQdWc?oc=5",
         "pubDate": "Wed, 25 Nov 2026 10:17:43 GMT",
         "description": "L'IA va-t-elle rendre le no-code obsolète ? JDN"
       },
       {
-        "title": "Claude Fable 5.2 : la propriété du code fait bondir la consolidation - Brief IA",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcklGNnBFUExqcU50T3h5Ny14QjZESmVLTGlvNTVmOEJRZTBHc0JiaTBZZFJoQmJGaWVndDRvVkFYM1NPOUpvdWtqV0FmZzNMSmtTYzRETFJXY2RNUzJQOEdhMHJiTGhXd2MteDl5aWZ0NGlSVDRSZjBGd2x0NFRaNGNpaGNMVW5mMDBVdFN5YW5QTUpFN0RucE16TDB3UQ?oc=5",
-        "pubDate": "Thu, 12 Nov 2026 16:04:51 GMT",
-        "description": "Claude Fable 5.2 : la propriété du code fait bondir la consolidation Brief IA"
+        "title": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs - Cyberattaque.org",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcF95NW5sc19kQ0FNRmNNbnNYVHBobzc4d1F6ZU0wMXpOLXVyNjlVeFlZNGpsSkJJa295V2NCaUN6S2pEVWtzdm9uTElqX0hVa1d2RzJLbXdSdlhDWmp1OE0xLURfeXYwWktZZ1c4RExUOHpVcndlNVBJWV8wOWFwOVhfaUgtbEc3YUZwazVxSDNmMUVNZzVQUExQYWQ5MERIUXhtV19yVWZsbmZLVlN6YjJ4OVpPdFVkQi00?oc=5",
+        "pubDate": "Tue, 10 Nov 2026 08:00:00 GMT",
+        "description": "Claude Code : Anthropic reconnaît avoir fait fuiter les adresses e-mail de ses utilisateurs Cyberattaque.org"
+      },
+      {
+        "title": "Anthropic lance Claude Ship pour automatiser la revue et la validation du code - Le Monde Informatique",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ3hDNlhST1Fua0c5NnRPQW1wUk9TeUlzOUp0WFplRGRqSVhZY3RteW5UR0lvaUEyR2JyZzRmbHZRb1JFTlhGd0M0aFlERHZpSkd5dDFGRXVrc3hLRGEzSV9mRkRiYXQxeG4tXzhYSXRKaG9taldaSUJpS21Dd2NvRG9TMnQ2VmNHUGo0WEt4aVRXcTFJdktqbDBSOU5qRjBNYzlDLVJvN01RXzFEZ3BweklnRUxJM3BoSmhtaDR6SnlzZw?oc=5",
+        "pubDate": "Wed, 25 Nov 2026 07:00:00 GMT",
+        "description": "Anthropic lance Claude Ship pour automatiser la revue et la validation du code Le Monde Informatique"
       }
     ],
     "articles-theme3": [
@@ -55,25 +55,31 @@
         "description": "3 idées reçues qui freinent l’adoption de l’IA générative dans votre entreprise IBM"
       },
       {
-        "title": "En Chine, les offres d’emploi s’effondrent face à l’IA - Le Grand Continent",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaFM5aGlfcnZJVDhBbGh5V2xuR2VXSHk3S0gzemlOaW1rdGhraWU2b2dFWi1xR0JzUGxJMm9EeDJpa1pKQ1FEMzcyN0RtWHYtQ3FtSm45ZFFpYlNOWDN3WUp4WlBSeENndEFUNFduR2poR0lzUkgwX2otcXI3VlFXWm14bEI2SFhXU2hCQUEyTDROWkNaTm1BMw?oc=5",
-        "pubDate": "Tue, 24 Nov 2026 05:30:00 GMT",
-        "description": "En Chine, les offres d’emploi s’effondrent face à l’IA Le Grand Continent"
+        "title": "Prompt parties, Moocs… : comment les entreprises forment-elles leurs salariés à l’IA ? - Ouest-France",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdXhNVXFhU1ExX1VjdG5SWG1sVXZPWVE3Q2VFWkJNc1dUZ1lPbXJnNmxXWS1lbk9lX0ZzNFJnQVEtVGZtcUpSdlV2NVpRSThWNzlwNEtYQy13RmpxTVhkaTdkd3JPc3JBdnBHQXkwTlJWUGNvd3hVZFNGak5pNVQ0NjY5MTZyaThBYmJHTDFneEliVXpLTlVrOEJtVnE3VVZVa0ZIY2lIWWlwV1A4UldNZDE5TWRBQzhYSzJjTXA0SWNjc21McWxlTmxYTF9xbnFJMEZsajc2bWN0NzVtZkFrNUxGRjRNV1dxdDE1eVQ3aGh3OUJrX3VCcFlzcw?oc=5",
+        "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
+        "description": "Prompt parties, Moocs… : comment les entreprises forment-elles leurs salariés à l’IA ? Ouest-France"
       }
     ]
   },
   "global": [
     {
-      "title": "Les développeurs de Bitcoin Core corrigent une vulnérabilité découverte avec l'IA - Cryptoast",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcHNNbzhnWmlCT0FjLTBxazc1ald1QlExUGRkTmhabzlmXzF6WnNzYm96cnBWdDUwNDdOU3pMMU53WWdNNDJpUEd5aWh5TFZRYVhDYi1pYVRzdWNwNl9GNUQ3MjVZTzhoZkFTZEFGRlNORGNtRmNKQlBoTkp2NWhNTnhFTWl6SFNtT19jNjg0VUZWaGJR?oc=5",
-      "pubDate": "Mon, 23 Nov 2026 15:13:43 GMT",
-      "description": "Les développeurs de Bitcoin Core corrigent une vulnérabilité découverte avec l'IA Cryptoast"
+      "title": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA - ActuIA",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON3o0ZXdsTGN5THNvdkFCRnp6ZTJHVThyRTRTSHlwaEdSbUJfZzJTWXlVU3RsRW1OZVh4YS1HN3Q0WktaQ0o3M2Zvd2dZTjZtVExKc19yRTV3ZnB1aEE0MGVhbk5vQW5FTURMY01sWGRkSF95c2V0YjI4dE8td0ljRkt6Mk5BNzhTbVhoVUZnMTdKWHBPU2drM1BRODVkcU94ZGlVdA?oc=5",
+      "pubDate": "Wed, 18 Nov 2026 09:00:00 GMT",
+      "description": "L'Appel de Paris laisse aux développeurs le pouvoir d'arrêter leurs IA ActuIA"
     },
     {
       "title": "« C'est la fin de la récréation » : la flambée des coûts de l'IA, nouvelle préoccupation majeure des développeurs - Les Echos",
       "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQRG00M2kyZVpKeW5zV21NSDR1T1FyaDRlT0tIaWJPZzJ5OXVYX3JWV2lGM1hkUE5JRnc0dXRHaVk5Qi12NFU5Wmd3QlNaTk5od0tXMVVzWUlPckZPc1BZSzdjdERuR0dXVmFRT3Nsd1dPYkNaT0p5SllYWURLNmpBakNZY3p1aG0wcEJ6LUZRZ2pYdmp5UmtqRm9hamhkaW51eDZ6UFFLRUdVVzZXWnJTbnQxNW1PeTZOUVBLazVTejFnYTVOSXNCWDBuX3MtTFRabEJDR3lHLVZTc1dHeHdzQ2tWaXd1WnpvbmFoMmlKdzAwWjNXY2h0em9nQnlERDBXci1IUA?oc=5",
       "pubDate": "Fri, 30 Oct 2026 07:00:00 GMT",
       "description": "« C'est la fin de la récréation » : la flambée des coûts de l'IA, nouvelle préoccupation majeure des développeurs Les Echos"
+    },
+    {
+      "title": "8 prédictions sur les menaces 2027 - Programmez!",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUtTekdpdXk0SFR2U2x6c0Q2MndNVVpTY0p3NXZtRThsZUN0anRHSFJhQVZIVjlzb0F1aXA3TDlZY2paSUNlOHNVbl9DZUZNMU1DY2RqRmtlbi1KT2tEdy1kRlc2UXlYeUVKbl8wajNGRFc5NG00STFpVW9USmdBWWtpOHM?oc=5",
+      "pubDate": "Thu, 26 Nov 2026 06:01:01 GMT",
+      "description": "8 prédictions sur les menaces 2027 Programmez!"
     },
     {
       "title": "Dites oui au MCP, en toute sécurité : guide pour gouverner les agents de codage IA avec Evo ADS - Snyk",
@@ -100,34 +106,16 @@
       "description": "Avec l’IA, les entreprises vont-elles recommencer à développer leurs logiciels ? ITforBusiness.fr"
     },
     {
-      "title": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis - Cyberattaque.org",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3dQQTRSaE5JTHhmOGZhMFRiSTFRdmtoLWxPV3pDemVJUGp5SXBqbG1OQzBzVVhNUWJwUzQtWlh5U0lCclVBTE9pUUxtcU5IRzhwZ1ozZWVzblJHTUM1ajZvbjZDZzB3TEtFTWctN2dSNTFIbDdDd1ViZ09veEhTdU1OUVVfRDc1TnZfcHRkTWV2UkY1dlk2QmxrMkRSTndKX29MQQ?oc=5",
-      "pubDate": "Mon, 02 Nov 2026 08:00:00 GMT",
-      "description": "Cyberattaque contre Trigger.dev : des accès sensibles de clients compromis Cyberattaque.org"
-    },
-    {
       "title": "AI est à la fois une cible et un outil pour l’acteur malveillant​​ ​ - Recorded Future",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5US0p0TjVJclhDZlpyYWwyR0ZpNHhGWlRGbFMwTEhiekxmYTZCOFNHYm1QYkNhQWxCMU9rOUZvb2xaQW90VHRRcVhhUjIybHNGZlhXS3haWk9OZ3BJZ0ZqTzBhUmtMek5xUTVvb1RINGtudFZPU3pfLWRB?oc=5",
       "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
       "description": "AI est à la fois une cible et un outil pour l’acteur malveillant​​ ​ Recorded Future"
     },
     {
-      "title": "MegaETH devient MEGA : 30 millions de dollars pour lancer un marché d’inférence IA - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuMFdTa2lzOTRQYm9UdDN6WV9ZZlJLSzBBOU9JeWxjUl9QX3Q1RlFJdzJGYjIwNlA3OHVkc3hpZzJ3ck1BX0owVU9lUkxvNVBYR0x5Y3BtTzdIZThMZnJvekJCNGtDbXNjUFQwMg?oc=5",
-      "pubDate": "Wed, 11 Nov 2026 08:00:00 GMT",
-      "description": "MegaETH devient MEGA : 30 millions de dollars pour lancer un marché d’inférence IA TradingView"
-    },
-    {
-      "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
-      "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
-      "description": "Dangers de l’IA | Pour la suite de l’humanité La Presse"
-    },
-    {
-      "title": "« Il risque d’y avoir de la casse » : expert-comptable, un métier très exposé à l’IA - Le Point",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSC04cXRvUWFJVXM3Z0hsbzBUeFBnWXowY1JrdUkzQUJCSkFSQ3M1c1daNEt3QmN3RHltaE1ZcV9QRXZYc1ZiQ09oWXc1Zk90ZzNPM3VmZUM5MW5fejhhdkxzZUJWcHotT2dwUExZVmJGWnRvSFpGU01qUU51eEFoYnFMenZuYmRzYUhoM1VvVnZhemVYMUw2Z3NBd0pHY0xBVm41czM4UnJGY1VacHRaTEVCd1NFQVd6OFQ3b2JkVkdqWUlRODMwUlFYS3IxTHo3?oc=5",
-      "pubDate": "Tue, 10 Nov 2026 08:00:00 GMT",
-      "description": "« Il risque d’y avoir de la casse » : expert-comptable, un métier très exposé à l’IA Le Point"
+      "title": "Code détourné par des tiers, le développeur risque 45 ans de prison : le procès de Tornado Cash et la survie de l'innov… - 深潮TechFlow",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GQ1U1WEJCRUFTSDVacWNfS1dnRHI1QktIbThuaUpVN0RiUU5mUXpkak5DZ2V5R1pWSElXUTJDQlBPZ3ltTm9BOW5yS0tIei1Zd3Z2al9mMVZYbXcwNWk4aDNjaEhxX0xOZ09mRlpadDZrRGk3eWtYbm5HbnQ3T0k?oc=5",
+      "pubDate": "Thu, 26 Nov 2026 10:04:06 GMT",
+      "description": "Code détourné par des tiers, le développeur risque 45 ans de prison : le procès de Tornado Cash et la survie de l'innov… 深潮TechFlow"
     },
     {
       "title": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano - Mon Carnet – de l'actualité numérique",
@@ -136,40 +124,52 @@
       "description": "The Hinton Lectures : « Un risque élevé que l’IA prenne le contrôle d’ici trois ans » – Paul Christiano Mon Carnet – de l'actualité numérique"
     },
     {
-      "title": "IA : le recrutement face au risque de tarir l'expertise - Brief IA",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeGphM3hoN2RhOHNua2lpcEMwdGotMlZJM3VMb2xreTcwMjhzMWxJdkRmSWEweXc2N0NkUUxzTTBWUW9oUE9DRVUwN0RCM3FxNGplaExoSm1UNGJHWU5xd01WRXlEQzJ5ZGJxWHNYcjUzbzc4Ulk4RzNuUDN3OEotWGVDelBGUUt4aF9fdQ?oc=5",
-      "pubDate": "Tue, 17 Nov 2026 09:34:50 GMT",
-      "description": "IA : le recrutement face au risque de tarir l'expertise Brief IA"
-    },
-    {
-      "title": "Siri s’ouvre aux développeurs, sauf en Europe, et ça compte vite - Servicesmobiles.fr",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSVk4SHNIUnh3T2J3T09Xb3p1bnZfS2lWQXBBRXZncU9nNjJTTWdKdnViUmZ4SFNGY09jSjhib2Y1bDhGNVBSQzhNcWJwVHhoM2thY3dGNWZEeTZBbG4xbDZNNXFpVGF1UllpeGI3Vnc0N05mWVYta2JHYXNWbTREb2hkY0o4aE1zT1RFWDlpalFGSzVoQkJ4UG1yU2EtbWRn?oc=5",
-      "pubDate": "Mon, 09 Nov 2026 11:00:54 GMT",
-      "description": "Siri s’ouvre aux développeurs, sauf en Europe, et ça compte vite Servicesmobiles.fr"
-    },
-    {
       "title": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés - OpenAI",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tbXFJbjhEd2FFcVh3VHdOSVVOeXo0RTlNdmc3M0FQQnF3WUktR2Zqa1BhYVJReE9KYWs0TUJ4V0tZM0NsX1hQbkVfX3NlaFljbWJUclo1QXA4dS1yOUZtSkU1aVJEZw?oc=5",
       "pubDate": "Thu, 05 Nov 2026 08:00:00 GMT",
       "description": "GPT‑6 Cyber : repousser les limites des agents de cybersécurité alignés OpenAI"
     },
     {
+      "title": "Dangers de l’IA | Pour la suite de l’humanité - La Presse",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmREc0dnU25KeUI5U0VDRV9WZklFUUxjWElOdTNvQmNEY2Y5bDFkRjVURnRzMzlTZlA1SHN4Sm43UncxbUhMVlpfeFlpMy05bXA1MWEwRmVRZTB4Zi0yaUQyejhHUnpCcHVUbjlVVWpKTE1GNW54c0M2c204QlB4ZmliZzFkcEtWdXk2N2NabW9vZTZUSmZCLUFtZTlTX0QwVllFaGdFNkZpc01Mbmc?oc=5",
+      "pubDate": "Thu, 12 Nov 2026 08:00:00 GMT",
+      "description": "Dangers de l’IA | Pour la suite de l’humanité La Presse"
+    },
+    {
       "title": "L'I.A continue ses ravages dans le jeu vidéo : 54 % des développeurs licenciés toujours sans emploi et ça ne va pas s'arranger - JeuxVideo.com",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxON0t4Y1BnZUJYSVMxN3lhV21vYTl0bWlQYlFNMURxcjdiRTFTLV84aHZQVnN4ZGl5bEhVQWxOWHlQQWtVM0pIV092bU81TUNuTWZoYVQzZDJIOGZNUExYTmxJS0RlZ2ZSb0I4SVFYYzFkc0dJRVZhYnBmR2RabjdRMTZwM3NYZmpCcE1rNUR5R3Nhb2NRc1M0bXdPUVM1b2s4Y3ltazZ4VUpHQU82WmdIUFFzeDZ1SDRwV3hkNno3QmVFUGdDc1NEZl9PNkktaElFR3BhQmNYVkROVUlQb1I2YTRFaDk5SUZ2TzlOaTFiY05pSGFPcHlTRA?oc=5",
-      "pubDate": "Tue, 17 Nov 2026 11:50:08 GMT",
+      "pubDate": "Tue, 17 Nov 2026 08:00:00 GMT",
       "description": "L'I.A continue ses ravages dans le jeu vidéo : 54 % des développeurs licenciés toujours sans emploi et ça ne va pas s'arranger JeuxVideo.com"
     },
     {
-      "title": "Anthropic IPO Buy wait or avoid Seven questions investors should ask - Saxo",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQzNaVnlGMGptSkdlN0d5ZFFMdmZER0JjQkM0cVRYUWNsdkI4QmVqYTlFYWt0V0syR3FKbXBNN3k5cFM1M3lGMWVDeTVaVjVHbk5oRVVXUEtfVlFjMTlJelFBdWN4NDhwQkstcnE4cHRyQjZyNll6NThicFVQQjJHdnN4ZUhqaDJ5cV9kNUU1MktzOE1KcW9ldElROXRaUEtBcGJOaXNrZ016TG1tTGdRdkdHdE94bFhBSUlpTjAxMl9zbzFTd1RHUG84cw?oc=5",
-      "pubDate": "Thu, 19 Nov 2026 18:00:00 GMT",
-      "description": "Anthropic IPO Buy wait or avoid Seven questions investors should ask Saxo"
+      "title": "Les développeurs de Zcash exhortent les utilisateurs à migrer 2 % de l’offre de ZEC pour accélérer le retrait du pool Sapling - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1VS0Y3bXFqZG90b2J3YWVWMmFBQjEyUmR4R1BuYWJ5QURnRVM0cWduMVZuakNpdUU4V0Z0ZHZVa1E1b3dBT3l2Tmcza2VVQ0J6Q0VhN0tzZEtITklsUkl4SWFfWDVJZlREaEd2eEt0OA?oc=5",
+      "pubDate": "Thu, 26 Nov 2026 10:15:28 GMT",
+      "description": "Les développeurs de Zcash exhortent les utilisateurs à migrer 2 % de l’offre de ZEC pour accélérer le retrait du pool Sapling TradingView"
     },
     {
-      "title": "Puces Nvidia : les restrictions américaines poussent la Chine à bâtir ses alternatives - InformatiqueNews",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMUhFNjFuVDhPQUgySV9peU9uWTI4b0RuWVRTLXlsVFR5MzhVZXFJaW9YRnlBSDIwaGtDbV9jUWRKWkJVR3RYWEhNN2pVMHN5a0c0TDc3dGc0aGxlbHNBcFNfMHVpelVIMHVJTThCYk9kYkY5UXBwMTRnaTZDa2psNzdBYlE5RVcxWkw2ZHJtQ3JGLVBmVUE?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 06:30:00 GMT",
-      "description": "Puces Nvidia : les restrictions américaines poussent la Chine à bâtir ses alternatives InformatiqueNews"
+      "title": "Vulnérabilité EMBRACE, Codex et VS Code toujours sans correctif - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONVBGUVJqMEJsMl9OSGNSVXduYmE5LThrMW94S0VnMWhrbGtGNWNwN1RLUXVTcFk0R1NaOXVjd3A5UElrTlNmMXoyQUNRX1BUUC1zNERJQURMUWZLRm9IdlZPSUI5c1NFWUdxcGRGNHBBalgzNklONExfWVdxaVF1UVN5Y2dtOTRic0VTTjR2MTg?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 07:00:00 GMT",
+      "description": "Vulnérabilité EMBRACE, Codex et VS Code toujours sans correctif Pasquale Pillitteri"
+    },
+    {
+      "title": "Libre et open source express: apocalypse de vulnérabilité, entrep ... - ZDNET",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNzFaMGUya0Z0Z3BwdEd2WmhkQXltZDVtWEV3WlhFTktzYWtFNG0xVUFWTnhvdlZtdDF1WDE4dmJVci1DTWpvSmJmZ1dZdmxLbUZqV0F4bGVkeUd0VjhGejdWTmdCQURmUlIyWDM2ZlpqeVhaeUdLdjdnTG1iUHByUjB3TUtvVWJKVHZSWFpZTWxkV2ZkbC1YS1o5b1ljTVNfNHppZ3BTdkxIeVl4cmVNR0xDSVRKOHUzX1BqRTBIaUxod0QtZzV1V1Q1eS1ZTU0yaDllSnoxcFNjZU95V0hpOEdWSHVRNFFPWmNrb1JpSVMyNl9yRHVSS1Nsbw?oc=5",
+      "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
+      "description": "Libre et open source express: apocalypse de vulnérabilité, entrep ... ZDNET"
+    },
+    {
+      "title": "Le risque de crédit de SoftBank atteint son plus haut niveau depuis quatre ans ; l'action s'effondre alors que - Boursorama",
+      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNbFk1ZXdLMjBpNFFCWVlacndjZTFsLVpfNnE2a0VtVU1LS0NfLUxBSml2SHpadWVBclNvaGwxRW5tbkFXaFBNWW95ck11SmJsZUFIVmFrSU1OX19zbW0xYmk4RUh1Y2hCUzU3bmNuckI0WUUyVS1sbkFZNmpkbzVHX0NOMGd5Z1hVVFhPTVN2Zkh6S1o0SElRU1Ayb05SZTRGOG1SbGFITFJCZzhNNG16bktpWkF0R1ljTl9neGlCMnFwOFVONFVxeFN6bUNVdlhLZ3JqaXJYZGlvaURmREU5VGpSNGxHZ1AwVGt0WkN5NDlCT2QzX2JVN016bENfZjRoT2R2SS1UbXJaZGRlS2N5WlBNQW5BQ3Y0WklNLTRUdldvakRTRkRjVWZGeGJ5dXVPNUNsck9ULWotN19iNEsycjJSMTF4ZzhHdjRMNnUySU5iUDTSAdgCQVVfeXFMTmYzMFg5Y0FETEcxTkhwOEYwSzYtMEZLVFZiREJYeXlwUGRsQ21aTU1qT29mQ0dpeUhrQnhuUlZuVEtoLVZnT1AwWnlKSmtYSXJGdkxueXlUdFZSZmRDdG95RjlhMzhzZHpvOTFrbzY3eTNoa1RlWXhRNlA3NmtiZVExVWNnUk1mTGl6cmhxMXoxb2loUUMyQ292MXFWdzRud0s5TU1ianVJUjdNSEJNS2tDWDZUMVZqSzdFUTAybE9vdTlLVUxhZHoxbkphN0E0cnYwcnBCelkwVVNXRHc3OTdFRFZzY0dVSGpfWVlQVE16UWtkal9WMzRkZDg3SjZqdkRnYmZLbTVmMTFZZm90UnJ0RktGaG02d2ZQaVJoU1VaYzEweE9UVURpcklndE9rdmRiWkFEWmZMX0M4OHJKeWoxdnFwYl96S0RzMWpvU2kySk1LS21VTkk?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 08:00:00 GMT",
+      "description": "Le risque de crédit de SoftBank atteint son plus haut niveau depuis quatre ans ; l'action s'effondre alors que Boursorama"
+    },
+    {
+      "title": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code - Pause Hardware",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAySXN1NUxYQnR5WUZaNjdwakx3LVJCQWV5QzBEUWpLM1JYVGVXUjh3bUl5NUEzRFNDc2h1QWJRbm5NMERZVWMzbTZSOVpXNUExTU5OVXJpemFKdWtxaHFib3Zid2xISHFyV3lOSDJWcDNMU3lDYWREbA?oc=5",
+      "pubDate": "Sat, 31 Oct 2026 07:00:00 GMT",
+      "description": "Claude refuse de recréer des jeux, même quand le développeur veut réutiliser son code Pause Hardware"
     }
   ]
 }
